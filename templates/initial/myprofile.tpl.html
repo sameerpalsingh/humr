@@ -1,0 +1,484 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+ <body>
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+ <body>
+ <form name="myprofile" method="post" action="">
+ <table width="100%" cellspacing="0" cellpadding="0" >
+ <tr>
+  <tr>
+                      <td class="s-title" style="border-bottom:1px solid #CCCCCC">My Profile </td>
+                    </tr>
+					 <div style="float:left; margin-top:; ">
+					  <div style="float:left; margin-right:45%;">
+							<a href="manage_album.php"><img src="<?php echo DIR_WS_USER_IMAGES.getImageFromId($db, $row['pic']) ; ?>" width=100 border=0 alt="click here to see the photograph"></a>
+						</div>
+						<br>
+						  
+						</div>
+   <tr>
+  <td> <input type="image" name="profilepic"/></td>
+  </tr>
+  <table  align="left" width="50%">
+ 
+  <tr>
+  <td><img src="images/personal-info.gif" alt="" width="131" height="30" /></td>
+  </tr>
+  
+ <tr>
+                            
+							<td width="225"><font class="text">Name</font></td>
+                            <td ><input class="box" maxlength="40" size="35" name="name" value="<?php echo $sess_user_name; ?>" readonly />                            </td>
+                          </tr>
+
+						
+						  <tr>
+                            <td width="225"><font class="text">User Id</font></td>
+                            <td ><input class="box" maxlength="40" size="35" name="loginid"
+							value="<?php echo $userid;?>" disabled="disabled" /> </td>
+                          </tr>
+
+
+						  <tr>
+                            <td width="225"><font class="text">Password</font></td>
+                            <td ><input class="box" maxlength="40" size="35" name="password" value="<?php echo $password; ?>"  /disabled="disabled"> </td>
+                          </tr>
+
+                          <tr>
+                            <td><font class="text">Gender</font></td>
+                            <td ><font class="text">
+                            <input type="radio" checked="checked" value="M"  name="gender" 
+	                        disabled='disabled'  <?php if ($gender=='M') echo 'checked'; ?>/>Male
+                              
+                            <input type="radio" value="F" name="gender" disabled='disabled' <?php if ($gender=='F') echo 'checked'; ?>/>
+                              Female</font></td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Date Of Birth</font></td>
+                            <td >
+                            <select style="font-size: 9pt; width: 60px; font-family: arial, verdana, sans-serif" size="1" name="day" disabled="disabled">
+                            <option value="0">Day</option>
+                            <?php
+                            echo getDayOfDOB($dobArr[2]);
+                            ?>                           
+                            </select>
+                                <select 
+                                style="font-size: 9pt; width: 60px; font-family: arial, verdana, sans-serif" 
+                                size="1" name="month" readonly disabled="disabled">
+                                 <option value="0">Month</option>
+                            <?php
+                            echo getMonthOfDOB($dobArr[1]);
+                            ?>                           
+                                </select>
+                                <select 
+                                style="font-size: 9pt; width: 60px; font-family: arial, verdana, sans-serif" 
+                                size="1" name="year" disabled="disabled">
+                                <option value="0">Year</option>
+                            <?php
+                            echo getYearOfDOB($dobArr[0]);
+                            ?>                           
+                                </select>                            
+								</td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Marital Status</font></td>
+                            <td ><font class="text">
+                              <select 
+                               style="font-size: 9pt; width: 110px; font-family: arial, verdana, sans-serif" 
+                               name="maritalstatus" disabled="disabled">
+                                <option value="0">-Select any One-</option>
+                                <option value="1" <?php echo ($maritalstatus == 1)? 'selected' : '' ; ?> >Unmarried</option>
+                                <option value="2" <?php echo ($maritalstatus == 2)? 'selected' : '' ; ?> >Divorcee</option>
+                                <option value="3" <?php echo ($maritalstatus == 3)? 'selected' : '' ; ?> >Widow/Widower</option>
+                                <option value="4" <?php echo ($maritalstatus == 4)? 'selected' : '' ; ?> >Annulled</option>
+                                <option value="5" <?php echo ($maritalstatus == 5)? 'selected' : '' ; ?> >Awaiting Divorce</option>
+                              </select>
+                            </font></td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Looking For</font></td>
+                            <td ><font class="text">
+                              <select 
+                              style="font-size: 9pt; width: 110px; font-family: arial, verdana, sans-serif" 
+                              name="lookingfor" disabled="disabled">
+                                <option value="0" selected="selected">-Select any One-</option>
+                                <option value="1" <?php echo ($lookingfor == 1)? 'selected' : '' ; ?> >Unmarried</option>
+                                <option value="2" <?php echo ($lookingfor == 2)? 'selected' : '' ; ?> >Divorcee</option>
+                                <option value="3" <?php echo ($lookingfor == 3)? 'selected' : '' ; ?> >Widow/Widower</option>
+                                <option value="4" <?php echo ($lookingfor == 4)? 'selected' : '' ; ?> >Annulled</option>
+                                <option value="5" <?php echo ($lookingfor == 5)? 'selected' : '' ; ?> >Awaiting Divorce</option>
+                              </select>
+                            </font></td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Height</font></td>
+                            <td colspan="5"><select 
+                             style="font-size: 9pt; width: 110px; font-family: arial, verdana, sans-serif" 
+                             size="1" name="height" disabled="disabled">
+                                <option value="0">-Select any one-</option>
+
+								<?php 
+								echo createDropDownForHeight($db,$height);
+								?>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td width="90"><font class="text">Body Type* </font></td>
+                            <td colspan="5"><select 
+                                style="font-size: 9pt; width: 110px; font-family: arial, verdana, sans-serif" 
+                                size="1" name="bodytype" disabled="disabled">
+                                <option value="0">-Select any one-</option>
+                                <option value="1" <?php echo ($bodytype == '1')? 'selected' : '' ; ?> >Slim</option>
+                                <option value="2" <?php echo ($bodytype == '2')? 'selected' : '' ; ?> >Average</option>
+                                <option value="3" <?php echo ($bodytype == '3')? 'selected' : '' ; ?> >Athletic</option>
+                                <option value="4" <?php echo ($bodytype == '4')? 'selected' : '' ; ?> >Heavy</option>
+                            </select>                            </td>
+                          </tr>
+                          <tr>
+                            <td width="90"><font class="text">Complexion* </font></td>
+                            <td colspan="5"><select class="TextBox" 
+                            style="font-size: 9pt; width: 110px; font-family: arial, verdana, sans-serif" 
+                            size="1" name="complexion" disabled="disabled">
+                                <option value="0" selected="selected">-Select any 
+                                  one-</option>
+                                <option value="1" <?php echo ($complexion == 1)? 'selected' : '';?> >Very Fair</option>
+                                <option value="2" <?php echo ($complexion == 2)? 'selected' : '';?> >Fair</option>
+                                <option value="3" <?php echo ($complexion == 3)? 'selected' : '';?> >Wheatish</option>
+                                <option value="4" <?php echo ($complexion == 4)? 'selected' : '';?> >Wheatish Brown</option>
+                                <option value="5" <?php echo ($complexion == 5)? 'selected' : '';?> >Dark</option>
+                            </select>                           
+							</td>
+                          </tr>
+
+						   <tr>
+                            <td><font class="text">Weight</font></td>
+                            <td ><font class="text">
+                              <select style="font-size: 9pt; width: 110px; font-family: arial, verdana, sans-serif" 
+                               name="weight" disabled="disabled">
+                                <option value="0">-Select Your Weight-</option>
+								<?php
+
+								echo createDropDownForWeight($db,$weight);
+
+								 ?>
+                               </font></td>
+                          </tr>
+						  <tr><td> &nbsp;</td></tr>
+						   <tr>
+  <td><img src="images/social-back.gif" alt="" width="117" height="30" /></td>
+  </tr>
+  
+                          <tr>
+                            <td><font class="text">Religion</font></td>
+                            <td ><font class="text">
+                            <select style="font-size: 9pt; width: 120px; font-family: arial, verdana, sans-serif" name="religion" disabled="disabled">
+                               
+							<option value="0">-Select Your Religion-</option>
+                            <?php
+                               echo createDropDownForReligion($db, $religion);
+                            ?>
+						  </font></td>
+                          </tr>
+
+						   <tr>
+                            <td><font class="text">Caste</font></td>
+                            <td >
+                            <select style="font-size: 9pt; width: 230px; font-family: arial, verdana, sans-serif" name="caste" disabled="disabled">
+                            <option value="0">-Select any one option-</option>
+                            <?php
+                               echo createDropDownForCaste($db, $caste);
+                            ?>
+                            </select>
+                            </td>
+                          </tr>
+
+							 <tr>
+                            <td><font class="text">Sub-Caste/Surname</font></td>
+                            <td >
+                            <input class="box" maxlength="30" name="subcast" value="<?php echo $subcast; ?>"/ disabled="disabled">
+                            </td>
+                            </tr>
+
+						    <tr>
+                            <td><font class="text">Gotra/Gothram</font></td>
+                            <td >
+                            <input class="box" maxlength="30" name="gotra" value="<?php echo $gotra; ?>"/ disabled="disabled">
+                                                      
+                            </td>
+                            </tr>
+
+						    <tr>
+                            <td><font class="text">Ancrstral Origin (Native)</font></td>
+                            <td >
+                            <input class="box" maxlength="30" name="ancestralorigin" value="<?php echo $ancestralorigin; ?>"/ disabled="disabled">
+                            
+                          </td>
+                          </tr>
+
+						  <tr>
+                            <td><font class="text">Nakshatra</font></td>
+                            <td ><font class="text">
+                           <select style="font-size: 9pt; width: 120px; font-family: arial, verdana, sans-serif" name="nakshatra" disabled="disabled">
+                                
+								 <option value="0">-Select Nakshatra-</option>
+                            <?php
+                               echo createDropDownForNakshatra($db, $nakshatra);
+                            ?>
+								
+                            </font></td>
+                          </tr>
+                           
+                           
+                          </td>
+                          </tr>
+
+                          <tr>
+                            <td><font class="text">Raasi / Moon Sign</font></td>
+                            <td ><font class="text">
+                            <select style="font-size: 9pt; width: 140px; font-family: arial, verdana, sans-serif" name="raasi" disabled="disabled">
+                                <option value="0">-Select any one-</option>
+                               <?php
+                                echo createDropDownForRaasi($raasi);
+                               ?>
+                              </select>
+                            </font></td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Mother tongue (state of origin) * </font></td>
+                            <td ><font class="text">
+                              <select style="font-size: 9pt;font-family: arial, verdana, sans-serif" 
+                              name="mothertongue" disabled="disabled">
+                              <option value="0">-Select any one-</option>
+                              <?php
+                               echo createDropDownForMotherTongue($db, $mothertongue);
+                              ?>
+                              </select>
+                            </font></td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Manglik </font></td>
+                            <td ><font class="text">
+							<input type="radio" name="yes" > yes
+							<input type="radio" name="no" > No
+                              <!--<input type="radio" <?php echo ($manglik == "1")? 'checked' : '';?> value="N" name="manglik" / disabled="disabled">No
+                              <input type="radio" <?php echo ($manglik == "2")? 'checked' : '';?> value="Y" name="manglik" / disabled="disabled">Yes
+							  <input type="radio" <?php echo ($manglik == "3")? 'checked' : '';?> value="N" name="manglik" / disabled="disabled"> Don't Know
+                              <input type="radio" <?php echo ($manglik == "4")? 'checked' : '';?> value="Y" name="manglik" / disabled="disabled">Angshik (Partial Manglik)-->
+							  </font> </td>
+                          </tr>
+  </table>
+
+     
+
+
+				     <table  width="50%" align="right">
+					 
+					      <tr>
+                            <td ><img src="images/educational.gif" alt="" width="250" height="33" /></td>
+                          </tr>
+                         
+						    <tr>
+                            <td><font class="text">Educational Background</font></td>
+                            <td><font class="text">
+                              <textarea class="box" name="educational_background" disabled="disabled"><?php echo stripslashes($educational_background); ?></textarea>
+                            </font></td>
+                            </tr>
+							 <tr>
+                            <td><font class="text">Highest Degree</font></td>
+                            <td><select style="font-size: 9pt; width: 250px; font-family: arial, verdana, sans-serif" name="highestdegree" disabled="disabled">
+                            <option value="0">Select Highest Degree </option>
+                            <?php
+                                echo createDropDownForHighestdegree($db,$highestdegree);
+                            ?>
+                            </select>
+                              
+                              </tr>
+
+				
+							 <tr>
+                            <td><font class="text">Professional Background</font></td>
+                            <td><font class="text">
+                            <textarea class="box" name="professional_background" disabled="disabled"><?php echo stripslashes($professional_background); ?></textarea>
+                            </font></td>
+                            </tr>
+
+						    <tr>
+                            <td><font class="text">Work Area</font></td>
+                            <td ><font class="text">
+                            <select style="font-size: 9pt; width: 150px; font-family: arial, verdana, sans-serif" name="workarea" disabled="disabled">
+                            <option value="0">-Select Work Area-</option>
+                            <?php
+                             echo createDropDownForWorkarea($db, $workarea);
+                            ?>
+                            </select>
+                            </font>
+							</td>
+                          
+						    </tr>
+
+						    <tr>
+                            <td><font class="text">Work status</font></td>
+                            <td ><font class="text">
+                              <select style="font-size: 9pt; width: 150px; font-family: arial, verdana, sans-serif" name="work_status" disabled="disabled">
+
+							    <?php
+                                    echo createDropDownForWorkStatus($db,$workstatus);
+                                ?>
+                                
+                            </font></td>
+                          </tr>
+                          <tr>
+
+						    <tr>
+                             <td><font class="text">Annual Income</font></td>
+                             <td ><font class="text">
+                              <select style="font-size: 9pt; width: 150px; font-family: arial, verdana, sans-serif" name="annualincome" disabled="disabled">
+                                <option value="0">- Select Your Income -</option>
+                               <?php
+                                    echo createDropDownForIncome($db,$annualincome);
+                               ?>
+                              </select>
+                            </font></td>
+                          </tr>
+						 <tr><td>&nbsp;</td></tr>
+						 <tr><td>&nbsp</td></tr>
+						 <tr><td>&nbsp;</td></tr>
+						 <tr><td>&nbsp</td></tr>
+
+
+						  <tr><td><img src="images/location-info.gif" alt="" width="134" height="33" /></td></tr>
+					  </tr>
+
+					   <tr>
+                            <td><font class="text">Citizenship</font></td>
+                            <td colspan="3"><font class="text">
+                              <select name="citizenship" disabled="disabled">
+                                <option value="0" selected="selected">Select One</option>
+                                <?php
+                                    echo createDropDownForCountries($db, $citizenship);
+                                ?>
+                              </select>
+                            </font></td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Country Living in</font></td>
+                            <td colspan="3"><font class="text">
+                              <select style="font-size: 9pt; width: 200px; font-family: arial, verdana, sans-serif"       name="livingin" disabled="disabled">
+                                <option value="0" selected="selected">Select One</option>
+                                <?php
+                                    echo createDropDownForCountries($db, $livingin);
+                                ?>
+                              </select>
+                            </font></td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Native State</font></td>
+                            <td colspan="3">
+                              <select style="font-size: 9pt; width: 200px; font-family: arial, verdana, sans-serif" name="nativestate" disabled="disabled">
+                                <option value="0" selected="selected">Select One</option>
+                                <?php
+                                    echo createDropDownForState($db, $nativestate);
+                                ?>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Residing City</font></td>
+                            <td colspan="3"><select style="font-size: 9pt; width: 200px; font-family: arial, verdana, sans-serif" name="residingcity" disabled="disabled">
+                                <option value="0">Select One</option>
+                                <?php
+                                    echo createDropDownForCities($db, $city);
+                                ?>
+                              </select></td>
+                          </tr>
+                          <tr>
+                            <td colspan="4">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td colspan="4"><img src="images/contact-info.gif" alt="" width="139" height="33" /></td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">E-mail </font></td>
+                            <td colspan="3"><font class="text">
+                              <input class="box" maxlength="80" name="emailid" value="<?php echo $emailid; ?>"/ disabled="disabled">
+                              <span id='divEmail' name='divEmail' >Ex: info@humraahi.com</span></font></td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Contact Phone </font></td>
+                            <td colspan="3"><font class="text">
+                              <input class="box" maxlength="30" name="contact_number" value="<?php echo $contact_number; ?>"/ disabled="disabled">
+                            </font></td>
+                          </tr>
+                          <tr>
+                            <td><font class="text">Contact Address </font></td>
+                            <td colspan="3"><font class="text">
+                              <textarea class="box" name="address" disabled="disabled"><?php echo stripslashes($contact_address); ?></textarea>
+                            </font></td>
+                          </tr>
+						 
+						 
+						 <tr><td colspan="4"><img src="images/other-info.gif" alt="" width="119" height="33" /></td></tr>
+						<tr>
+                            <td><font class="text">Blood Group</font></td>
+                            <td colspan="3"><font class="text">
+                              <select style="font-size: 9pt; width: 150px; font-family: arial, verdana, sans-serif" name="bloodgroup" disabled="disabled">
+                               <option value="0">- Select Your Blood Group -</option>
+                               <?php
+                                    echo createDropDownForBloodgroup($db,$bloodgroup);
+                               ?>
+                              </select>
+                            </font></td>
+                          </tr>
+
+
+                          <tr>
+                            <td><font class="text">Profile Description</font></td>
+                            <td colspan="3"><font class="text">
+                              <textarea class="box" name="description" disabled="disabled"><?php echo stripslashes($description); ?></textarea>
+                            </font></td>
+                          </tr>
+						  <tr><td>&nbsp;</td></tr>
+						 <tr><td>&nbsp</td></tr>
+						
+						
+						
+					  </table>
+
+					   <table  align="left" width="50%">
+  
+ 
+						
+                      </table>
+					  <table align="left" width="50%">
+					  <tr>
+					 
+					  </table>
+
+					  
+
+					 
+	</tr>				  
+  </table>
+  </form>
+ </body>
+</html>
+
+ </body>
+</html>

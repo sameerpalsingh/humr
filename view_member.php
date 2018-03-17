@@ -1,0 +1,172 @@
+<?php
+include 'includes/application_top.php';
+
+$db = new sql_db();
+
+/*$gender       = isset($_POST['gender'])?$gender=$_POST['gender']:$gender='';
+$caste        = isset($_POST['caste'])?$caste=$_POST['caste']:$caste='';
+$aboutyourself= isset($_POST['aboutyourself'])?$aboutyourself=$_POST['aboutyourself']:$aboutyourself='';
+$mothertongue = isset($_POST['mothertongue'])?$mothertongue=$_POST['mothertongue']:$mothertongue='';
+$age1         = isset($_POST['age1'])?$age1=$_POST['age1']:$age1='';
+$age2         = isset($_POST['age2'])?$age2=$_POST['age2']:$age2='';
+$photos       = isset($_POST['photos'])?$photos='Y':$photos='';
+
+function getQuickSearchResults($gender,$aboutyourself, $caste, $mothertongue, $age1, $age2, $photos) {
+    global $db;
+    $sql = "SELECT id, name, age, caste, citizenship, aboutyourself,domem, pic, loginid, city
+            FROM hum_registration
+            WHERE gender='$gender' ";
+    if ($caste != '') {
+        $sql.= "AND caste='$caste' ";
+    }
+    if ($mothertongue != '') {
+        $sql.= "AND mothertongue='$mothertongue' ";
+    }
+	if ($aboutyourself != '') {
+        $sql.= "AND aboutyourself='$aboutyourself' ";
+    }
+    $sql.= "AND age between $age1 and $age2 ";
+    if ($photos == 'Y') {
+        $sql.= "AND pic!='' ";
+    }
+    $sql.= "ORDER BY id desc";
+    return $db->executeQuery($sql);
+}
+
+if (isset($_POST['SearchProfile'])) {
+    $rs = getQuickSearchResults($gender, $caste, $aboutyourself,$mothertongue, $age1, $age2, $photos);
+}*/
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title><?php echo SITE_TITLE;?></title>
+<link href="templates/initial/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="<?php echo DIR_WS_JS;?>popup.js"></script>
+<script language="JavaScript">
+<!--
+    function popup(url) {
+        window.open(url,'', width=100);
+    }
+
+    function validate() {
+        var chckboxchecked = false;
+        for(i=0; i<document.frmSearch.elements.length; i++) {
+            if (document.frmSearch.elements[i].type == "checkbox" && document.frmSearch.elements[i].checked == true) {
+                chckboxchecked = true;
+            }
+        }
+        if (chckboxchecked == false) {
+            alert("Please select profile.");
+            return false;
+        }
+        return true;
+    }
+
+    function checkuncheckall() {
+        if (document.frmSearch.txtcheck.value== 'checked') {
+            uncheckall();
+            document.frmSearch.txtcheck.value = 'unchecked'
+        } else {
+            checkall();
+            document.frmSearch.txtcheck.value = 'checked';
+        }
+    }
+
+    function checkall()
+    {
+        for(i=0; i<document.frmSearch.elements.length; i++)
+        {
+            if(document.frmSearch.elements[i].type=="checkbox")
+            {
+                document.frmSearch.elements[i].checked=true;
+            }
+        }
+    }
+
+    function uncheckall()
+    {
+        for(i=0; i<document.frmSearch.elements.length; i++)
+        {
+            if(document.frmSearch.elements[i].type=="checkbox")
+            {
+                document.frmSearch.elements[i].checked=false;
+            }
+        }
+    }
+
+
+
+    function allow_validate() {
+        var chckboxchecked = false;
+        for(i=0; i<document.frmSearchallow.elements.length; i++) {
+            if (document.frmSearchallow.elements[i].type == "checkbox" && document.frmSearchallow.elements[i].checked == true) {
+                chckboxchecked = true;
+            }
+        }
+        if (chckboxchecked == false) {
+            alert("Please select profile.");
+            return false;
+        }
+        return true;
+    }
+	    function checkuncheckall_frmallow() {
+        if (document.frmSearchallow.txtcheckallow.value== 'checked') {
+            uncheckall_();
+            document.frmSearchallow.txtcheckallow.value = 'unchecked'
+        } else {
+            checkall_();
+            document.frmSearchallow.txtcheckallow.value = 'checked';
+        }
+    }
+	    function checkall_()
+    {
+        for(i=0; i<document.frmSearchallow.elements.length; i++)
+        {
+            if(document.frmSearchallow.elements[i].type=="checkbox")
+            {
+                document.frmSearchallow.elements[i].checked=true;
+            }
+        }
+    }
+
+    function uncheckall_()
+    {
+        for(i=0; i<document.frmSearchallow.elements.length; i++)
+        {
+            if(document.frmSearchallow.elements[i].type=="checkbox")
+            {
+                document.frmSearchallow.elements[i].checked=false;
+            }
+        }
+    }
+
+
+
+
+
+
+//-->
+</script>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="223" height="537" valign="top"><?php include(DIR_FS_INCLUDES."left.inc.php"); ?></td>
+        <td valign="top">
+        <?php include(DIR_FS_INCLUDES."header.inc.php"); ?>
+        <?php include(DIR_FS_TEMPLATES."wl_view_member.tpl.php"); ?>
+        </td></tr>
+    </table></td>
+  </tr>
+<?php include(DIR_FS_TEMPLATES."footer.tpl.php"); ?>
+</table>
+</body>
+</html>

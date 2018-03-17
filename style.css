@@ -1,0 +1,193 @@
+body {
+    margin: 0px;
+}
+.toplinks {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #E8DFD8;
+    text-align: right;
+    height: 30px;
+    padding-right: 20px;
+}
+.left-links {
+    border: 1px solid #FFFFFF;
+    background-color: #A6A19F;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.toplink-2 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #990000;
+    line-height: 18px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.left-links-title {
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #585452;
+    background-color: #D2CFCA;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFFFFF;
+}
+.left-links-white {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    height: 40px;
+    letter-spacing: 1px;
+}
+.footer {
+    background-color: #D0C5BB;
+    height: 40px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #999999;
+}
+.Mid-links-title {
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #F0F0EE;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFFFFF;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #FFFFFF;
+}
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #E24403;
+}
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+}
+.l-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #FF9900;
+}
+.s-title {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #FF9900;
+}
+.tdunderline{    
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;    
+}
+.search{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    line-height: 25px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+    
+}
+.search li{
+    display:block;
+    background-color: #F4F4F4;
+    margin-bottom:2px;
+    padding-left: 10px;
+    list-style-position: inside;
+    list-style-type: square;
+    }
+
+.search A{
+    color: #FF6600; text-decoration:underline
+}
+.search A:hover{
+    color: #FAA505; text-decoration:underline
+}
+.bothside-border {
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #A1191B;
+    border-left-color: #A1191B;
+}
+.p-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.forget-pass {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    color: #990000;
+    text-decoration: underline;
+}
+.content-container {
+    padding: 15px;
+    border: 1px solid #CCCCCC;
+}
+.search2 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #333333;
+}
+.form-text, .form-text A {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: bold;
+    text-decoration:none
+}
+
+.form-text A:hover {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 22px;
+    color: #666666;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+.chk_box_cont {
+    height: 98px;
+    overflow: auto;
+    width: 250px;
+}
+.i-title {
+    font-family: Geneva, Arial, Helvetica, sans-serif;/* for IE only*/
+
+
+    font-size: 18px;/* for IE only*/
+    line-height: 20px;/* for IE only*/
+    font-weight: bold;/* for IE only*/
+    color: #FF9900;/* for IE only*/
+}/* for IE only*/

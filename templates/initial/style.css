@@ -1,0 +1,319 @@
+body {
+    margin: 0px;
+}
+.toplinks {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #E8DFD8;
+    text-align: right;
+    height: 30px;
+    padding-right: 20px;
+}
+.left-links {
+    border: 1px solid #FFFFFF;
+    background-color: #A6A19F;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.tdunderline{
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold; 
+    font-size: 11px; 
+    color: #000000; 
+    line-height: 20px; 
+    font-style: normal; 
+    font-family: verdana, arial, helvetica, sans-serif
+}
+.tdunderline A {
+    color: #333333; text-decoration:none
+}
+.tdunderline A:hover{
+    color: #990000;
+    text-decoration:underline
+}
+.toplink-2{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #990000;
+    line-height: 18px;
+    font-weight: bold;
+    padding-right: 20px; text-decoration:none
+}
+.toplink-2 A {
+    color: #990000;text-decoration:none
+}
+.toplink-2 A:hover{
+    color: #333333;
+    text-decoration:underline
+}
+.left-links-title {
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #585452;
+    background-color: #D2CFCA;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFFFFF;
+}
+.left-links-white {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    height: 40px;
+    letter-spacing: 1px;
+}
+.left-links-white A{color: #FFFFFF; text-decoration:none}
+.left-links-white A:hover{color: #999999;text-decoration:underline}
+.footer {
+    background-color: #D0C5BB;
+    height: 40px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #999999;
+}
+.Mid-links-title {
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #F0F0EE;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFFFFF;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #FFFFFF;
+}
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #E24403;
+}
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    font-weight: bold;
+}
+.s-title {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #FF9900;
+}
+.search{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    line-height: 25px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+    
+}
+
+.l-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #FF9900;
+}
+.s-title {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #FF9900;
+}
+.search li{
+    display:block;
+    background-color: #F4F4F4;
+    margin-bottom:2px;
+    padding-left: 10px;
+    list-style-position: inside;
+    list-style-type: square;
+    }
+
+.search A{
+    color: #333333; text-decoration:none
+}
+.search A:hover{
+    color: #FF3300; text-decoration:none
+}
+.bothside-border {
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #A1191B;
+    border-left-color: #A1191B;
+}
+.p-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.forget-pass, .forget-pass A {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    color: #990000;
+    text-decoration: underline;
+}
+.content-container {
+    padding: 15px;
+    border: 1px solid #CCCCCC;
+}
+.search2, .search2 A {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #333333; text-decoration:none
+}
+.search2 A:hover{color:#999999}
+.form-text, .form-text A {
+    font-family: Verdana, Arial, Helvetica, sans-serif;\9;
+    font-size: 11px;\9;
+    line-height: 22px;\9;
+    color: #333333;\9;
+    font-weight: bold;\9;
+    text-decoration:none\9;
+}
+
+.form-text A:hover {
+    font-family: Verdana, Arial, Helvetica, sans-serif;\9;
+    font-size: 11px;\9;
+    line-height: 22px;\9;
+    color: #666666;\9;
+    font-weight: bold;\9;
+    text-decoration: underline\9;
+}
+.text {
+    FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #cc0033; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.text1 {
+    FILTER: Gray; FONT: bold italic x-small Arial, Helvetica, sans-serif; TEXT-TRANSFORM: none; CURSOR: crosshair; TEXT-DECORATION: underline blink
+}
+.text2 {
+    FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #3300ff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.text3 {
+    FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.text3 A:hover {
+    FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.text4 {
+    FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-STYLE: normal; FONT-FAMILY:Arial;
+}
+.text4 A:hover {
+}
+
+.box2 {
+    BORDER-RIGHT: #ff0000 1px ridge; PADDING-RIGHT: 4px; BORDER-TOP: #ff0000 1px ridge; PADDING-LEFT: 4px; PADDING-BOTTOM: 1px; BORDER-LEFT: #ff0000 1px ridge; PADDING-TOP: 1px; BORDER-BOTTOM: #ff0000 1px ridge
+}
+
+.smalltext {
+    FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #3e3e3e; LINE-HEIGHT: 20px; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.content2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    color: #333333;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.content2 A{
+    color: #A1191B; text-decoration:none
+}
+.content2 A:hover{
+    color: #FF6600; text-decoration:none
+}
+.arrow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #333333;
+}
+
+
+.pagination {
+float:right;
+padding-top:5px;
+height:41px;
+}
+.prev {
+float:left;
+color:#0165a4;
+font-weight: bold;
+padding-top:11px;
+padding-right:5px;
+}
+.next {
+float:left;
+color:#0165a4;
+font-weight: bold;
+padding-top:11px;
+padding-left:5px;
+}
+.active_page {
+float:left;
+color:#000000;
+background:#E3E3E3;
+padding:9px;
+margin:2px;
+}
+.inactive_page {
+float:left;
+background:#F5F5F5;
+padding:9px;
+margin:2px;
+}
+
+.info, .success, .warning, .error, .validation {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
+}
+.info {
+color: #00529B;
+background-color: #BDE5F8;
+background-image: url('info.png');
+}
+.success {
+color: #4F8A10;
+background-color: #DFF2BF;
+background-image:url('success.png');
+}
+.warning {
+color: #9F6000;
+background-color: #FEEFB3;
+background-image: url('warning.png');
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('/images/error.png');
+}

@@ -1,0 +1,386 @@
+[23-Mar-2018 08:36:37 Europe/Berlin] PHP Notice:  Undefined variable: caste in E:\xampp7\htdocs\humraahi\index.php on line 329
+[23-Mar-2018 08:36:38 Europe/Berlin] PHP Notice:  Undefined variable: mothertongue in E:\xampp7\htdocs\humraahi\index.php on line 340
+[23-Mar-2018 08:36:54 Europe/Berlin] PHP Notice:  Undefined variable: caste in E:\xampp7\htdocs\humraahi\index.php on line 329
+[23-Mar-2018 08:36:54 Europe/Berlin] PHP Notice:  Undefined variable: mothertongue in E:\xampp7\htdocs\humraahi\index.php on line 340
+[23-Mar-2018 13:12:32 Asia/Kolkata] PHP Notice:  Undefined variable: message in E:\xampp7\htdocs\humraahi\registration_submit.php on line 90
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: emailid in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 16
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: loginid in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 17
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: password in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 18
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: name in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 19
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: lookingfor in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 20
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: gender in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 21
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: day in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 22
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: month in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 23
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: year in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 24
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: maritalstatus in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 25
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: height in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 26
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: livingin in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 27
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: state in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 28
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: city in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 29
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: mobile in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 31
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: contact_address in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 33
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: religion in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: caste in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 35
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: raasi in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 36
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 37
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: mothertongue in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 39
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: address in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 40
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: citizenship in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 42
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: occupation in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 44
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 45
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined index: education in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 46
+[23-Mar-2018 08:42:32 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 69
+[23-Mar-2018 08:42:33 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 272
+[23-Mar-2018 08:42:33 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 174
+[23-Mar-2018 08:42:33 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 291
+[23-Mar-2018 08:42:33 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 191
+[23-Mar-2018 08:42:33 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 455
+[23-Mar-2018 08:57:12 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 08:57:13 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 08:57:13 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 08:57:13 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 08:57:13 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 08:57:39 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 08:57:39 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 08:57:39 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 08:57:39 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 08:57:39 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 08:59:00 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 08:59:00 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 08:59:00 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 08:59:00 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 08:59:00 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:01:33 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:01:33 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:01:33 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:01:33 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:01:33 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:01:45 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:01:45 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:01:45 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:01:45 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:01:45 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:02:18 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:02:18 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:02:18 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:02:18 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:02:18 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:02:29 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:02:29 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:02:29 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:02:29 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:02:29 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:02:40 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:02:40 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:02:40 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:02:40 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:02:40 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:02:46 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:02:46 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:02:46 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:02:46 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:02:46 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:03:04 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 30
+[23-Mar-2018 09:03:04 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 61
+[23-Mar-2018 09:03:04 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:03:04 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 77
+[23-Mar-2018 09:03:04 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:03:17 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 30
+[23-Mar-2018 09:03:17 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 58
+[23-Mar-2018 09:03:17 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:03:17 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 74
+[23-Mar-2018 09:03:17 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:03:24 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:03:24 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:03:24 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:03:24 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:03:24 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 13:33:43 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Thumbnail has a deprecated constructor in E:\xampp7\htdocs\humraahi\includes\class.thumbnail.php on line 66
+[23-Mar-2018 09:03:43 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 132
+[23-Mar-2018 09:03:43 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 171
+[23-Mar-2018 09:03:50 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:03:50 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:03:50 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:03:50 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:03:50 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:09:23 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:09:23 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:09:23 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:09:23 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:09:23 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:12:11 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:12:11 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:12:11 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:12:11 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:12:11 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 13:46:23 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Thumbnail has a deprecated constructor in E:\xampp7\htdocs\humraahi\includes\class.thumbnail.php on line 66
+[23-Mar-2018 09:16:23 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 132
+[23-Mar-2018 09:16:23 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 171
+[23-Mar-2018 09:16:25 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:16:25 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:16:25 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:16:25 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:16:25 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:16:32 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:16:32 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:16:32 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:16:32 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:16:32 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:21:49 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:21:49 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:21:49 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:21:49 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:21:49 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:22:57 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:22:57 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:22:57 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:22:57 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:22:57 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:25:50 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:25:50 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:25:50 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:25:50 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:25:50 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:26:11 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:26:11 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:26:11 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:26:11 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:26:11 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:27:07 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:27:07 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:27:07 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:27:07 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:27:07 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:27:15 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:27:15 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:27:15 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:27:15 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:27:15 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 09:28:19 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 09:28:19 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 09:28:19 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 09:28:19 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 09:28:19 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 11:10:26 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 11:10:26 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 11:10:26 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 11:10:26 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 11:10:26 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 15:43:14 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Thumbnail has a deprecated constructor in E:\xampp7\htdocs\humraahi\includes\class.thumbnail.php on line 66
+[23-Mar-2018 11:13:14 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 132
+[23-Mar-2018 11:13:14 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 171
+[23-Mar-2018 11:13:18 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 11:13:18 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 11:13:18 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 11:13:18 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 11:13:18 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 11:13:20 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 11:13:20 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 11:13:20 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 11:13:20 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 11:13:20 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 15:50:16 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Thumbnail has a deprecated constructor in E:\xampp7\htdocs\humraahi\includes\class.thumbnail.php on line 66
+[23-Mar-2018 15:50:16 Asia/Kolkata] PHP Warning:  move_uploaded_file(E:/xampp7/htdocs/humraahi/user_pics/original/36_b9fde1d4f81f9ae53df8ef998a82d97e.jpg): failed to open stream: No such file or directory in E:\xampp7\htdocs\humraahi\includes\class.upload.php on line 112
+[23-Mar-2018 15:50:16 Asia/Kolkata] PHP Warning:  move_uploaded_file(): Unable to move 'E:\xampp7\tmp\phpA0D9.tmp' to 'E:/xampp7/htdocs/humraahi/user_pics/original/36_b9fde1d4f81f9ae53df8ef998a82d97e.jpg' in E:\xampp7\htdocs\humraahi\includes\class.upload.php on line 112
+[23-Mar-2018 15:52:50 Asia/Kolkata] PHP Warning:  move_uploaded_file(E:/xampp7/htdocs/humraahi/user_pics/original/36_f44630467ded40da28e15a168b6811d3.jpg): failed to open stream: No such file or directory in E:\xampp7\htdocs\humraahi\includes\class.upload.php on line 112
+[23-Mar-2018 15:52:50 Asia/Kolkata] PHP Warning:  move_uploaded_file(): Unable to move 'E:\xampp7\tmp\phpFB26.tmp' to 'E:/xampp7/htdocs/humraahi/user_pics/original/36_f44630467ded40da28e15a168b6811d3.jpg' in E:\xampp7\htdocs\humraahi\includes\class.upload.php on line 112
+[23-Mar-2018 15:56:07 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method Upload::Thumbnail() in E:\xampp7\htdocs\humraahi\includes\class.upload.php:136
+Stack trace:
+#0 E:\xampp7\htdocs\humraahi\includes\class.upload.php(116): Upload->createThumb(100)
+#1 E:\xampp7\htdocs\humraahi\includes\class.upload.php(93): Upload->uploadFile('E:\\xampp7\\tmp\\p...')
+#2 E:\xampp7\htdocs\humraahi\registration1_submit.php(21): Upload->__construct(Array)
+#3 {main}
+  thrown in E:\xampp7\htdocs\humraahi\includes\class.upload.php on line 136
+[23-Mar-2018 16:07:56 Asia/Kolkata] PHP Warning:  imagejpeg(E:/xampp7/htdocs/humraahi/user_pics/100/36_aa88a683f3e5cebf149b3f5688c69649.jpg): failed to open stream: No such file or directory in E:\xampp7\htdocs\humraahi\includes\class.thumbnail.php on line 335
+[23-Mar-2018 16:07:56 Asia/Kolkata] PHP Warning:  imagejpeg(E:/xampp7/htdocs/humraahi/user_pics/500/36_aa88a683f3e5cebf149b3f5688c69649.jpg): failed to open stream: No such file or directory in E:\xampp7\htdocs\humraahi\includes\class.thumbnail.php on line 335
+[23-Mar-2018 11:39:31 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 132
+[23-Mar-2018 11:39:31 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 171
+[23-Mar-2018 11:40:41 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 11:40:41 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 11:40:41 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 11:40:41 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 11:40:41 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 11:40:45 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 132
+[23-Mar-2018 11:40:45 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 171
+[23-Mar-2018 11:42:02 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 11:42:02 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 437
+[23-Mar-2018 11:42:02 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89
+[23-Mar-2018 11:42:02 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 380
+[23-Mar-2018 11:42:22 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\xampp7\htdocs\humraahi\edit_profile.php on line 99
+[23-Mar-2018 11:42:41 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 11:42:41 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 437
+[23-Mar-2018 11:42:41 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89
+[23-Mar-2018 11:42:41 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 380
+[23-Mar-2018 11:42:41 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 132
+[23-Mar-2018 11:42:41 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 171
+[23-Mar-2018 11:42:42 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 11:42:42 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 11:42:42 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 11:42:42 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 11:42:42 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 11:42:56 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 132
+[23-Mar-2018 11:42:56 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 171
+[23-Mar-2018 11:43:02 Europe/Berlin] PHP Notice:  Undefined variable: highestdegree in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 34
+[23-Mar-2018 11:43:02 Europe/Berlin] PHP Notice:  Undefined variable: income_id in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 65
+[23-Mar-2018 11:43:02 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 292
+[23-Mar-2018 11:43:02 Europe/Berlin] PHP Notice:  Undefined variable: weight in E:\xampp7\htdocs\humraahi\templates\initial\registration1.tpl.php on line 81
+[23-Mar-2018 11:43:02 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 456
+[23-Mar-2018 11:43:06 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 132
+[23-Mar-2018 11:43:06 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 171
+[23-Mar-2018 12:22:47 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 131
+[23-Mar-2018 12:22:47 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 176
+[23-Mar-2018 12:25:40 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 131
+[23-Mar-2018 12:25:40 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 176
+[23-Mar-2018 12:27:48 Europe/Berlin] PHP Notice:  Undefined variable: dbObj in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 71
+[23-Mar-2018 12:27:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function executeQuery() on null in E:\xampp7\htdocs\humraahi\includes\application_top.php:394
+Stack trace:
+#0 E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php(71): createDropDownForNakshatra(NULL, '')
+#1 E:\xampp7\htdocs\humraahi\profile.php(103): include('E:\\xampp7\\htdoc...')
+#2 {main}
+  thrown in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 394
+[23-Mar-2018 12:28:12 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 399
+[23-Mar-2018 12:28:12 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 12:28:12 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 12:29:42 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 12:29:42 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 12:30:01 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 12:30:01 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 12:30:44 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 12:30:44 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 12:54:50 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 12:54:50 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 17:25:49 Asia/Kolkata] PHP Notice:  Undefined variable: upload_horoscope in E:\xampp7\htdocs\humraahi\profile_submit.php on line 28
+[23-Mar-2018 17:25:49 Asia/Kolkata] PHP Notice:  Undefined variable: rdbfamilyvalues in E:\xampp7\htdocs\humraahi\profile_submit.php on line 29
+[23-Mar-2018 17:25:49 Asia/Kolkata] PHP Notice:  Undefined variable: rdbfamilytype in E:\xampp7\htdocs\humraahi\profile_submit.php on line 30
+[23-Mar-2018 17:25:49 Asia/Kolkata] PHP Notice:  Undefined variable: rdbfamilystatus in E:\xampp7\htdocs\humraahi\profile_submit.php on line 31
+[23-Mar-2018 17:25:49 Asia/Kolkata] PHP Notice:  Undefined variable: rdbliveparents in E:\xampp7\htdocs\humraahi\profile_submit.php on line 36
+[23-Mar-2018 12:55:49 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 12:55:49 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89
+[23-Mar-2018 12:55:53 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 12:55:53 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 17:32:41 Asia/Kolkata] PHP Notice:  Undefined variable: upload_horoscope in E:\xampp7\htdocs\humraahi\profile_submit.php on line 28
+[23-Mar-2018 13:20:35 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 13:20:35 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89
+[23-Mar-2018 13:24:07 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 13:24:07 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 13:34:28 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 13:34:28 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89
+[23-Mar-2018 18:04:53 Asia/Kolkata] PHP Notice:  Undefined index: spoken in E:\xampp7\htdocs\humraahi\profile1_submit.php on line 7
+[23-Mar-2018 18:04:53 Asia/Kolkata] PHP Notice:  Undefined variable: spoken_language in E:\xampp7\htdocs\humraahi\profile1_submit.php on line 25
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 290
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:02 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 290
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:35:35 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:39:14 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 13:39:14 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 13:42:27 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 13:42:27 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 13:43:15 Europe/Berlin] PHP Notice:  Undefined index: origin in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 44
+[23-Mar-2018 13:43:15 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 13:43:15 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 13:43:33 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 13:43:33 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 13:45:35 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 13:45:35 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 13:46:04 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 13:46:04 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 290
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 13:46:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 289
+[23-Mar-2018 14:23:37 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:23:38 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:23:54 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:23:54 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:25:30 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:25:30 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:28:31 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:28:31 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:32:07 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:32:07 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:35:48 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:35:48 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:36:47 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:36:47 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:41:38 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:41:38 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:42:14 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:42:14 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:42:20 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:42:20 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:44:36 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:44:36 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:44:53 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:44:53 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:48:22 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:48:22 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:48:44 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:48:44 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:49:00 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:49:00 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:49:23 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:49:23 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:50:15 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:50:15 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:51:16 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:51:16 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:52:01 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:52:01 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:52:11 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 14:52:11 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89
+[23-Mar-2018 14:52:18 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:52:18 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:52:37 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 14:52:37 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89
+[23-Mar-2018 14:52:57 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 14:52:57 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89
+[23-Mar-2018 14:52:58 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:52:58 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:53:02 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 14:53:02 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89
+[23-Mar-2018 14:53:05 Europe/Berlin] PHP Notice:  Undefined variable: sql in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 103
+[23-Mar-2018 14:53:05 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:54:57 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 14:56:45 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 147
+[23-Mar-2018 15:00:25 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 147
+[23-Mar-2018 15:00:27 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 147
+[23-Mar-2018 15:00:45 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 15:00:45 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89
+[23-Mar-2018 15:00:50 Europe/Berlin] PHP Notice:  Undefined variable: country in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 147
+[23-Mar-2018 15:02:03 Europe/Berlin] PHP Notice:  Undefined index: detcountry in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 147
+[23-Mar-2018 15:02:03 Europe/Berlin] PHP Notice:  Undefined index: detcity in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 152
+[23-Mar-2018 15:03:11 Europe/Berlin] PHP Notice:  Undefined index: detcountry in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 148
+[23-Mar-2018 15:03:11 Europe/Berlin] PHP Notice:  Undefined index: detcity in E:\xampp7\htdocs\humraahi\templates\initial\profile.tpl.php on line 153
+[23-Mar-2018 15:12:34 Europe/Berlin] PHP Notice:  Undefined variable: workstatus in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 48
+[23-Mar-2018 15:12:34 Europe/Berlin] PHP Notice:  Undefined variable: bloodgroup in E:\xampp7\htdocs\humraahi\templates\initial\profile1.tpl.php on line 89

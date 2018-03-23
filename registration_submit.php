@@ -48,7 +48,6 @@ if(mysql_num_rows($sql_user) >= 1) {
   else if($landline) {$showmobile='landline';}
   else {$showmobile='Mobile';}
 
-
   $sql="insert into hum_registration set 
 		emailid		    ='".addslashes($emailid)."',
 		password		='".addslashes($password)."',
@@ -100,7 +99,7 @@ if(mysql_num_rows($sql_user) >= 1) {
 //echo "<pre>";
 //print_r($_SESSION);
 //echo $header;
-   @mail($to, $subject, $message, $header);
+   //@mail($to, $subject, $message, $header);
    header("Location: registration1.php");
 //echo "<meta http-equiv='Refresh' Content='0 URL=profile.php'>";
 exit;

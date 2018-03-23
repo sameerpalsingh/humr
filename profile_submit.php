@@ -4,8 +4,9 @@ date_default_timezone_set("Asia/Kolkata");
 $db = new sql_db;
 extract($_POST);
 
-$tob = $hour.":".$minut.":".$second;
+$tob = $hour.":".$minute.":".$second;
 
+$upload_horoscope = "";
 if($_FILES['horoscope_file']['name']) {
 	$upload_horoscope = $_FILES['horoscope_file']['name'];
 	@mkdir("horoscope/".$_SESSION[sess_user_id]);
@@ -23,8 +24,8 @@ $sql="INSERT INTO hum_members_profile set
 	nakshatra		 ='".($nakshatra)."',
 	horoscope		 ='".($rdbhoroscope)."',
 	birth_time		 ='".($tob)."',
-	det_country		 ='".($delcountry)."',
-	det_city		 ='".addslashes($detcity)."',
+	det_country		 ='".($horcountry)."',
+	det_city		 ='".addslashes($horcity)."',
 	upload_horoscope ='".($upload_horoscope)."',
 	family_values	 ='".($rdbfamilyvalues)."',
 	family_type		 ='".($rdbfamilytype)."',
@@ -35,7 +36,28 @@ $sql="INSERT INTO hum_members_profile set
 	sister           ='".($sister)."',
 	live_with_parents='".addslashes($rdbliveparents)."',
 	about_family     ='".addslashes($about_yourfamily)."',
-	user_id=".$_SESSION['sess_user_id'];
+	user_id=".$_SESSION['sess_user_id']." ON DUPLICATE KEY UPDATE 
+            
+        subcast          ='".addslashes($subcast)."',
+	gotra            ='".addslashes($gotra)."',
+	ancestralorigin  ='".addslashes($origin)."',
+	manglik          ='".($rdbmanglik)."',
+	nakshatra		 ='".($nakshatra)."',
+	horoscope		 ='".($rdbhoroscope)."',
+	birth_time		 ='".($tob)."',
+	det_country		 ='".($horcountry)."',
+	det_city		 ='".addslashes($horcity)."',
+	upload_horoscope ='".($upload_horoscope)."',
+	family_values	 ='".($rdbfamilyvalues)."',
+	family_type		 ='".($rdbfamilytype)."',
+	family_status	 ='".($rdbfamilystatus)."',
+	father_occupation='".($fatheroccupation)."',
+	mother_occupation='".($motheroccupation)."',
+	brother          ='".($brother)."',
+	sister           ='".($sister)."',
+	live_with_parents='".addslashes($rdbliveparents)."',
+	about_family     ='".addslashes($about_yourfamily)."'
+        ";
 	
 $rs = $db->executeQuery($sql);
 header("Location: profile1.php");

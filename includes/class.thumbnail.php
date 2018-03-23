@@ -166,14 +166,18 @@ class Thumbnail {
     *@var mixed images
     **/
     var $img;
-
+   
+    public function __construct() {
+        ;
+    }
+            
     /**
     *open source image
     *@access public
     *@param string filename of the source image file
     *@return boolean
     **/
-    function Thumbnail($imgfile)     {
+    public function thumb($imgfile) {
         $img_info =  getimagesize( $imgfile );
         //detect image format
         switch( $img_info[2] ){

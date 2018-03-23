@@ -132,8 +132,8 @@ class Upload extends Thumbnail
      * @return     filename of the new thumbnail.
      */
     private function createThumb($size)
-    {
-        $this->Thumbnail($this->sizeOriginalFilepath);
+    {       
+        $this->thumb($this->sizeOriginalFilepath);
         $this->quality = 95;
         $this->size_auto($size);                        // set the biggest width or height for thumbnail
         $this->quality=75;                        //default 75 , only for JPG format

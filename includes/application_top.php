@@ -136,7 +136,7 @@ $_income    = array('1' => 'No Income',
 					'13' => 'Rs.25,00,001 and above',
 					);
 
-$_mother_occupation = array('Housewife', 
+$_mother_occupation = array('-Select any One-','Housewife', 
     'Business/Entrepreneur', 
     'Service-Private', 
     'Service-Govt/PSU', 
@@ -147,7 +147,18 @@ $_mother_occupation = array('Housewife',
     'Expired'
     );
 
-
+$_father_occupation = array('-Select any One-',
+    'Business/Entrepreneur', 
+    'Service-Private', 
+    'Service-Govt/PSU', 
+    'Army/Armed forces',
+    'Civil Services',
+    'Teacher',
+    'Retired',
+    'Not Employed',
+    'Expired'    
+    );
+                                    
 
 /*******************************************************************************************
  * Inclusion of Common files
@@ -164,7 +175,7 @@ function createDropDownForCaste($dbObj, $selectedId='') {
         if ($selectedId == $row['id']) {
             $retVal.="<option value='".$row['id']."' selected >".$row['caste']."</option>\n";
         } else {
-			 $retVal.="<option value='".$row['id']."'>".$row['caste']."</option>\n";
+            $retVal.="<option value='".$row['id']."'>".$row['caste']."</option>\n";
         }
     }
     return $retVal;
@@ -201,6 +212,28 @@ function createDropDownForMotherOccup($selectedId='') {
     }
     return $retVal;
 }
+
+function createDropDownForFatherOccup($selectedId='') {
+    global $_father_occupation;
+    $retVal = '';
+    foreach($_father_occupation as $key => $val) {
+        if ($selectedId == $key) {
+            $retVal.="<option value='".$key."' selected >".$val."</option>\n";
+        } else {
+            $retVal.="<option value='".$key."'>".$val."</option>\n";
+        }
+    }
+    return $retVal;
+}
+
+function showFatherOccupation($id) {
+    global $_father_occupation;
+    if ($id==0 || $id == '') {
+        return 'N/A';
+    }
+    return $_father_occupation[$id];
+}
+
 function showMotherOccupation($id) {
     global $_mother_occupation;
     if ($id==0 || $id == '') {
@@ -264,6 +297,7 @@ function showHighestdegreeById($dbObj, $highestdegreeId) {
 //}
 
 function createDropDownForWorkarea($dbObj, $selectedId='') {
+    $retVal = "";
     $rs = $dbObj->executeQuery('SELECT * FROM hum_workarea ');
     while ($row = $dbObj->fetchRow($rs)) {
         if ($selectedId == $row['id']) {
@@ -294,22 +328,18 @@ function createDropDownForIncome($selectedId='') {
     return $retVal;
     }
 
-	function displayincome($selectedId='')
-{
-global $_income;
-        foreach($_income as $key => $val) {
-            if ($selectedId == $key) {
-                echo "$val";
-            }
+function displayincome($selectedId='') {
+    global $_income;
+    foreach($_income as $key => $val) {
+        if ($selectedId == $key) {
+            echo "$val";
+        }
+    }
 }
-}
-
-
 
 function showIncomeById($incomeId) {
     global $_income;
     return $_income[$incomeId];
-
 }
 
 
@@ -334,7 +364,7 @@ function showCountryById($dbObj, $countryId) {
 
 function createDropDownForState($dbObj, $selectedId='') {
     $rs = $dbObj->executeQuery('SELECT * FROM hum_state');
-		$retVal="";
+    $retVal = "";
     while ($row = $dbObj->fetchRow($rs)) {
         if ($selectedId == $row['id']) {
             $retVal.="<option value='".$row['id']."' selected >".$row['state']."</option>\n";
@@ -371,6 +401,7 @@ function showCityById($dbObj, $cityId) {
 }
 
 function createDropDownForbloodgroup($dbObj, $selectedId='') {
+    $retVal = "";
     $rs = $dbObj->executeQuery('SELECT * FROM hum_bloodgroup');
     while ($row = $dbObj->fetchRow($rs)) {
         if ($selectedId == $row['id']) {
@@ -390,7 +421,9 @@ function showBloodById($dbObj, $bloodgroupId) {
 
 
 function createDropDownForNakshatra($dbObj, $selectedId='') {
-    $rs = $dbObj->executeQuery('SELECT * FROM  hum_nakshatra');
+    $selectedId = trim($selectedId);
+    $retVal = "";
+    $rs = $dbObj->executeQuery('SELECT * FROM hum_nakshatra');
     while ($row = $dbObj->fetchRow($rs)) {
         if ($selectedId == $row['id']) {
             $retVal.="<option value='".$row['id']."' selected >".$row['nakshatra']."</option>\n";
@@ -428,6 +461,7 @@ function showreligionById($dbObj, $religionId) {
 }
 
 function createDropDownForWorkStatus($dbObj, $selectedId='') {
+    $retVal = "";
     $rs = $dbObj->executeQuery('SELECT * FROM  hum_workstatus');
     while ($row = $dbObj->fetchRow($rs)) {
         if ($selectedId == $row['id']) {
@@ -448,6 +482,7 @@ function showworkstatusById($dbObj, $workstatusId) {
 
 function createDropDownForWeight($dbObj, $selectedId='') {
     $rs = $dbObj->executeQuery('SELECT * FROM  hum_weight');
+    $retVal = "";
     while ($row = $dbObj->fetchRow($rs)) {
         if ($selectedId == $row['id']) {
             $retVal.="<option value='".$row['id']."' selected >".$row['weight']."</option>\n";
@@ -467,7 +502,7 @@ function showweightById($dbObj, $weightId) {
 
 function createDropDownForHeight($dbObj, $selectedId='') {
     $rs = $dbObj->executeQuery('SELECT * FROM hum_height');
-	$retVal="";
+    $retVal="";
     while ($row = $dbObj->fetchRow($rs)) {
         if ($selectedId == $row['id']) {
             $retVal.="<option value='".$row['id']."' selected >".$row['height']."</option>\n";

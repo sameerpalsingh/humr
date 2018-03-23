@@ -25,35 +25,28 @@ function limitText(limitField, limitCount) {
 }
 
 function login_validate1() {
-	if(document.frmRegistration.highestdegree.selectedIndex == 0) {
-        alert ("Please select your Highest Degree !!");
+    if(document.frmRegistration.highestdegree.selectedIndex == 0) {
+        alert ("Please select highest degree");
         document.frmRegistration.highestdegree.focus();
         return false;
-    }
-    else if(document.frmRegistration.workarea.selectedIndex == 0) {
-        alert ("Please select your workarea..!!");
+    } else if(document.frmRegistration.workarea.selectedIndex == 0) {
+        alert ("Please select workarea");
         document.frmRegistration.workarea.focus();
         return false;
-    }
-	else if(document.frmRegistration.annualincome.selectedIndex == 0) {
-        alert ("Please select your Annual Income !!");
+    } else if(document.frmRegistration.annualincome.selectedIndex == 0) {
+        alert ("Please select annual income");
         document.frmRegistration.annualincome.focus();
         return false;
-    }
-
-	else if(document.frmRegistration.weight.value== 0) {
-        alert ("Please select your weight!!");
+    } else if(document.frmRegistration.weight.value== 0) {
+        alert ("Please select weight");
         document.frmRegistration.weight.focus();
         return false;
-    }
-	 
-	
-	if(document.frmRegistration.about_yourself.value.length < 50 || document.frmRegistration.about_yourself.value.length > 500 ) {
-      alert ("Please enter Minimun 50 Char upto 500 char.......");
+    } else if(document.frmRegistration.about_yourself.value.length < 50 || document.frmRegistration.about_yourself.value.length > 500 ) {
+      alert ("Write something about family background, education, lifestyle, interests, hobbies etc.\nPlease enter atleast 50 characters and maximum 500 characters.");
       document.frmRegistration.about_yourself.focus();
       return false;
     }
-    return true;*/
+    return true;
 }
 
 //-->

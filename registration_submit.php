@@ -48,27 +48,27 @@ if(mysql_num_rows($sql_user) >= 1) {
   else if($landline) {$showmobile='landline';}
   else {$showmobile='Mobile';}
 
+
   $sql="insert into hum_registration set 
-		emailid		    ='".addslashes($emailid)."',
+		emailid                 ='".addslashes($emailid)."',
 		password		='".addslashes($password)."',
 		name			='".addslashes($name)."',
 		looking_for		='".$lookingfor."',
 		gender			='".$gender."',
 		age			='".$age."',
 		dob			='".$dob."',
-		marital_status	='".$maritalstatus."',
+		marital_status          ='".$maritalstatus."',
 		height			='".$height."',
 		country			='".$livingin."',
 		state			='".$state."',
 		city			='".$city."',
-		contact_number	='".$contact."',
-		contact_status	='".$showmobile."',
-		contact_address='".addslashes($contact_address)."',
+		contact_number          ='".$contact."',
+		contact_status          ='".$showmobile."',
+		contact_address         ='".addslashes($contact_address)."',
 		religion		='".$religion."',
 		caste			='".$caste."',
 		raasi			='".$raasi."',
-		mothertongue	='".$mothertongue."',
-		
+		mothertongue            ='".$mothertongue."',
 		loginid			='".$loginid."',
 		joiningdate		='".$joindate."'";
 
@@ -99,7 +99,7 @@ if(mysql_num_rows($sql_user) >= 1) {
 //echo "<pre>";
 //print_r($_SESSION);
 //echo $header;
-   //@mail($to, $subject, $message, $header);
+   @mail($to, $subject, $message, $header);
    header("Location: registration1.php");
 //echo "<meta http-equiv='Refresh' Content='0 URL=profile.php'>";
 exit;

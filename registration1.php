@@ -18,7 +18,7 @@ if(empty($_SESSION['sess_user_id'])) {
 <script src="<?php echo DIR_WS_JS?>jquery-1.2.6.js" type="text/JavaScript"></script>
 
 <script type="text/javascript">
-<!--
+
 function limitText(limitField, limitCount) {
 	limitCount.value = limitField.value.replace(/\s{2,}/g, ' ').length;
 	limitField.value = limitField.value.replace(/\s{2,}/g, ' ');
@@ -49,7 +49,6 @@ function login_validate1() {
     return true;
 }
 
-//-->
 </script>
 </head>
 

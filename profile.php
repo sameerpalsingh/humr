@@ -7,9 +7,9 @@ $rs = $db->executeQuery($sql_profile);
 $row = $db->fetchRow($rs);
 $birthtime_arr = explode(":", $row['birth_time']);
 
-$hour = $birthtime_arr[0];
-$minute = $birthtime_arr[1];
-$second = $birthtime_arr[2];
+$hour = isset($birthtime_arr[0])?$birthtime_arr[0]:0;
+$minute = isset($birthtime_arr[1])?$birthtime_arr[1]:1;
+$second = isset($birthtime_arr[1])?$birthtime_arr[2]:2;
 
 if (empty($_SESSION['sess_user_id'])) {
     header("Location: registration.php");

@@ -259,6 +259,7 @@
         var filename = document.frmRegistration.fimage.value.split('.');
         var len = filename.length;
         var extension = (filename[len - 1]);
+        extension = extension.toLowerCase();
         if (extension != "png" && extension != "jpg" && extension != "jpeg" && extension != "bmp") {
             alert("Please upload only images. Allowed image types are png, jpg, jpeg, bmp.");
             document.getElementById("submit_form").disabled = true;

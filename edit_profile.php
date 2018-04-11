@@ -21,9 +21,11 @@ $sess_user_id   = (int)$_SESSION['sess_user_id'];
 $err_message = "";
 $message = "";
 
-$rs = $db->executeQuery("SELECT * FROM hum_registration,hum_members_profile WHERE hum_registration.id='$sess_user_id' and hum_members_profile.user_id='$sess_user_id'");
-
-
+$rs = $db->executeQuery("SELECT * FROM
+                        hum_registration LEFT JOIN hum_members_profile 
+                        ON (hum_registration.id = hum_members_profile.user_id)
+                        WHERE hum_registration.id='$sess_user_id'");
+       
 //$rs = $db->executeQuery('SELECT * FROM hum_registration WHERE id='.$sess_user_id);
 $row = $db->fetchRow($rs);
 
@@ -73,115 +75,168 @@ $description            = $row['aboutyourself'];
 
 /******************family**********************************/
 
-$familyvalues			=$row['family_values'];
-$familytype				=$row['family_type'];
-$familystatus			=$row['family_status'];
-$fatheroccupation		=$row['father_occupation'];
-$motheroccupation		=$row['mother_occupation'];
-$brother				=$row['brother'];
-$sister					=$row['sister'];
-$livewith				=$row['live_with_parents'];
-$aboutfamily			=$row['about_family'];
+$familyvalues       = $row['family_values'];
+$familytype         = $row['family_type'];
+$familystatus       = $row['family_status'];
+$fatheroccupation   = $row['father_occupation'];
+$motheroccupation   = $row['mother_occupation'];
+$brother            = $row['brother'];
+$sister             = $row['sister'];
+$livewith           = $row['live_with_parents'];
+$aboutfamily        = $row['about_family'];
 
 /******************Desired Partner**********************************/
 
-$p_age					=$row['partner_age'];
-$p_status				=$row['partner_marital_status'];
-$p_height				=$row['partner_height'];
-$p_region				=$row['partner_state_region'];
-$p_religion				=$row['partner_religion'];
-$p_cast					=$row['partner_cast'];
-$p_income				=$row['partner_annual_income'];
-$p_desc					=$row['desired_partner'];
+$p_age      = isset($row['partner_age'])?$row['partner_age']:'';
+$p_status   = isset($row['partner_marital_status'])?$row['partner_marital_status']:'';
+$p_height   = isset($row['partner_height'])?$row['partner_height']:'';
+$p_region   = isset($row['partner_state_region'])?$row['partner_state_region']:'';
+$p_religion = isset($row['partner_religion'])?$row['partner_religion']:'';
+$p_cast     = isset($row['partner_cast'])?$row['partner_cast']:'';
+$p_income   = isset($row['partner_annual_income'])?$row['partner_annual_income']:'';
+$p_desc     = isset($row['desired_partner'])?$row['desired_partner']:'';
 
 $pheight=explode('to',$p_height);
-$heightfrom=$pheight[0];
-$heightto=$pheight[1];
+if ($p_height == '') {
+    $pheightfrom = "";
+    $pheightto   = "";
+} else {
+    $heightfrom=$pheight[0];
+    $heightto=$pheight[1];
+    $height1=$db->executeQuery('SELECT height FROM hum_height WHERE id='.$heightfrom);
+    $pheightfrom = $db->fetchRow($height1);
+    $height2=$db->executeQuery('SELECT height FROM hum_height WHERE id='.$heightto);
+    $pheightto = $db->fetchRow($height2);
+}
 
+if (isset($highestdegree) && $highestdegree > 0) {
+    $highestdegree=$db->executeQuery('SELECT highestdegree FROM hum_highestdegree WHERE id='.$highestdegree);
+    $degree = $db->fetchRow($highestdegree);    
+} else {
+    $degree = "";
+}
 
-$height1=$db->executeQuery('SELECT height FROM hum_height WHERE id='.$heightfrom);
-$pheightfrom = $db->fetchRow($height1);
+if (isset($nakshatra) && $nakshatra > 0) {
+    $nakshatra=$db->executeQuery('SELECT nakshatra FROM hum_nakshatra WHERE id='.$nakshatra);
+    $nak = $db->fetchRow($nakshatra);
+} else {
+    $nak = '';
+}
 
-$height2=$db->executeQuery('SELECT height FROM hum_height WHERE id='.$heightto);
-$pheightto = $db->fetchRow($height2);
+if (isset($height) && $height > 0) {
+    $height=$db->executeQuery('SELECT height FROM hum_height WHERE id='.$height);
+    $high = $db->fetchRow($height);
+} else {
+    $high = '';
+}
 
-$highestdegree=$db->executeQuery('SELECT highestdegree FROM hum_highestdegree WHERE id='.$highestdegree);
-$degree = $db->fetchRow($highestdegree);
+if (isset($bloodgroup) && $bloodgroup > 0) {
+    $bloodgroup=$db->executeQuery('SELECT bloodgroup FROM hum_bloodgroup WHERE id='.$bloodgroup);
+    $blood = $db->fetchRow($bloodgroup);
+} else {
+    $blood = '';
+}
 
+if (isset($religion) && $religion > 0) {
+    $religion=$db->executeQuery('SELECT religion FROM hum_religion WHERE id='.$religion);
+    $rel = $db->fetchRow($religion);
+} else {
+    $rel = "";
+}
 
-$nakshatra=$db->executeQuery('SELECT nakshatra FROM hum_nakshatra WHERE id='.$nakshatra);
-$nak = $db->fetchRow($nakshatra);
+if (isset($caste) && $caste > 0) {
+    $caste=$db->executeQuery('SELECT caste FROM hum_caste WHERE id='.$caste);
+    $cast = $db->fetchRow($caste);
+} else {
+    $cast = "";
+}
 
+if (isset($city) && $city > 0) {
+    $city=$db->executeQuery('SELECT city FROM hum_cities WHERE id='.$city);
+    $citi = $db->fetchRow($city);
+} else {
+    $citi = "";
+}
 
+if (isset($citizenship) && $citizenship > 0) {
+    $citizen=$db->executeQuery('SELECT country FROM hum_countries WHERE id='.$citizenship);
+    $cont = $db->fetchRow($citizen);
+} else {
+    $cont = "";
+}
 
+if (isset($livingin) && $livingin > 0) {
+    $livingin=$db->executeQuery('SELECT country FROM hum_countries WHERE id='.$livingin);
+    $living = $db->fetchRow($livingin);
+} else {
+    $living = "";
+}
 
-$height=$db->executeQuery('SELECT height FROM hum_height WHERE id='.$height);
-$high = $db->fetchRow($height);
+if (isset($nativestate) && $nativestate > 0) {
+    $nativestate=$db->executeQuery('SELECT state FROM hum_state WHERE id='.$nativestate);
+    $stat = $db->fetchRow($nativestate);
+} else {
+    $stat = "";
+}
 
-$bloodgroup=$db->executeQuery('SELECT bloodgroup FROM hum_bloodgroup WHERE id='.$bloodgroup);
-$blood = $db->fetchRow($bloodgroup);
+if (isset($workarea) && $workarea > 0) {
+    $workarea=$db->executeQuery('SELECT workarea FROM hum_workarea WHERE id='.$workarea);
+    $work = $db->fetchRow($workarea);
+} else {
+    $work = "";
+}
 
+if (isset($workstatus) && $workstatus > 0) {
+    $workstatus=$db->executeQuery('SELECT workstatus FROM hum_workstatus WHERE id='.$workstatus);
+    $status = $db->fetchRow($workstatus);
+} else {
+    $status = "";
+}
 
-$religion=$db->executeQuery('SELECT religion FROM hum_religion WHERE id='.$religion);
-$rel = $db->fetchRow($religion);
-
-
-$caste=$db->executeQuery('SELECT caste FROM hum_caste WHERE id='.$caste);
-$cast = $db->fetchRow($caste);
-
-$city=$db->executeQuery('SELECT city FROM hum_cities WHERE id='.$city);
-$citi = $db->fetchRow($city);
-
-
-$citizen=$db->executeQuery('SELECT country FROM hum_countries WHERE id='.$citizenship);
-$cont = $db->fetchRow($citizen);
-
-$livingin=$db->executeQuery('SELECT country FROM hum_countries WHERE id='.$livingin);
-$living = $db->fetchRow($livingin);
-
-$nativestate=$db->executeQuery('SELECT state FROM hum_state WHERE id='.$nativestate);
-$stat = $db->fetchRow($nativestate);
-
-
-$workarea=$db->executeQuery('SELECT workarea FROM hum_workarea WHERE id='.$workarea);
-$work = $db->fetchRow($workarea);
-
-
-$workstatus=$db->executeQuery('SELECT workstatus FROM hum_workstatus WHERE id='.$workstatus);
-$status = $db->fetchRow($workstatus);
-
-
-$weight=$db->executeQuery('SELECT weight FROM hum_weight WHERE id='.$weight);
-$kg = $db->fetchRow($weight);
+if (isset($weight) && $weight > 0) {
+    $weight=$db->executeQuery('SELECT weight FROM hum_weight WHERE id='.$weight);
+    $kg = $db->fetchRow($weight);
+} else {
+    $kg = "";
+}
 
 //$pic=$db->executeQuery('SELECT image_name_original_size FROM hum_members_images WHERE id='.$pic);
 //$img = $db->fetchRow($pic);
 
-$mothertongue=$db->executeQuery('SELECT mother_tongue FROM hum_mother_tongue WHERE id='.$mothertongue);
-$tongue = $db->fetchRow($mothertongue);
+if (isset($mothertongue) && $mothertongue > 0) {
+    $mothertongue=$db->executeQuery('SELECT mother_tongue FROM hum_mother_tongue WHERE id='.$mothertongue);
+    $tongue = $db->fetchRow($mothertongue);
+} else {
+    $tongue = "";
+}
 
-
-$physical=$db->executeQuery('SELECT physicalstatus FROM hum_challenged WHERE id='.$physicalstatus);
-$phy = $db->fetchRow($physical);
-
+if (isset($physicalstatus) && $physicalstatus > 0) {
+    $physical=$db->executeQuery('SELECT physicalstatus FROM hum_challenged WHERE id='.$physicalstatus);
+    $phy = $db->fetchRow($physical);
+} else {
+    $phy = "";
+}
 
 $sql_images = "SELECT image_name_100_size
                FROM hum_members_images,hum_registration
                WHERE hum_members_images.id=hum_registration.pic and hum_members_images.member_id=".$_SESSION['sess_user_id'];
 $rs_images = $db->executeQuery($sql_images);
 
+$contact=explode(',', $contact_number);
+$mobile   = isset($contact[0])?$contact[0]:'';
+$landline = isset($contact[1])?$contact[1]:'';
 
+$dateofbirth = explode('-',$dob);
+$year  = $dateofbirth[0];
+$month = isset($dateofbirth[1])?$dateofbirth[1]:'';
+$day   = isset($dateofbirth[2])?$dateofbirth[2]:'';
 
-$contact=explode(',',$contact_number);
-$mobile=$contact[0];
-$landline=$contact[1];
+if (count($dobArr) == 1) {
+    $dobArr[0] = "00";
+    $dobArr[1] = "00";
+    $dobArr[2] = "0000";
+};
 
-$dateofbirth=explode('-',$dob);
-$year=$dateofbirth[0];
-$month=$dateofbirth[1];
-$day=$dateofbirth[2];
-
-//print_r($dobArr);
 function getDayOfDOB($day)
 {
     $output = "";

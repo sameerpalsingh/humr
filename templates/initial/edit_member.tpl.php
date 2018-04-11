@@ -135,7 +135,7 @@
 					<font class="txt">
 					<?php
 					if($gender=='M'){echo "Male";}
-					else {echo "Female";}
+                                        else if ($gender == "F") { echo "Female";};
 					?>
 					</font>
                    </td>
@@ -191,7 +191,7 @@
 					
 					<font class="txt">
 					<?php
-					echo $high['height'];
+					echo isset($high['height'])?$high['height']:'';
 					?>
 					</font>
                     </td>
@@ -233,7 +233,7 @@
 					?>-->
 					<font class="txt">
 					<?php
-					echo $kg['weight'];
+					echo isset($kg['weight'])?$kg['weight']:"";
 					?>
 					</font>
                     </td>
@@ -300,7 +300,7 @@
                     <td colspan="3" style="font-size: 12px; font-family: arial, verdana, sans-serif ">
 					<font class="txt">
 					<?php
-					echo $cont['country'];
+					echo isset($cont['country'])?$cont['country']:"";
 					?>
 					</font>
 					</td>
@@ -310,7 +310,7 @@
                     <td colspan="3" style="font-size: 12px; font-family: arial, verdana, sans-serif">
 					<font class="txt">
 					<?php
-					echo $living['country'];
+					echo isset($living['country'])?$living['country']:"";
 					?>
 					</font>
 					</td>
@@ -326,7 +326,7 @@
                     </select>-->
 					<font class="txt">
 					<?php
-					echo $stat['state'];
+					echo isset($stat['state'])?$stat['state']:"";
 					?>
 					</font>
                     </td>
@@ -341,7 +341,7 @@
                     </select>-->
 					<font class="txt">
 					<?php
-					echo $citi['city'];
+					echo isset($citi['city'])?$citi['city']:"";
 					?>
 					</font>
 					</td>
@@ -359,7 +359,7 @@
                     <td style="font-size: 12px; font-family: arial, verdana, sans-serif">
                     <font class="txt">
 					<?php
-					echo $phy['physicalstatus'];
+					echo isset($phy['physicalstatus'])?$phy['physicalstatus']:"";
 					?>
                     </font>
 					</td>
@@ -376,7 +376,7 @@
                     -->
 					<font class="txt">
 					<?php
-					echo $blood['bloodgroup'];
+					echo isset($blood['bloodgroup'])?$blood['bloodgroup']:"";
 					?>
 					</font>
 					</td>
@@ -567,7 +567,7 @@
                
                     </font>-->
 					<font class="txt">
-					<?php echo $status['workstatus'] ?>
+					<?php echo isset($status['workstatus'])?$status['workstatus']:"" ?>
 					</font>
 					</td>
                     </tr>
@@ -630,7 +630,7 @@
                      </select>-->
 					 <font class="txt">
 					 <?php
-					 echo $cast['caste'];
+					 echo isset($cast['caste'])?$cast['caste']:"";
 					 ?>
 					 </font>
                      </td>
@@ -675,7 +675,7 @@
 					 </font>-->
 					 <font class="txt">
 					 <?php
-					 echo $nak['nakshatra'];
+					 echo isset($nak['nakshatra'])?$nak['nakshatra']:"";
 					 ?>
 					 </font>
 					 </td>
@@ -744,9 +744,7 @@
 					?>
 					</td>
 					</tr>
-
-
-     				<tr>
+                                        <tr>
 					<td>
 					&nbsp;
 					</td>
@@ -784,8 +782,10 @@ Desired-Partner-Details</font><a href="desirepartnerdetails_edit.php?height=780&
 
 
 					 <?php
-                     echo $pheightfrom['height']." "."to"." ".$pheightto['height'];
-                     ?>
+                                         if (isset($pheightfrom['height']))  {
+                                            echo $pheightfrom['height']." "."to"." ".$pheightto['height'];
+                                         }
+                                         ?>
  
 					</td>
                     </tr>

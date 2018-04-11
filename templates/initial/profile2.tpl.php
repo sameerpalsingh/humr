@@ -445,13 +445,12 @@
 									<!--<span style="color: rgb(10, 137, 254);margin:15px;">------------</span>-->
 									<div id="checkrl_2" style="display:block;" ><input id="checkrl_rl_2" type="checkbox" value="Buddhist" name="Buddhist" />Buddhist</div>
 									<div id="checkrl_3" style="display:block;" ><input id="checkrl_rl_3" type="checkbox" value="Christian" name="Christian" />Christian</div>
-									<div id="checkrl_4" style="display:block;" ><input id="checkrl_rl_4" type="checkbox" value="Hindu" name="Hindu" />Hindu</div>
-									<div id="checkrl_5" style="display:block;" ><input id="checkrl_rl_5" type="checkbox" value="Jain" name="Jain" />Jain</div>
-									<div id="checkrl_6" style="display:block;" ><input id="checkrl_rl_6" type="checkbox" value="Jewish" name="Jewish" />Jewish</div>
-									<div id="checkrl_7" style="display:block;" ><input id="checkrl_rl_7" type="checkbox" value="Muslim" name="Muslim" />Muslim</div>
-									<div id="checkrl_8" style="display:block;" ><input id="checkrl_rl_8" type="checkbox" value="Parsi" name="Parsi" />Parsi</div>
-									<div id="checkrl_9" style="display:block;" ><input id="checkrl_rl_9" type="checkbox" value="Sikh" name="Sikh" />Sikh</div>
-									<div id="checkrl_10" style="display:block;" ><input id="checkrl_rl_10" type="checkbox" value="Other" name="Other" />Other</div>
+									<div id="checkrl_4" style="display:block;" ><input id="checkrl_rl_4" type="checkbox" value="Jain" name="Jain" />Jain</div>
+									<div id="checkrl_5" style="display:block;" ><input id="checkrl_rl_5" type="checkbox" value="Jewish" name="Jewish" />Jewish</div>
+									<div id="checkrl_6" style="display:block;" ><input id="checkrl_rl_6" type="checkbox" value="Muslim" name="Muslim" />Muslim</div>
+									<div id="checkrl_7" style="display:block;" ><input id="checkrl_rl_7" type="checkbox" value="Parsi" name="Parsi" />Parsi</div>
+									<div id="checkrl_8" style="display:block;" ><input id="checkrl_rl_8" type="checkbox" value="Sikh" name="Sikh" />Sikh</div>
+									<div id="checkrl_9" style="display:block;" ><input id="checkrl_rl_9" type="checkbox" value="Other" name="Other" />Other</div>
 									</div>
 									<span id='div_sel_lang' style="font-size: 8pt; font-family: arial, verdana, sans-serif;color:#d50033;" name='div_sel_lang'style="float:left;">Select Religion Here.</span>
 							</div>
@@ -621,7 +620,7 @@
                           <tr>
                             <td><font class="text">Describe your desired partner</font></td>
                             <td colspan="2"
-							  style="font-size: 13px; font-family: arial, verdana, sans-serif">Tell us about your expectations & what you’re looking for.<br/>
+							  style="font-size: 13px; font-family: arial, verdana, sans-serif">Tell us about your expectations & what youï¿½re looking for.<br/>
 							  <span style="float:left;" style="font-size: 12pt; width: 335px; font-family: arial, verdana, sans-serif" > 
 							<textarea name="described_partner" id="about_your_partner" cols="40" rows="5" class="fl" onKeyDown="limitText(this.form.described_partner,this.form.countdown,500);" 
 								onKeyUp="limitText(this.form.described_partner,this.form.countdown);"></textarea><br/>

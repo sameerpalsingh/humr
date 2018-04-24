@@ -88,7 +88,7 @@ $aboutfamily      = !empty($row['about_family'])?$row['about_family']:'N/A';
 
 $p_age      = !empty($row['partner_age'])?$row['partner_age']:'N/A';
 $p_status   = !empty($row['partner_marital_status'])?$row['partner_marital_status']:'N/A';
-$p_height   = !empty($row['partner_height'])?$row['partner_height']:'N/A';
+$p_height   = !empty($row['partner_height'])?$row['partner_height']:'';
 $p_region   = !empty($row['partner_state_region'])?$row['partner_state_region']:'N/A';
 $p_religion = !empty($row['partner_religion'])?$row['partner_religion']:'N/A';
 $p_cast     = !empty($row['partner_cast'])?$row['partner_cast']:'N/A';

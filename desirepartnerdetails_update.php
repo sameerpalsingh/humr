@@ -1,5 +1,5 @@
 <?php
-include ("includes/application_top.php");
+require_once 'includes/application_top.php';
 $db = new sql_db;
 
 extract($_POST);
@@ -14,19 +14,19 @@ $partner_cast    = '';
 $annual_income   = '';
 
 if(isset($_REQUEST['mrtstatus']) && count($_REQUEST['mrtstatus']) > 0){
-	$marrital_status = implode(" , ",$_REQUEST['mrtstatus']);
+    $marrital_status = implode(",",$_REQUEST['mrtstatus']);
 }
 if(isset($_REQUEST['region']) && count($_REQUEST['region']) > 0){
-	$state_region = implode(" , ",$_REQUEST['region']);
+    $state_region = implode(",",$_REQUEST['region']);
 }
 if(isset($_REQUEST['religion']) && count($_REQUEST['religion']) > 0){
-	$part_religion = implode(" , ",$_REQUEST['religion']);
+    $part_religion = implode(",",$_REQUEST['religion']);
 }
 if(isset($_REQUEST['cast']) && count($_REQUEST['cast']) > 0){
-	$partner_cast = implode(" , ",$_REQUEST['cast']);
+    $partner_cast = implode(",",$_REQUEST['cast']);
 }
 if(isset($_REQUEST['income']) && count($_REQUEST['income']) > 0){
-	$annual_income = implode(" , ",$_REQUEST['income']);
+    $annual_income = implode(",",$_REQUEST['income']);
 }
 
 $sql = "INSERT INTO hum_members_profile SET

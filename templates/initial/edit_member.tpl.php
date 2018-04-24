@@ -450,7 +450,7 @@
 				    </td>
 					</tr>
 					<tr>
-                    <td valign="top"><font class="text">Father�s Occupation</font></td>
+                    <td valign="top"><font class="text">Father's Occupation</font></td>
 					<td style="font-size: 12px; font-family: arial, verdana, sans-serif">
 						  
 				    <?php
@@ -728,6 +728,7 @@
 					 <?php echo $tongue['mother_tongue'];?></td>
 					 </font>
                      </tr>
+                     <!-- 
 				    <tr>
                     <td valign="top"><font class="text">Spoken languages </font></td>
 					<td style="font-size: 12px; font-family: arial, verdana, sans-serif">
@@ -735,7 +736,8 @@
 					echo !empty($language)?$language:'N/A';
 					?>
 					</td>
-					</tr>
+					</tr> -->
+                                        
                                         <tr>
 					<td>
 					&nbsp;

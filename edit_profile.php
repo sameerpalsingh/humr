@@ -25,8 +25,7 @@ $rs = $db->executeQuery("SELECT * FROM
                         hum_registration LEFT JOIN hum_members_profile 
                         ON (hum_registration.id = hum_members_profile.user_id)
                         WHERE hum_registration.id='$sess_user_id'");
-       
-//$rs = $db->executeQuery('SELECT * FROM hum_registration WHERE id='.$sess_user_id);
+
 $row = $db->fetchRow($rs);
 
 $name					= $row['name'];
@@ -51,7 +50,7 @@ $nakshatra				= $row['nakshatra'];
 $raasi					= $row['raasi'];
 $mothertongue                           = $row['mothertongue'];
 $manglik				= $row['manglik'];
-$language				=$row['languages'];
+$language				= $row['languages'];
 $highestdegree                          = $row['highestdegree'];
 //$detaileducation                      = $row['detaileducation'];
 $workarea                               = $row['workarea'];
@@ -75,26 +74,26 @@ $description            = $row['aboutyourself'];
 
 /******************family**********************************/
 
-$familyvalues       = $row['family_values'];
-$familytype         = $row['family_type'];
-$familystatus       = $row['family_status'];
-$fatheroccupation   = $row['father_occupation'];
-$motheroccupation   = $row['mother_occupation'];
-$brother            = $row['brother'];
-$sister             = $row['sister'];
-$livewith           = $row['live_with_parents'];
-$aboutfamily        = $row['about_family'];
+$familyvalues     = !empty($row['family_values'])?$row['family_values']:'N/A';
+$familytype       = !empty($row['family_type'])?$row['family_type']:'N/A';
+$familystatus     = !empty($row['family_status'])?$row['family_status']:'N/A';
+$fatheroccupation = !empty($row['father_occupation'])?$row['father_occupation']:'N/A';
+$motheroccupation = !empty($row['mother_occupation'])?$row['mother_occupation']:'N/A';
+$brother          = !empty($row['brother'])?$row['brother']:'N/A';
+$sister           = !empty($row['sister'])?$row['sister']:'N/A';
+$livewith         = !empty($row['live_with_parents'])?$row['live_with_parents']:'N/A';
+$aboutfamily      = !empty($row['about_family'])?$row['about_family']:'N/A';
 
 /******************Desired Partner**********************************/
 
-$p_age      = isset($row['partner_age'])?$row['partner_age']:'';
-$p_status   = isset($row['partner_marital_status'])?$row['partner_marital_status']:'';
-$p_height   = isset($row['partner_height'])?$row['partner_height']:'';
-$p_region   = isset($row['partner_state_region'])?$row['partner_state_region']:'';
-$p_religion = isset($row['partner_religion'])?$row['partner_religion']:'';
-$p_cast     = isset($row['partner_cast'])?$row['partner_cast']:'';
-$p_income   = isset($row['partner_annual_income'])?$row['partner_annual_income']:'';
-$p_desc     = isset($row['desired_partner'])?$row['desired_partner']:'';
+$p_age      = !empty($row['partner_age'])?$row['partner_age']:'N/A';
+$p_status   = !empty($row['partner_marital_status'])?$row['partner_marital_status']:'N/A';
+$p_height   = !empty($row['partner_height'])?$row['partner_height']:'N/A';
+$p_region   = !empty($row['partner_state_region'])?$row['partner_state_region']:'N/A';
+$p_religion = !empty($row['partner_religion'])?$row['partner_religion']:'N/A';
+$p_cast     = !empty($row['partner_cast'])?$row['partner_cast']:'N/A';
+$p_income   = !empty($row['partner_annual_income'])?$row['partner_annual_income']:'N/A';
+$p_desc     = !empty($row['desired_partner'])?$row['desired_partner']:'N/A';
 
 $pheight=explode('to',$p_height);
 if ($p_height == '') {
@@ -113,7 +112,7 @@ if (isset($highestdegree) && $highestdegree > 0) {
     $highestdegree=$db->executeQuery('SELECT highestdegree FROM hum_highestdegree WHERE id='.$highestdegree);
     $degree = $db->fetchRow($highestdegree);    
 } else {
-    $degree = "";
+    $degree = array('highestdegree'=>'');
 }
 
 if (isset($nakshatra) && $nakshatra > 0) {
@@ -183,7 +182,7 @@ if (isset($workarea) && $workarea > 0) {
     $workarea=$db->executeQuery('SELECT workarea FROM hum_workarea WHERE id='.$workarea);
     $work = $db->fetchRow($workarea);
 } else {
-    $work = "";
+    $work = array("workarea"=>"");
 }
 
 if (isset($workstatus) && $workstatus > 0) {

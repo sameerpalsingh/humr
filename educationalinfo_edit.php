@@ -22,68 +22,50 @@ $sess_user_id = (int)$_SESSION['sess_user_id'];
 $err_message = "";
 $message = "";
 
-$rs = $db->executeQuery("SELECT * FROM hum_registration,hum_members_profile WHERE hum_registration.id='$sess_user_id' and hum_members_profile.user_id='$sess_user_id'");
 
+$rs = $db->executeQuery('SELECT * FROM hum_registration hr'
+        . ' LEFT JOIN'
+        . ' hum_members_profile hmp'
+        . ' ON (hr.id=hmp.user_id)'
+        . ' WHERE hr.id='.$sess_user_id);
 
-//$rs = $db->executeQuery('SELECT * FROM hum_registration WHERE id='.$sess_user_id);
 $row = $db->fetchRow($rs);
 
-
-$highestdegree			= $row['highestdegree'];
-//$detaileducation      = $row['detaileducation'];
-$workarea               = $row['workarea'];
-$workstatus             = $row['work_status'];
-$educational_background =$row['educational_background'];
-$professional_background=$row['professional_background'];
-$annualincome           = $row['annualincome'];
+$highestdegree		 = $row['highestdegree'];
+//$detaileducation       = $row['detaileducation'];
+$workarea                = $row['workarea'];
+$workstatus              = $row['work_status'];
+$educational_background  = $row['educational_background'];
+$professional_background = $row['professional_background'];
+$annualincome            = $row['annualincome'];
 ?>
-
 <head>
-
 <script type="text/javascript">
 <!--
-function login_validate3() 
-
-{
+function login_validate3() {
     if(document.educationalinfo.educational_background.value == ""){
-        alert ("Please Write about your Educational Background!!");
+        alert ("Please write about your educational background");
         document.educationalinfo.educational_background.focus();
         return false;
-    }
-	else if(document.educationalinfo.highestdegree.selectedIndex == 0) {
-        alert ("Please select your Highest Degree !!");
+    } else if(document.educationalinfo.highestdegree.selectedIndex == 0) {
+        alert ("Please select your highest degree");
         document.educationalinfo.highestdegree.focus();
         return false;
-    }
-
-	else if(document.educationalinfo.professional_background.value == ""){
-        alert ("Please Write about your Professional Background!!");
+    } else if(document.educationalinfo.professional_background.value == ""){
+        alert ("Please write about your professional background");
         document.educationalinfo.professional_background.focus();
         return false;
-    }
-	
-	else if(document.educationalinfo.workarea.selectedIndex == 0) {
-        alert ("Please select your workarea..!!");
+    } else if(document.educationalinfo.workarea.selectedIndex == 0) {
+        alert ("Please select your workarea");
         document.educationalinfo.workarea.focus();
         return false;
     }
-	
-	else if(document.educationalinfo.work_status.selectedIndex == 0){
-        alert ("Please select Work Status !!");
-        document.educationalinfo.work_status.focus();
-        return false;
-    }
-	
-    
-	 if(document.educationalinfo.annualincome.selectedIndex == 0) {
-        alert ("Please select your Annual Income !!");
+    if(document.educationalinfo.annualincome.selectedIndex == 0) {
+        alert ("Please select your annual income");
         document.educationalinfo.annualincome.focus();
         return false;
     }
-
-    
 }
-
 //-->
 </script>
 </head>

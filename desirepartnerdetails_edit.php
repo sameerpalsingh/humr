@@ -1,5 +1,5 @@
 <?php
-include("includes/application_top.php");
+require_once 'includes/application_top.php';
 ?>
 <html>
     <head>
@@ -26,24 +26,25 @@ include("includes/application_top.php");
 
     $err_message = "";
     $message = "";
+   
+    $rs = $db->executeQuery('SELECT * FROM hum_registration hr'
+        . ' LEFT JOIN'
+        . ' hum_members_profile hmp'
+        . ' ON (hr.id=hmp.user_id)'
+        . ' WHERE hr.id='.$sess_user_id);
 
-    $rs = $db->executeQuery("SELECT * FROM hum_registration,hum_members_profile WHERE hum_registration.id='$sess_user_id' and hum_members_profile.user_id='$sess_user_id'");
-
-//$rs = $db->executeQuery('SELECT * FROM hum_registration WHERE id='.$sess_user_id);
     $row = $db->fetchRow($rs);
 
-
-    $p_age = $row['partner_age'];
-    $p_status = $row['partner_marital_status'];
-    $p_height = $row['partner_height'];
-    $p_region = $row['partner_state_region'];
+    $p_age      = $row['partner_age'];
+    $p_status   = $row['partner_marital_status'];
+    $p_height   = $row['partner_height'];
+    $p_region   = $row['partner_state_region'];
     $p_religion = $row['partner_religion'];
-    $p_cast = $row['partner_cast'];
-    $p_income = $row['partner_annual_income'];
-    $p_desc = $row['desired_partner'];
+    $p_cast     = $row['partner_cast'];
+    $p_income   = $row['partner_annual_income'];
+    $p_desc     = $row['desired_partner'];
 
-
-    $age = explode('to', $p_age);
+    $age  = explode('to', $p_age);
     $age1 = $age[0];
     $age2 = $age[1];
 
@@ -84,7 +85,6 @@ include("includes/application_top.php");
             }
         }
     </script>
-
 
     <body>	
         <form name="desirepartnerdetails" method="post" action="desirepartnerdetails_update.php" onsubmit=" return login_validate4();">
@@ -1230,36 +1230,32 @@ if (preg_match('|Jewish|', $p_religion)) {
                                         function login_validate4() {
 
                                             if (document.desirepartnerdetails.age.selectedIndex == 0) {
-                                                alert("Please enter Age field !!");
+                                                alert("Please select age range");
                                                 document.desirepartnerdetails.age.focus();
                                                 return false;
                                             }
                                             else if (document.desirepartnerdetails.uptoage.selectedIndex == 0) {
-                                                alert("Please enter To Age field !!");
+                                                alert("Please select age range");
                                                 document.desirepartnerdetails.uptoage.focus();
                                                 return false;
                                             }
 
                                             else if (document.desirepartnerdetails.height.selectedIndex == 0) {
-                                                alert("Please enter Height field !!");
+                                                alert("Please select height range");
                                                 document.desirepartnerdetails.height.focus();
                                                 return false;
                                             }
                                             else if (document.desirepartnerdetails.uptoheight.selectedIndex == 0) {
-                                                alert("Please Enter To Height !!");
+                                                alert("Please select height range");
                                                 document.desirepartnerdetails.uptoheight.focus();
                                                 return false;
                                             }
                                             if (document.desirepartnerdetails.described_partner.value.length < 100 || document.desirepartnerdetails.described_partner.value.length > 500) {
-                                                alert("Please enter Minimun 100 Char upto 500 char.......");
+                                                alert("Please enter at least 100 to 500 characters");
                                                 document.desirepartnerdetails.described_partner.focus();
                                                 return false;
                                             }
-
                                         }
-
-
-
                                         function check(id) {
                                             if (id == "check") {
                                                 for (var i = 1; i <= 6; i++) {
@@ -1285,17 +1281,12 @@ if (preg_match('|Jewish|', $p_religion)) {
                                         function selectAll(div, total) {
                                             if (div == "check") {
                                                 for (i = 1; i <= total; i++) {
-
                                                     document.getElementById("check_ms_" + i).checked = "none";
                                                     document.getElementById("check_ms_" + i).checked = "checked";
-
-
                                                 }
                                             }
-
                                             if (div == "disp") {
                                                 for (i = 1; i <= total; i++) {
-
                                                     document.getElementById("disp_" + i).style.display = "";
                                                     document.getElementById("check_ms_" + i).checked = "checked";
                                                     document.getElementById("disp_ms_" + i).checked = "checked";
@@ -1306,37 +1297,28 @@ if (preg_match('|Jewish|', $p_religion)) {
                                         function uncheckAll(div, total) {
                                             if (div == "check") {
                                                 for (i = 1; i <= total; i++) {
-
                                                     document.getElementById("check_ms_" + i).checked = "none";
                                                     document.getElementById("check_ms_" + i).checked = "";
-
-
                                                 }
                                             }
                                             if (div == "disp") {
                                                 for (i = 1; i <= total; i++) {
-
                                                     document.getElementById("disp_" + i).style.display = "";
                                                     document.getElementById("check_ms_" + i).checked = "checked";
                                                     document.getElementById("disp_ms_" + i).checked = "";
                                                 }
                                             }
-
                                         }
-
 
                                         function selectAllmt(div, total) {
                                             if (div == "checkmt") {
                                                 for (i = 1; i <= total; i++) {
-
                                                     document.getElementById("checkmt_" + i).checked = "none";
                                                     document.getElementById("checkmt_mt_" + i).checked = "checked";
-
                                                 }
                                             }
                                             if (div == "dispmt") {
                                                 for (i = 1; i <= total; i++) {
-
                                                     document.getElementById("dispmt_" + i).style.display = "";
                                                     document.getElementById("checkmt_mt_" + i).checked = "checked";
                                                     document.getElementById("dispmt_mt_" + i).checked = "checked";

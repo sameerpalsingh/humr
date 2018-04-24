@@ -1,5 +1,5 @@
 <?php
-include("includes/application_top.php");
+require_once("includes/application_top.php");
 
 //checking the username with password
 if (!isset($_SESSION['sess_user_id'])) {
@@ -22,13 +22,13 @@ $sess_user_id = (int) $_SESSION['sess_user_id'];
 $err_message = "";
 $message = "";
 
-$rs = $db->executeQuery("SELECT * FROM hum_registration,hum_members_profile WHERE hum_registration.id='$sess_user_id' and hum_members_profile.user_id='$sess_user_id'");
+$rs = $db->executeQuery("SELECT * FROM hum_registration"
+        . " LEFT JOIN "
+        . " hum_members_profile "
+        . " ON (hum_registration.id=hum_members_profile.user_id)"
+        . " WHERE hum_registration.id='$sess_user_id'");
 
-
-
-//$rs = $db->executeQuery('SELECT * FROM hum_registration WHERE id='.$sess_user_id);
 $row = $db->fetchRow($rs);
-
 
 $pic = $row['pic'];
 $userid = $row['loginid'];

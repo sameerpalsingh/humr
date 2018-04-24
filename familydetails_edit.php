@@ -22,25 +22,23 @@ $sess_user_id = (int) $_SESSION['sess_user_id'];
 $err_message = "";
 $message = "";
 
-$rs = $db->executeQuery("SELECT * FROM hum_registration,hum_members_profile WHERE hum_registration.id='$sess_user_id' and hum_members_profile.user_id='$sess_user_id'");
+$rs = $db->executeQuery("SELECT * FROM hum_registration hr"
+        . " LEFT JOIN "
+        . "hum_members_profile hmp "
+        . "ON (hr.id=hmp.user_id) "
+        . "WHERE hr.id='$sess_user_id'");
 
-
-//$rs = $db->executeQuery('SELECT * FROM hum_registration WHERE id='.$sess_user_id);
 $row = $db->fetchRow($rs);
 
-$familyvalues = $row['family_values'];
-$familytype = $row['family_type'];
-$familystatus = $row['family_status'];
+$familyvalues     = $row['family_values'];
+$familytype       = $row['family_type'];
+$familystatus     = $row['family_status'];
 $fatheroccupation = $row['father_occupation'];
 $motheroccupation = $row['mother_occupation'];
-$brother = $row['brother'];
-$sister = $row['sister'];
-$livewith = $row['live_with_parents'];
-$aboutfamily = $row['about_family'];
-
-
-
-//$err_message = $_GET['err_message'];
+$brother          = $row['brother'];
+$sister           = $row['sister'];
+$livewith         = $row['live_with_parents'];
+$aboutfamily      = $row['about_family'];
 
 if (isset($_GET['mess'])) {
     $message = "*Your profile is updated successfully*";
@@ -49,25 +47,15 @@ if (isset($_GET['mess'])) {
 
 <script>
     function submit_this() {
-
         // the fields that are to be processed
         //var field1 = $("input[@name=field1]").val();
         //var field2 = $("input[@name=field2]").val();
 
         // ajax call to itself 
         //$.post("form.php", {input1: field1, input2: field2}, function(data){$("#message").text(data);});
-
-
         //return false;
     }
-
 </script>
-
-
-<html>
-
-
-
     <form name="familydetails" method="post" action="familydetails_update.php" onsubmit="return familydetail();">
         <table>
             <tr>
@@ -312,20 +300,3 @@ if (isset($_GET['mess'])) {
 </script>
 </table>
 </form>
-
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

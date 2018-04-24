@@ -197,20 +197,21 @@
                     </td>
                     </tr>
                     <tr>
-                    <td width="90"><font class="text">Body Type* </font></td>
+                    <td width="90"><font class="text">Body Type </font></td>
                     <td colspan="5" style="font-size: 12px; font-family: arial, verdana, sans-serif">
 					<font class="txt" >
 					<?php
-				    if ($bodytype==1){echo "Slim";}
+                                        if ($bodytype==1){echo "Slim";}
 					else if ($bodytype==2){echo "Average";}
 					else if ($bodytype==3){echo "Athletic";}
-					else{echo "Heavy";}
+                                        else if ($bodytype==4){echo "Heavy";}
+					else{echo "N/A";}
 					?>
 					</font>                        
 					</td>
                     </tr>
                     <tr>
-                    <td width="90"><font class="text">Complexion* </font></td>
+                    <td width="90"><font class="text">Complexion </font></td>
                     <td colspan="5" style="font-size: 12px; font-family: arial, verdana, sans-serif">
 					<font class="txt">
 					<?php
@@ -218,7 +219,8 @@
 					else if($complexion == 2){echo "Fair";}
 					else if($complexion == 3){echo "Wheatish";}
 					else if($complexion == 4){echo "Wheatish Brown";}
-					else{echo "Dark";}
+                                        else if($complexion == 5){echo "Dark";}
+					else{echo "N/A";}
 					?>
 					</font>
 					</td>
@@ -519,12 +521,7 @@
                     </tr>
 					<tr>
                     <td valign="top"><font class="text">Highest Degree</font></td>
-                    <td style="font-size: 12px; font-family: arial, verdana, sans-serif"><!--<select style="font-size: 9pt;" name="highestdegree" disabled="disabled">
-                    <option value="0">Select Highest Degree </option>
-                    <?php
-                    echo createDropDownForHighestdegree($db,$highestdegree);
-                    ?>
-                    </select> -->
+                    <td style="font-size: 12px; font-family: arial, verdana, sans-serif">
 					<font class="txt">
 					<?php
 					echo $degree['highestdegree'];
@@ -544,12 +541,7 @@
 				    <tr>
                     <td valign="top"><font class="text">Work Area</font></td>
                     <td style="font-size: 12px; font-family: arial, verdana, sans-serif">
-                    <!--<select style="font-size: 9pt; display:none;" name="workarea" disabled="disabled">
-                    <option value="0">-Select Work Area-</option>
-                    <?php
-                    echo createDropDownForWorkarea($db, $workarea);
-                    ?>
-                    </select>-->
+                    
 					<font class="txt">
                     <?php
                     echo $work['workarea'];
@@ -740,7 +732,7 @@
                     <td valign="top"><font class="text">Spoken languages </font></td>
 					<td style="font-size: 12px; font-family: arial, verdana, sans-serif">
 					<?php
-					echo $language;
+					echo !empty($language)?$language:'N/A';
 					?>
 					</td>
 					</tr>
@@ -751,7 +743,7 @@
 					</tr>
 <tr><td colspan="2">
 <font class="head"> 
-Desired-Partner-Details</font><a href="desirepartnerdetails_edit.php?height=780&width=800" class="thickbox" title="" style="text-decoration: none;"><font class="add"> [Edit]</a></font>
+Desired Partner Details</font><a href="desirepartnerdetails_edit.php?height=780&width=800" class="thickbox" title="" style="text-decoration: none;"><font class="add"> [Edit]</a></font>
 					</font>
 					</td>
 					</tr>

@@ -1,5 +1,5 @@
 <?php
-include ("includes/application_top.php");
+require_once 'includes/application_top.php';
 
 $db = new sql_db;
 
@@ -11,16 +11,22 @@ $sql = "UPDATE hum_registration SET
         raasi                   = '".$_POST['raasi']."',
         mothertongue            = '".$_POST['mothertongue']."'               
         WHERE id =".$_SESSION['sess_user_id'];
-		
+
 $rs = $db->executeQuery($sql);
 
-$update="UPDATE hum_members_profile SET
-        subcast				= '".$_POST['subcast']."',
-        gotra				= '".$_POST['gotra']."',
-        ancestralorigin			= '".$_POST['ancestralorigin']."',
-        manglik				= '".$_POST['manglik']."',
-        nakshatra			= '".$_POST['nakshatra']."'
-        WHERE user_id   =".$_SESSION['sess_user_id'];
+$update="INSERT INTO hum_members_profile SET
+        subcast		= '".$_POST['subcast']."',
+        gotra		= '".$_POST['gotra']."',
+        ancestralorigin	= '".$_POST['ancestralorigin']."',
+        manglik		= '".$_POST['manglik']."',
+        nakshatra	= '".$_POST['nakshatra']."',
+        user_id   =".$_SESSION['sess_user_id'] . " "
+        . "ON DUPLICATE KEY UPDATE "
+        . "subcast = '".$_POST['subcast']."', "
+        . "gotra = '".$_POST['gotra']."', "
+        . "ancestralorigin = '".$_POST['ancestralorigin']."', "
+        . "manglik = '".$_POST['manglik']."', "
+        . "nakshatra = '".$_POST['nakshatra']."' ";
 $rs = $db->executeQuery($update);
 
 header("Location: edit_profile.php?mess=success");

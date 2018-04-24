@@ -11,11 +11,14 @@ $sql = "UPDATE hum_registration SET
 		
 $rs = $db->executeQuery($sql);
 
-$update="UPDATE hum_members_profile SET
+$update="INSERT INTO hum_members_profile SET
         educational_background  = '".addslashes($_POST['educational_background'])."',	
         work_status             = '".$_POST['work_status']."',
-        professional_background = '".addslashes($_POST['professional_background'])."'
-        WHERE user_id           = ".$_SESSION['sess_user_id'];
+        professional_background = '".addslashes($_POST['professional_background'])."',
+        user_id           = '".$_SESSION['sess_user_id']."' ON DUPLICATE KEY UPDATE "
+        . "educational_background  = '".addslashes($_POST['educational_background'])."', "
+        . "work_status = '".$_POST['work_status']."', "
+        . "professional_background = '".addslashes($_POST['professional_background'])."' ";
 
 $rs = $db->executeQuery($update);
 if (!$rs) {

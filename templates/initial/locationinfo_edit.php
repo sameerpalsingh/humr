@@ -22,12 +22,13 @@ $sess_user_id = (int)$_SESSION['sess_user_id'];
 $err_message = "";
 $message = "";
 
-$rs = $db->executeQuery('SELECT * FROM hum_registration,hum_members_profile WHERE hum_registration.id=hum_members_profile.id');
+$rs = $db->executeQuery('SELECT * FROM hum_registration hr'
+        . ' LEFT JOIN'
+        . ' hum_members_profile hmp'
+        . ' ON (hr.id=hmp.id)'
+        . ' WHERE hr.id='.$sess_user_id);
 
-
-//$rs = $db->executeQuery('SELECT * FROM hum_registration WHERE id='.$sess_user_id);
 $row = $db->fetchRow($rs);
-
 
 $citizenship            = $row['livingin'];
 $livingin               = $row['country'];

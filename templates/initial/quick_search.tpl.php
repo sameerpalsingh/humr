@@ -21,96 +21,66 @@
     <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
     <td width="24" height="25">&nbsp;</td>
-    <td  >&nbsp;</td>
+    <td  ><h3 class="page_heading">Quick Search</h3></td>
     <td width="25" align="right">&nbsp;</td>
     </tr>
-    <tr>
-    <td width="24" >&nbsp;</td>
-    <td><div align="center">
-    <table class="box2" cellspacing="2" cellpadding="1" width="68%" border="0">
-              <tbody>
-                <tr>
-                  <td width="625" colspan="6" align="left" valign="middle"><div align="center"><b class="heading">
-                  <?php $nam=explode(" ",$_SESSION['sess_full_name']);
-						$nam1=$nam[0];
-						echo ucwords($nam1); ?>,
-                  <?php
-                  if (isset($_GET['mess'])) {
-                    echo "Profile has been added as your favourites.";
-                  }
-				  elseif (isset($_GET['err_message']))
-				  {
-				  	echo "Hello";
-					echo  $err_message = $_GET['err_message'];
-				  }
-				  else {
-                    echo "You can do a quick search here.";
-                  }
-                  ?>
-                </b></div></td>
-                </tr>
-              </tbody>
+      
     </table>
-    <br />
-    <table width="626" border="0">
-              <tbody>
 
-              </tbody>
-            </table>
+<div align="center">
+
+    <br />
+
           <form method="get" action="quick_search.php">
-            <table width="68%" border="0" class="box2" align="center" cellpadding="0" cellspacing="0" bordercolor="#E8E4D9">
-              <tr>
-                <td width="501"><div align="left" class="text3">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td bgcolor="#E8E4D9"><div align="center"><b><font color="#000000" font="verdana" size="2">Search Partner</font></b></div></td>
-                      </tr>
-                    </table>
-                </div></td>
-              </tr>
-              <tr>
-                <td><table width="100%" border="0" cellspacing="2" cellpadding="0">
+            <table class="table table-bordered" width="100%" border="1" cellspacing="2" cellpadding="0">
                     <tr align="left">
-                      <td width="27%" class="text">Searching For </td>
-                      <td width="73%" class="content" ><!--<input type="hidden" name='gender' value=
+                      <td width="15%" class="vheading">Searching For </td>
+                      <td width="85%" class="" ><!--<input type="hidden" name='gender' value=
 					  <?php if($quick['gender']=='M') {
-						  echo "F";
+						  echo "M";
 					  }
 					  else{
-						  echo "M";
+						  echo "F";
 					  }
 					  ?>
 					  >
 <font class="txt" ><?php if($quick['gender']=='M') {
-						  echo "Female";
-					  }
-					  else{
 						  echo "Male";
 					  }
-					  ?></font>--><select name="gender" class="content" >
-                          <option value="M" <?php if($quick['gender']=="F") { echo "selected";}?>>Male</option>
-                          <option value="F" <?php if($quick['gender']=="M") { echo "selected";}?>>Female</option>
+					  else{
+						  echo "Female";
+					  }
+					  ?></font>--><select name="gender" class="" >
+                          <option value="M" <?php if($quick['gender']=="M") { echo "selected";}?>>Male</option>
+                          <option value="F" <?php if($quick['gender']=="F") { echo "selected";}?>>Female</option>
                       </select>
 </td>
                     </tr>
                     <tr align="left">
-                      <td class="text">Caste </td>
-                      <td class="content"><select name="caste" class="content">
+                      <td class="vheading">Religion </td>
+                      <td class=""><select name="religion" class="">
+                      <option value="">All</option>
+                        <?php echo createDropDownForReligion($db, $religion); ?>
+                      </select></td>
+                    </tr>
+                    <tr align="left">
+                      <td class="vheading">Caste </td>
+                      <td class=""><select name="caste" class="">
                       <option value="">All</option>
                         <?php echo createDropDownForCaste($db, $caste); ?>
                       </select></td>
                     </tr>
 			
                     <tr align="left">
-                      <td class="text">Mother Tongue</td>
-                      <td class="content"><select name="mothertongue" class="content" size="1">
+                      <td class="vheading">Mother Tongue</td>
+                      <td class=""><select name="mothertongue" class="content" size="1">
                       <option value="">All</option>
                       <?php echo createDropDownForMotherTongue($db, $mothertongue); ?>
                       </select></td>
                     </tr>
                       <tr align="left">
-                                  <td class="text">Age </td>
-                                  <td class="content"><select class="content" name="age1">
+                                  <td class="vheading">Age </td>
+                                  <td class=""><select class="content" name="age1">
 								  <?php
 								  $age= $quick['age']-'5';
 								  for ($i=$age; $i<70; $i++) {
@@ -121,7 +91,7 @@
 								  ?>
                                     </select>
                 to
-                <select name="age2" class="content">
+                <select name="age2" class="">
 								  <?php
 								  $age= $quick['age']+'5';
 								  for ($i=$age; $i<70; $i++) {
@@ -134,30 +104,20 @@
                                   </td>
                                 </tr>
                     <tr align="left">
-                      <td class="text">Photos </td>
+                      <td class="vheading">Photos </td>
                       <td><input type="checkbox" name="photos" value="Y" <?php echo ($photos=='Y')?'checked':''; ?> /></td>
                     </tr>
                     <tr>
                       <td colspan="2"><div align="center">
                           <input type='hidden' name='SearchProfile' value="1" />
-                          <input type="image" src='<?php echo DIR_WS_IMAGES;?>search.jpg' />
+                          <button type="submit" class="btn btn-danger">Search</button>
                       </div></td>
                     </tr>
                 </table>
-                </td>
-              </tr>
-
-            </table>
+                
           </form>
         </div>
-         </td>
-        <td width="24" >&nbsp;</td>
-      </tr>
-      <tr>
-        <td width="24" height="25">&nbsp;</td>
-        
-      </tr>
-    </table>
+              
 <?php
     if (isset($rs)) {
     ?>
@@ -172,9 +132,9 @@
   ?>
 
   <form method="post" action="add_to_favourites.php" name="frmSearch" onsubmit="return validate();">
-    <table style="background-color:#e8e4d9;color:#000000; border:1px solid #FF0000;margin-top:10px;" width="73%"   align="center">
+    <table class="table table-bordered">
   
-  <tr  style="background-color:#990000;color:#FFF;"><td height="10px" colspan="2"><input type="checkbox" name="chkbox[]" value="<?php echo $row["id"]?>">&nbsp;<?php echo $row["name"]?>&nbsp;(<?php echo $row["loginid"]?>)</td></tr>
+  <tr><td  style="background-color: #990000; color: #ffffff" height="10px" colspan="2"><input type="checkbox" name="chkbox[]" value="<?php echo $row["id"]?>">&nbsp;<?php echo $row["name"]?>&nbsp;(<?php echo $row["loginid"]?>)</td></tr>
 	
   <tr >
 
@@ -231,44 +191,44 @@ $qs_images = $db->executeQuery($sql_images);
 	
 	</td>
 	<td >
-	<table width="432" cellpadding="0" cellspacing="0" border="0" align="left">
+            <table align="left">
 	
 	<tr>
-	<td width="119" class="text">Name</td>
-	<td width="119" class="content"><?php echo $row['name'];?></td>
-	<td width="119" class="text">A.Income</td>
-	<td width="119" class="content"><?php 
+	<td width="119" class="vheading_small">Name</td>
+	<td width="119" class=""><?php echo $row['name'];?></td>
+	<td width="119" class="vheading_small">A.Income</td>
+	<td width="119" class=""><?php 
 		$annualincome= $row['annualincome'];
 		echo displayincome($annualincome);?></td>
 	</tr>
 	
 	<tr>
-	<td class="text" >Gender/ Age</td>
-	<td width="180" class="content"><?php $gender= $row['gender'];
+	<td class="vheading_small" >Gender/ Age</td>
+	<td width="180" class=""><?php $gender= $row['gender'];
 	
 					if($gender=='M'){echo "Male";}
 					else {echo "Female";}
 					?> , (<?php echo $row['age']?> Years)</td>
-	<td class="text">Caste </td>
-	<td class="content"><?php echo showCasteById($db, $row['caste']); ?></td>
+	<td class="vheading_small">Caste </td>
+	<td class=""><?php echo showCasteById($db, $row['caste']); ?></td>
 	</tr>
 	
 	<tr>
-	<td class="text">Location: </td>
-	<td class="content"><?php echo showCityById($db, $row['city']); ?>, <?php echo showCountryById($db, $row['country']); ?></td>
-	<td class="text">Occupation</td>
-	<td class="content"><?php echo showWorkareaById($db, $row['workarea']); ?></td>
+	<td class="vheading_small">Location: </td>
+	<td class=""><?php echo showCityById($db, $row['city']); ?>, <?php echo showCountryById($db, $row['country']); ?></td>
+	<td class="vheading_small">Occupation</td>
+	<td class=""><?php echo showWorkareaById($db, $row['workarea']); ?></td>
 	</tr>
 	
 	<tr>
-	<td class="text">Education : </td>
-	<td class="content"><?php echo showHighestdegreeById($db, $row['highestdegree']); ?></td>
-	<td class="text">Height;</td>
-	<td class="content"><?php echo showHeightById($db, $row['height']); ?></td>
+	<td class="vheading_small">Education : </td>
+	<td class=""><?php echo showHighestdegreeById($db, $row['highestdegree']); ?></td>
+	<td class="vheading_small">Height;</td>
+	<td class=""><?php echo showHeightById($db, $row['height']); ?></td>
 	</tr>
 	<tr >
-	<td  class="text" valign="top">Description : </td>
-	<td class="content" colspan="3"><?php echo stripslashes($row['aboutyourself']); ?></td>
+	<td  class="vheading_small" valign="top">Description : </td>
+	<td class="" colspan="3"><?php echo stripslashes($row['aboutyourself']); ?></td>
 	</tr>
 	<!--<tr><td colspan="4" align="left">&nbsp;&nbsp;<a href="">Read More..</a></td></tr>-->
 	<tr><td colspan="4"><hr /></td></tr>
@@ -292,12 +252,9 @@ $qs_images = $db->executeQuery($sql_images);
     if ($num != 0) { 
 ?>
 
+<input type="submit" value="Add to favourites">
 
-<table style="" width="44%"   align="">
-<tbody><tr style="background-color:;color:#000000;"><td width="" align="center"  >
-
-<input type="submit" value="Add to favourites"></td></tr>
-  </tbody></table> </form>
+</form>
 <table  width="50%"   align="center">
 <tbody>
 <tr style="background-color:#FFFFFF;color:#000000;"><td align="center" colspan="2">&nbsp;</td>

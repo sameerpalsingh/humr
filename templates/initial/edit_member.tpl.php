@@ -93,7 +93,7 @@
 					 </td>
 					 </tr>
 					
-                    <td class="s-title" style="border-bottom:1px solid #CCCCCC">My Profile</td>
+                                         <td><h3 class="page_heading">My Profile</h3></td>
 					<td class="s-title" style="border-bottom:1px solid #CCCCCC"></td><td class="s-title" style="border-bottom:1px solid #CCCCCC"></td>
                     </tr>
 					

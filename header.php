@@ -9,5 +9,7 @@
 <script type="text/javascript" src="<?php echo DIR_WS_JS."func_ajax.js";?>"> </script>
 <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
 <script language="JavaScript" src="<?php echo DIR_WS_JS;?>popup.js"></script>
-<script src="<?php echo DIR_WS_JS?>jquery-1.2.6.js" type="text/JavaScript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>

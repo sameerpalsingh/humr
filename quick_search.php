@@ -21,17 +21,18 @@ $quick = $db->fetchRow($result);
  /*********this query for use to select age*******/
 
 
-$gender       = isset($_GET['gender'])?$gender=$_GET['gender']:$gender='';
-$caste        = isset($_GET['caste'])?$caste=$_GET['caste']:$caste='';
-$city         = isset($_GET['city'])?$city=$_GET['city']:$city='';
-$country      = isset($_GET['country'])?$country=$_GET['country']:$country='';
-$mothertongue = isset($_GET['mothertongue'])?$mothertongue=$_GET['mothertongue']:$mothertongue='';
-$age1         = isset($_GET['age1'])?$age1=$_GET['age1']:$age1='';
-$age2         = isset($_GET['age2'])?$age2=$_GET['age2']:$age2='';
-$photos       = isset($_GET['photos'])?$photos='Y':$photos='';
-$lastloggedin = isset($_GET['lastloggedin'])?$lastloggedin=$_GET['lastloggedin']:$lastloggedin='';
+$gender       = isset($_GET['gender'])?$_GET['gender']:'';
+$caste        = isset($_GET['caste'])?$_GET['caste']:'';
+$religion     = isset($_GET['religion'])?$_GET['religion']:'';
+$city         = isset($_GET['city'])?$_GET['city']:'';
+$country      = isset($_GET['country'])?$_GET['country']:'';
+$mothertongue = isset($_GET['mothertongue'])?$_GET['mothertongue']:'';
+$age1         = isset($_GET['age1'])?$_GET['age1']:'';
+$age2         = isset($_GET['age2'])?$_GET['age2']:'';
+$photos       = isset($_GET['photos'])?'Y':'';
+$lastloggedin = isset($_GET['lastloggedin'])?$_GET['lastloggedin']:'';
 
-function getQuickSearchResults($gender, $caste, $city,$country,$mothertongue, $age1, $age2, $photos,$lastloggedin,$id,$name) {
+function getQuickSearchResults($gender, $religion, $caste, $city,$country,$mothertongue, $age1, $age2, $photos,$id,$name) {
     
 	global $db;
 	global $num_for_paging;
@@ -50,9 +51,11 @@ function getQuickSearchResults($gender, $caste, $city,$country,$mothertongue, $a
 	if ($name != '') {
         $sql.= "AND loginid!='$name' ";
     }
-		
+    if ($religion != '') {
+        $sql.= "AND religion='$religion' ";
+    }		
 
-	if ($caste != '') {
+    if ($caste != '') {
         $sql.= "AND caste='$caste' ";
     }
 
@@ -62,11 +65,6 @@ function getQuickSearchResults($gender, $caste, $city,$country,$mothertongue, $a
 	if ($country != '') {
         $sql.= "AND country='$country' ";
     }
-	
-	if ($lastloggedin != '') {
-        $sql.= "AND lastloggedin='$lastloggedin' ";
-    }
-
 
     if ($mothertongue != '') {
         $sql.= "AND mothertongue='$mothertongue' ";
@@ -86,7 +84,7 @@ function getQuickSearchResults($gender, $caste, $city,$country,$mothertongue, $a
 
 if (isset($_GET['SearchProfile'])) {
 
-    $rs = getQuickSearchResults($gender, $caste, $city,$country, $mothertongue, $age1, $age2, $photos,$lastloggedin,$id,$name);
+    $rs = getQuickSearchResults($gender, $religion, $caste, $city,$country, $mothertongue, $age1, $age2, $photos,$id,$name);
 	$objPaging->processPaging($num_for_paging, $_SERVER['REQUEST_URI']);
 
 }

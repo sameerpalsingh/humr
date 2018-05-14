@@ -100,7 +100,7 @@ body {
     font-size: 12px;
     line-height: 22px;
     font-weight: bold;
-    color: #E24403;
+    color: #000000;
 }
 .content {
     font-family: Arial, Helvetica, sans-serif;
@@ -213,7 +213,7 @@ h3 {
 }
 
 .text {
-    FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #cc0033; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+    FONT-SIZE: 13px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none;
 }
 .text1 {
     FILTER: Gray; FONT: bold italic x-small Arial, Helvetica, sans-serif; TEXT-TRANSFORM: none; CURSOR: crosshair; TEXT-DECORATION: underline blink
@@ -222,7 +222,7 @@ h3 {
     FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #3300ff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
 }
 .text3 {
-    FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+    FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; padding: 10px;
 }
 .text3 A:hover {
     FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
@@ -319,4 +319,23 @@ background-image: url('warning.png');
     color: #D8000C;
     background-color: #FFBABA;
     background-image: url('/images/error.png');
+}
+.page_heading {
+    color: #cc0033;
+}
+.vheading {
+    color: #000000;
+    font-size: 13px;
+    padding: 3px;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    text-decoration: none;
+}
+.vheading_small {
+    color: #000000;
+    font-size: 12px;
+    padding: 3px;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    text-decoration: none;
 }

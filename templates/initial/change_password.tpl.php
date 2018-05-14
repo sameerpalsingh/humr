@@ -32,36 +32,37 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                   <td width="24" height="25">&nbsp;</td>
-                  <td  >&nbsp;</td>
+                  <td><h3 class="page_heading">Change Password</h3></td>
                   <td width="25" align="right">&nbsp;</td>
                 </tr>
                 <tr>
                   <td width="24" >&nbsp;</td>
                   <td><div align="center">
-                    <table class="box2" cellspacing="2" cellpadding="1" width="623" border="0">
-                        <tbody>
-                          <tr>
-                            <td width="625" colspan="6" align="left" valign="middle"><div align="center"><b class="heading">
-                <?php
-                if(isset($_GET['message'])) {
-                echo $_GET['message'];
-                } else {
-                $nam=explode(" ",$_SESSION['sess_full_name']);
-						$nam1=$nam[0];
-						echo ucwords($nam1).", You can change your Password here.";
-                }
-                ?>
-              </b></div></td>
-                          </tr>
-                        </tbody>
-                    </table>
+                    <?php
+                    if (isset($_GET['error']) && $_GET['error'] == 1) {
+                        ?>
+<div class="alert alert-warning">
+    <strong>Attention!</strong> Password and retype password do not match.
+</div>                          
+                        <?php
+                    }
+                    if (isset($_GET['error']) && $_GET['error'] == 2) {
+                        ?>
+<div class="alert alert-danger">
+    <strong>Error!</strong> Old password do not match.
+</div>                          
+                        <?php
+                    }
+                    if (isset($_GET['error']) && $_GET['error'] == 3) {
+                        ?>
+<div class="alert alert-success">
+    <strong>Success!</strong> Password is changed successfully..
+</div>                          
+                        <?php
+                    }
+                    ?>
                     <br />
-                    <table width="626" border="0">
-                          <tbody>
-
-                          </tbody>
-                      </table>
-                    <table class="box2" cellspacing="2" cellpadding="1" width="623" border="0">
+                    <table class="" cellspacing="2" cellpadding="1" width="623" border="0">
 
                      <form method="post" action="change_password_submit.php" name="frmPassword" onsubmit="return validatePasswordForm();">
                        <tbody>

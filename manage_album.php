@@ -1,10 +1,6 @@
 <?php
 include("includes/application_top.php");
-
-
 $db = new sql_db();
-
-
 
 $sql_member = "SELECT pic FROM hum_registration WHERE id='".$_SESSION['sess_user_id']."' ";
 $rs_member  = $db->executeQuery($sql_member);

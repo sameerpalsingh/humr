@@ -9,12 +9,10 @@
                 <td valign="top" class="bothside-border">
 				<table width="170" border="0" align="center" cellpadding="0" cellspacing="0">
                   <tr align="center" valign="middle">
-                    <td colspan="2" class="tdunderline"><h3>Logged in
-                      <?php
-					  $nam=explode(" ",$_SESSION['sess_full_name']);
-						$nam1=$nam[0];
-						echo ucwords($nam1);
-                                                ?></h3></td>
+                    <td colspan="2" class="tdunderline"><h5>Logged in as 
+                      <?php  $nam = explode(" ",$_SESSION['sess_full_name']);
+                        $nam1 = $nam[0];
+                        echo ucwords($nam1);?></h5></td>
                     </tr>
                   <tr>
                     <td colspan="2">&nbsp;</td>

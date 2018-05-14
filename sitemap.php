@@ -1,50 +1,7 @@
 <?php
 include("includes/application_top.php");
+include_once 'header.php';
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title><?php echo SITE_TITLE;?></title>
-<meta name="description" content="<?php echo SITE_DESCRIPTION;?>" />
-<meta name="keywords" content="<?php echo SITE_KEYWORDS;?>" />
-<meta http-equiv="imagetoolbar" content="no" />
-<link href="templates/initial/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript">
-
-//Disable right click script
-//visit http://www.rainbow.arch.scriptmania.com/scripts/
-var message="Sorry, right-click has been disabled";
-///////////////////////////////////
-function clickIE() {if (document.all) {(message);return false;}}
-function clickNS(e) {if
-(document.layers||(document.getElementById&&!document.all)) {
-if (e.which==2||e.which==3) {(message);return false;}}}
-if (document.layers)
-{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
-
-//Disable select-text script (IE4+, NS6+)
-//visit http://www.rainbow.arch.scriptmania.com/scripts/
-///////////////////////////////////
-function disableselect(e){
-return false
-}
-function reEnable(){
-return true
-}
-//if IE4+
-document.onselectstart=new Function ("return false")
-//if NS6
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-document.oncontextmenu=new Function("return false")
-
-</script>
-</head>
-
 <body>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
@@ -131,5 +88,39 @@ document.oncontextmenu=new Function("return false")
   </tr>
 <?php include(DIR_FS_TEMPLATES."footer.tpl.php"); ?>
 </table>
+<script type="text/javascript">
+
+//Disable right click script
+//visit http://www.rainbow.arch.scriptmania.com/scripts/
+var message="Sorry, right-click has been disabled";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+//Disable select-text script (IE4+, NS6+)
+//visit http://www.rainbow.arch.scriptmania.com/scripts/
+///////////////////////////////////
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+//if IE4+
+document.onselectstart=new Function ("return false")
+//if NS6
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+document.oncontextmenu=new Function("return false")
+
+</script>
+
 </body>
 </html>

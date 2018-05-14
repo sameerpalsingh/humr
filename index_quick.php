@@ -59,38 +59,8 @@ if (isset($_GET['SearchProfile'])) {
     $objPaging->processPaging($num_for_paging, $_SERVER['REQUEST_URI']);
 }
 
-
+include_once 'header.php';
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo SITE_TITLE;?></title>
-<meta name="description" content="<?php echo SITE_DESCRIPTION;?>" />
-<meta name="keywords" content="<?php echo SITE_KEYWORDS;?>" />
-<link href="<?php echo DIR_FS_TEMPLATES?>style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="<?php echo DIR_WS_JS."func_ajax.js";?>"> </script>
-<script type="text/javascript">
-<!--
-    function validate()
-    {
-
-        if(document.forms[0].elements[0].value=="")
-        {
-            alert("Please enter username");
-            document.forms[0].elements[0].focus();
-            return false;
-        } else if (document.forms[0].elements[1].value=="")
-        {
-            alert("Please enter password");
-            document.forms[0].elements[1].focus();
-            return false;
-        }
-        return true;
-    }
-
-</script></blockquote>
-</head>
 <body>
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -217,5 +187,25 @@ if (isset($_GET['SearchProfile'])) {
   </tr>
 <?php include(DIR_FS_TEMPLATES."footer.tpl.php"); ?>
 </table>
+<script type="text/javascript">
+<!--
+    function validate()
+    {
+
+        if(document.forms[0].elements[0].value=="")
+        {
+            alert("Please enter username");
+            document.forms[0].elements[0].focus();
+            return false;
+        } else if (document.forms[0].elements[1].value=="")
+        {
+            alert("Please enter password");
+            document.forms[0].elements[1].focus();
+            return false;
+        }
+        return true;
+    }
+
+</script>    
 </body>
 </html>

@@ -3,15 +3,15 @@
     function validatePasswordForm()
     {
         if (document.frmPassword.old_password.value.length < 1) {
-            alert("Please enter old Password.");
+            alert("Please enter Old Password.");
             document.frmPassword.old_password.focus();
             return false;
         } else if(document.frmPassword.new_password.value.length < 1) {
-            alert("Please enter new Password.");
+            alert("Please enter New Password.");
             document.frmPassword.new_password.focus();
             return false;
         } else if(document.frmPassword.new_password2.value.length < 1) {
-            alert("Please retype new Password.");
+            alert("Please retype New Password.");
             document.frmPassword.new_password2.focus();
             return false;
         } else if(document.frmPassword.new_password.value !=document.frmPassword.new_password2.value) {

@@ -4,9 +4,9 @@ include ("includes/application_top.php");
 
 $db = new sql_db;
 
-$old_password = strtolower(trim($_POST['old_password']));
-$new_password = strtolower(trim($_POST['new_password']));
-$new_password2 = strtolower(trim($_POST['new_password2']));
+$old_password = trim($_POST['old_password']);
+$new_password = trim($_POST['new_password']);
+$new_password2 = trim($_POST['new_password2']);
 
 if ($new_password != $new_password2) {
     header("Location: change_password.php?message=Password and retype password do not match.");

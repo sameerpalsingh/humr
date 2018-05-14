@@ -76,14 +76,60 @@ $num_for_paging = $db->recordCount;
 $rs = $db->executeQuery($sql_with_limit);
 $objPaging->processPaging($num_for_paging, $_SERVER['REQUEST_URI']);
 
+
+include_once("header.php");
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>:: Welcome to Humraahi.Com ::</title>
-<link href="templates/initial/style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
-<script language="JavaScript" src="<?php echo DIR_WS_JS;?>popup.js"></script>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="223" height="537" valign="top"><?php include(DIR_FS_INCLUDES."left.inc.php"); ?></td>
+        <td valign="top">
+        <?php include(DIR_FS_INCLUDES."header.inc.php"); ?>
+        <?php include(DIR_FS_TEMPLATES."advanced_search_result.tpl.php"); ?>
+         </td></tr>
+    </table></td>
+  </tr>
+<?php include(DIR_FS_TEMPLATES."footer.tpl.php"); ?>
+</table>
+
+</body>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="js/jquery.smooth-scroll.min.js"></script>
+<script src="js/lightbox.js"></script>
+
+<script>
+  jQuery(document).ready(function($) {
+      $('a').smoothScroll({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+      });
+
+      $('.showOlderChanges').on('click', function(e){
+        $('.changelog .old').slideDown('slow');
+        $(this).fadeOut();
+        e.preventDefault();
+      })
+  });
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2196019-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 <script language="JavaScript">
 <!--
     function popup(url) {
@@ -137,57 +183,7 @@ function uncheckall()
     }
 }
 </script>
-</head>
-<body>
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="223" height="537" valign="top"><?php include(DIR_FS_INCLUDES."left.inc.php"); ?></td>
-        <td valign="top">
-        <?php include(DIR_FS_INCLUDES."header.inc.php"); ?>
-        <?php include(DIR_FS_TEMPLATES."advanced_search_result.tpl.php"); ?>
-         </td></tr>
-    </table></td>
-  </tr>
-<?php include(DIR_FS_TEMPLATES."footer.tpl.php"); ?>
-</table>
-
-</body>
-<script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
-<script src="js/jquery.smooth-scroll.min.js"></script>
-<script src="js/lightbox.js"></script>
-
-<script>
-  jQuery(document).ready(function($) {
-      $('a').smoothScroll({
-        speed: 1000,
-        easing: 'easeInOutCubic'
-      });
-
-      $('.showOlderChanges').on('click', function(e){
-        $('.changelog .old').slideDown('slow');
-        $(this).fadeOut();
-        e.preventDefault();
-      })
-  });
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-2196019-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </html>
 <?php 
 @ob_end_flush();

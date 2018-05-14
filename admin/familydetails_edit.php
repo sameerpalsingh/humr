@@ -280,60 +280,55 @@ function checkfile() {
 
 function familydetail()
 {
-
-	 if (document.familydetails.rdbfamilyvalues[0].checked == false && document.familydetails.rdbfamilyvalues[1].checked == false && document.familydetails.rdbfamilyvalues[2].checked == false && document.familydetails.rdbfamilyvalues[3].checked == false ) {
-			alert("Please select Field Family Values.");
-				document.familydetails.rdbfamilyvalues[0].focus();
-				return false;
-	}
-	else if (document.familydetails.rdbfamilytype[0].checked == false && document.familydetails.rdbfamilytype[1].checked == false && document.familydetails.rdbfamilytype[2].checked == false ) {
-			alert("Please select Field Family Type.");
-				document.familydetails.rdbfamilytype[0].focus();
-				return false;
-	}
-	else if (document.familydetails.rdbfamilystatus[0].checked == false && document.familydetails.rdbfamilystatus[1].checked == false && document.familydetails.rdbfamilystatus[2].checked == false ) {
-			alert("Please select Field Family Status .");
-				document.familydetails.rdbfamilystatus[0].focus();
-				return false;
-	}
-     else if ( document.familydetails.fatheroccupation.selectedIndex == 0 ) {
-        alert ("Please select Father�s Occupation !!");
+    if (document.familydetails.rdbfamilyvalues[0].checked == false && document.familydetails.rdbfamilyvalues[1].checked == false && document.familydetails.rdbfamilyvalues[2].checked == false && document.familydetails.rdbfamilyvalues[3].checked == false ) {
+        alert("Please select field `Family Values`.");
+	document.familydetails.rdbfamilyvalues[0].focus();
+	return false;
+    } else if (document.familydetails.rdbfamilytype[0].checked == false && document.familydetails.rdbfamilytype[1].checked == false && document.familydetails.rdbfamilytype[2].checked == false ) {
+	alert("Please select field `Family Type`.");
+	document.familydetails.rdbfamilytype[0].focus();
+	return false;
+    } else if (document.familydetails.rdbfamilystatus[0].checked == false && document.familydetails.rdbfamilystatus[1].checked == false && document.familydetails.rdbfamilystatus[2].checked == false ) {
+	alert("Please select Field Family Status .");
+	document.familydetails.rdbfamilystatus[0].focus();
+	return false;
+    } else if ( document.familydetails.fatheroccupation.selectedIndex == 0 ) {
+        alert ("Please select Father's Occupation");
         document.familydetails.fatheroccupation.focus();
         return false;
     }
     else if ( document.familydetails.motheroccupation.selectedIndex == 0 ) {
-        alert ("Please select Mother�s Occupation !!");
+        alert ("Please select Mother's Occupation");
         document.familydetails.motheroccupation.focus();
         return false;
     }
     else if ( document.familydetails.brother.selectedIndex == 0 ) {
-        alert ("Please select your Brother(s) !!");
+        alert ("Please select your Brother(s)");
         document.familydetails.brother.focus();
         return false;
     }
     else if ( document.familydetails.sister.selectedIndex == 0 ) {
-        alert ("Please select your Sister(s) !!");
+        alert ("Please select your Sister(s)");
         document.familydetails.sister.focus();
         return false;
-    }
-	else if (document.familydetails.rdbliveparents[0].checked == false && document.familydetails.rdbliveparents[1].checked == false ) {
-			alert("Please select Field Do you live with your parents .");
-				document.familydetails.rdbliveparents[0].focus();
-				return false;
-	}
-	else if(document.familydetails.about_yourfamily.value == 0){
+    } else if (document.familydetails.rdbliveparents[0].checked == false && document.familydetails.rdbliveparents[1].checked == false ) {
+        alert("Please select `Field Do you live with your parents`");
+        document.familydetails.rdbliveparents[0].focus();
+        return false;
+    } else if(document.familydetails.about_yourfamily.value == 0){
         alert ("Please Write about your Family!!");
         document.familydetails.about_yourfamily.focus();
         return false;
-	}
-	if(document.familydetails.about_yourfamily.value.length < 100 || document.familydetails.about_yourfamily.value.length > 500 ) {
-      alert ("Please enter Minimun 100 Char upto 500 char.......");
-      document.familydetails.about_yourfamily.focus();
-      return false;
+    }
+    if(document.familydetails.about_yourfamily.value.length < 100 || document.familydetails.about_yourfamily.value.length > 500 ) {
+        alert ("Please enter 100 to 500 characters in family details box.");
+        document.familydetails.about_yourfamily.focus();
+        return false;
     }
 }
-	function limitText(limitField, limitCount) {
-	limitCount.value = limitField.value.length;
+
+function limitText(limitField, limitCount) {
+    limitCount.value = limitField.value.length;
 }
 
 </script>

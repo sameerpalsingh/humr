@@ -16,46 +16,14 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require_once("includes/application_top.php");
-
+require_once 'header.php';
 $db = new sql_db;
 
-//$_SESSION=$_REQUEST['username'];
-$gender       = isset($_POST['gender'])?$gender=$_POST['gender']:$gender='';
-$age1         = isset($_POST['age1'])?$age1=$_POST['age1']:$age1='';
-$age2         = isset($_POST['age2'])?$age2=$_POST['age2']:$age2='';
+$gender = isset($_POST['gender'])?$gender=$_POST['gender']:$gender='';
+$age1   = isset($_POST['age1'])?$age1=$_POST['age1']:$age1='';
+$age2   = isset($_POST['age2'])?$age2=$_POST['age2']:$age2='';
 ?>
 
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo SITE_TITLE;?></title>
-<meta name="description" content="<?php echo SITE_DESCRIPTION;?>" />
-<meta name="keywords" content="<?php echo SITE_KEYWORDS;?>" />
-<link href="<?php echo DIR_FS_TEMPLATES?>style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="<?php echo DIR_WS_JS."func_ajax.js";?>"> </script>
-<script type="text/javascript">
-<!--
-    function validate()
-    {
-
-        if(document.forms[0].elements[0].value=="")
-        {
-            alert("Please enter username");
-            document.forms[0].elements[0].focus();
-            return false;
-        } else if (document.forms[0].elements[1].value=="")
-        {
-            alert("Please enter password");
-            document.forms[0].elements[1].focus();
-            return false;
-        }
-        return true;
-    }
-
-</script>
-</head>
 <body>
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -134,7 +102,7 @@ $age2         = isset($_POST['age2'])?$age2=$_POST['age2']:$age2='';
                                     <tr>
                                       <td align="right" class="bothside-border">
                                                           <table width="180" border="0" align="center" cellpadding="0" cellspacing="2">
-                                                          <form name="frmLogin" method="get" action="login_check.php" onsubmit="return validate();" ><tr>
+                                                          <form name="frmLogin" method="POST" action="login_check.php" onsubmit="return validate();" ><tr>
                                                             <td colspan="2"><img src="images/spacer.gif" alt="" width="1" height="7" /></td>
                                                             </tr>
                                                           <tr>
@@ -444,5 +412,26 @@ $age2         = isset($_POST['age2'])?$age2=$_POST['age2']:$age2='';
   </tr>
 <?php include(DIR_FS_TEMPLATES."footer.tpl.php"); ?>
 </table>
+<script type="text/javascript">
+<!--
+    function validate()
+    {
+
+        if(document.forms[0].elements[0].value=="")
+        {
+            alert("Please enter username");
+            document.forms[0].elements[0].focus();
+            return false;
+        } else if (document.forms[0].elements[1].value=="")
+        {
+            alert("Please enter password");
+            document.forms[0].elements[1].focus();
+            return false;
+        }
+        return true;
+    }
+
+</script>
+    
 </body>
 </html>

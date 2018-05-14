@@ -9,21 +9,19 @@
                 <td valign="top" class="bothside-border">
 				<table width="170" border="0" align="center" cellpadding="0" cellspacing="0">
                   <tr align="center" valign="middle">
-                    <td colspan="2" class="tdunderline"><font class="text">Welcome
+                    <td colspan="2" class="tdunderline"><h3>Logged in
                       <?php
 					  $nam=explode(" ",$_SESSION['sess_full_name']);
 						$nam1=$nam[0];
 						echo ucwords($nam1);
-					  //echo $_SESSION['sess_full_name'];
-					  ?></font></td>
+                                                ?></h3></td>
                     </tr>
                   <tr>
                     <td colspan="2">&nbsp;</td>
                     </tr>
 						
                   <tr align="left">
-                    <td class="l-title"><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="left-links">&gt;&gt;&gt; My Profile</td>
+                    <td colspan="2" class="left-links">My Profile</td>
                   </tr>
                   <tr>
                     <td width="15"><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
@@ -41,17 +39,13 @@
                     <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
                     <td class="tdunderline"><a href="my_favourites.php">My Favourites</a></td>
                   </tr>
-                  <!--<tr>
-                    <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="tdunderline"><a href="privacy_settings.php">Privacy Settings</a></td>
-                  </tr>-->
+                  
                   <tr>
                     <td>&nbsp;</td>
                     <td >&nbsp;</td>
                   </tr>
                   <tr align="left">
-                    <td class="l-title"><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="left-links">&gt;&gt;&gt; Partner Search</td>
+                    <td colspan="2" class="left-links">Partner Search</td>
                   </tr>
                   <tr>
                     <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
@@ -70,8 +64,7 @@
                     <td >&nbsp;</td>
                   </tr>
                   <tr align="left">
-                    <td class="l-title"><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="left-links">&gt;&gt;&gt; My Contacts</td>
+                    <td colspan="2" class="left-links">My Contacts</td>
                   </tr>
                   <tr>
                     <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
@@ -89,48 +82,19 @@
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                   </tr>
-				  <tr align="left">
-                    <td class="l-title"><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="left-links">&gt;&gt;&gt; Contacts List</td>
+                  <tr align="left">
+                    <td colspan="2" class="left-links">Contacts List</td>
                   </tr>
                   <tr>
                     <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
                     <td class="tdunderline"><a href="view_member.php">Request & Approved List</a></td>
                   </tr>
-				<!--  <tr>
-                    <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="tdunderline"><a href="view_profile.php">Profile View by</a></td>
-                  </tr>
-				-->
+				
 				  <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                   </tr>
-                 <!-- <tr align="left">
-                    <td class="l-title"><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="left-links">&gt;&gt;&gt; Our Links </td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="tdunderline"><a href="splash_message.php">Splash Messages</a></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="tdunderline"><a href="read_splashes.php">Read Splashes</a></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="tdunderline"><a href="hot_profiles.php">Hot Profiles</a></td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
-                    <td class="tdunderline"><a href="success_stories.php">Success Stories</a></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                  </tr>-->
-
+                 
                 </table></td>
               </tr>
             </table></td>

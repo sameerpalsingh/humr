@@ -1,92 +1,7 @@
 <?php
 include("includes/application_top.php");
+include_once("header.php");
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title><?php echo SITE_TITLE;?></title>
-<meta name="description" content="<?php echo SITE_DESCRIPTION;?>" />
-<meta name="keywords" content="<?php echo SITE_KEYWORDS;?>" />
-<link href="templates/initial/style.css" rel="stylesheet" type="text/css" />
-<script language="JavaScript">
-function validateContactUs() {
-    if (document.frmContactUs.name.value == "") {
-        alert("Please enter your name.");
-        document.frmContactUs.name.focus();
-        return false;
-    } else if (document.frmContactUs.emailaddress.value == "") {
-        alert("Please enter your email address.");
-        document.frmContactUs.emailaddress.focus();
-        return false;
-    } else if (document.frmContactUs.emailaddress.value.length != 0) {
-
-        if(document.frmContactUs.emailaddress.value.indexOf(" ") != -1) {
-            alert("Please enter correct email address without spaces.");
-            document.frmContactUs.emailaddress.focus();
-            return false;
-        }
-        if(document.frmContactUs.emailaddress.value.indexOf("@") == -1) {
-            alert("Please enter correct email address.");
-            document.frmContactUs.emailaddress.focus();
-            return false;
-        }
-
-        validarr = document.frmContactUs.emailaddress.value.split("@");
-        if(validarr[0].length==0) {
-            alert("Please enter correct email address.");
-            document.frmContactUs.emailaddress.focus();
-            return false;
-        }
-        if(validarr[1].indexOf("@") >=0) {
-            alert("Please enter correct email address.");
-            document.frmContactUs.emailaddress.focus();
-            return false;
-        }
-        if(validarr[1].length==0) {
-            alert("Please enter correct email address.");
-            document.frmContactUs.emailaddress.focus();
-            return false;
-        }
-        if(validarr[1].length != 0) {
-
-            if(validarr[1].indexOf(".") == -1) {
-                alert("Please enter correct email address.");
-                document.frmContactUs.emailaddress.focus();
-                return false;
-            }
-            validemail = validarr[1].split(".");
-             if(validemail[0].length==0) {
-                alert("Please enter correct email address.");
-                document.frmContactUs.emailaddress.focus();
-                return false;
-            }
-            if(validemail[1].length==0) {
-                alert("Please enter correct email address.");
-                document.frmContactUs.emailaddress.focus();
-                return false;
-            }
-        }
-    }
-    if (document.frmContactUs.phone.value == "") {
-        alert("Please enter phone number.");
-        document.frmContactUs.phone.focus();
-        return false;
-    } else if (document.frmContactUs.mobile.value == "" || document.frmContactUs.mobile.value.indexOf(' ') != -1) {
-        alert("Please enter mobile number.");
-        document.frmContactUs.mobile.focus();
-        return false;
-    } else if (document.frmContactUs.message.value == "") {
-        alert("Please enter your message.");
-        document.frmContactUs.message.focus();
-        return false;
-    }
-
-
-}
-</script>
-</head>
-
 <body>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
@@ -198,5 +113,82 @@ function validateContactUs() {
   </tr>
 <?php include(DIR_FS_TEMPLATES."footer.tpl.php"); ?>
 </table>
+<script language="JavaScript">
+function validateContactUs() {
+    if (document.frmContactUs.name.value == "") {
+        alert("Please enter your name.");
+        document.frmContactUs.name.focus();
+        return false;
+    } else if (document.frmContactUs.emailaddress.value == "") {
+        alert("Please enter your email address.");
+        document.frmContactUs.emailaddress.focus();
+        return false;
+    } else if (document.frmContactUs.emailaddress.value.length != 0) {
+
+        if(document.frmContactUs.emailaddress.value.indexOf(" ") != -1) {
+            alert("Please enter correct email address without spaces.");
+            document.frmContactUs.emailaddress.focus();
+            return false;
+        }
+        if(document.frmContactUs.emailaddress.value.indexOf("@") == -1) {
+            alert("Please enter correct email address.");
+            document.frmContactUs.emailaddress.focus();
+            return false;
+        }
+
+        validarr = document.frmContactUs.emailaddress.value.split("@");
+        if(validarr[0].length==0) {
+            alert("Please enter correct email address.");
+            document.frmContactUs.emailaddress.focus();
+            return false;
+        }
+        if(validarr[1].indexOf("@") >=0) {
+            alert("Please enter correct email address.");
+            document.frmContactUs.emailaddress.focus();
+            return false;
+        }
+        if(validarr[1].length==0) {
+            alert("Please enter correct email address.");
+            document.frmContactUs.emailaddress.focus();
+            return false;
+        }
+        if(validarr[1].length != 0) {
+
+            if(validarr[1].indexOf(".") == -1) {
+                alert("Please enter correct email address.");
+                document.frmContactUs.emailaddress.focus();
+                return false;
+            }
+            validemail = validarr[1].split(".");
+             if(validemail[0].length==0) {
+                alert("Please enter correct email address.");
+                document.frmContactUs.emailaddress.focus();
+                return false;
+            }
+            if(validemail[1].length==0) {
+                alert("Please enter correct email address.");
+                document.frmContactUs.emailaddress.focus();
+                return false;
+            }
+        }
+    }
+    if (document.frmContactUs.phone.value == "") {
+        alert("Please enter phone number.");
+        document.frmContactUs.phone.focus();
+        return false;
+    } else if (document.frmContactUs.mobile.value == "" || document.frmContactUs.mobile.value.indexOf(' ') != -1) {
+        alert("Please enter mobile number.");
+        document.frmContactUs.mobile.focus();
+        return false;
+    } else if (document.frmContactUs.message.value == "") {
+        alert("Please enter your message.");
+        document.frmContactUs.message.focus();
+        return false;
+    }
+
+
+}
+</script>
+
 </body>
 </html>

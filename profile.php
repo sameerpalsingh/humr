@@ -15,70 +15,9 @@ if (empty($_SESSION['sess_user_id'])) {
     header("Location: registration.php");
     exit;
 }
+include_once 'header.php';
+
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        <title><?php echo SITE_TITLE; ?></title>
-        <meta name="description" content="<?php echo SITE_DESCRIPTION; ?>" />
-        <meta name="keywords" content="<?php echo SITE_KEYWORDS; ?>" />
-        <link href="<?php echo DIR_FS_TEMPLATES ?>style.css" rel="stylesheet" type="text/css" />
-
-        <script type="text/javascript">
-            <!--
-        function dispaly_Horoscope() {
-                document.getElementById("dispaly_Horoscope").style.display = "block";
-                document.getElementById("scanned_Horoscope").style.display = "none";
-            }
-
-            function scanned_Horoscope() {
-                document.getElementById("scanned_Horoscope").style.display = "block";
-                document.getElementById("dispaly_Horoscope").style.display = "none";
-            }
-            function limitText(limitField, limitCount) {
-                limitCount.value = limitField.value.replace(/\s{2,}/g, ' ').length;
-                limitField.value = limitField.value.replace(/\s{2,}/g, ' ');
-
-            }
-
-            function login_validate2() {
-
-                if (document.frmRegistration.subcast.value == "") {
-                    alert("Please enter sub-caste/surname field");
-                    document.frmRegistration.subcast.focus();
-                    return false;
-                }
-                var cast = /^[A-Za-z ]+$/;
-                if (!cast.test(document.frmRegistration.subcast.value)) {
-                    alert("Please enter the correct sub-caste/surname");
-                    document.frmRegistration.subcast.focus();
-                    return false;
-                }
-                var gotra = /^[A-Za-z ]+$/;
-                if (!gotra.test(document.frmRegistration.gotra.value) && (document.frmRegistration.gotra.value != "")) {
-                    alert("Please enter the correct gotra/gothram");
-                    document.frmRegistration.gotra.focus();
-                    return false;
-                }
-                if (document.frmRegistration.origin.value == "") {
-                    alert("Please enter ancestral origin (Native) field");
-                    document.frmRegistration.origin.focus();
-                    return false;
-                }
-                var ancestral = /^[A-Za-z ]+$/;
-                if (!ancestral.test(document.frmRegistration.origin.value)) {
-                    alert("Please enter the Correct ancestral origin (Native) Field");
-                    document.frmRegistration.origin.focus();
-                    return false;
-                }
-
-            }
-
-//-->
-        </script>
-    </head>
-
     <body>
 
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -145,6 +84,58 @@ if (empty($_SESSION['sess_user_id'])) {
             </tr>
             <?php include(DIR_FS_TEMPLATES . "footer.tpl.php"); ?>
         </table>
+        <script type="text/javascript">
+            <!--
+        function dispaly_Horoscope() {
+                document.getElementById("dispaly_Horoscope").style.display = "block";
+                document.getElementById("scanned_Horoscope").style.display = "none";
+            }
+
+            function scanned_Horoscope() {
+                document.getElementById("scanned_Horoscope").style.display = "block";
+                document.getElementById("dispaly_Horoscope").style.display = "none";
+            }
+            function limitText(limitField, limitCount) {
+                limitCount.value = limitField.value.replace(/\s{2,}/g, ' ').length;
+                limitField.value = limitField.value.replace(/\s{2,}/g, ' ');
+
+            }
+
+            function login_validate2() {
+
+                if (document.frmRegistration.subcast.value == "") {
+                    alert("Please enter sub-caste/surname field");
+                    document.frmRegistration.subcast.focus();
+                    return false;
+                }
+                var cast = /^[A-Za-z ]+$/;
+                if (!cast.test(document.frmRegistration.subcast.value)) {
+                    alert("Please enter the correct sub-caste/surname");
+                    document.frmRegistration.subcast.focus();
+                    return false;
+                }
+                var gotra = /^[A-Za-z ]+$/;
+                if (!gotra.test(document.frmRegistration.gotra.value) && (document.frmRegistration.gotra.value != "")) {
+                    alert("Please enter the correct gotra/gothram");
+                    document.frmRegistration.gotra.focus();
+                    return false;
+                }
+                if (document.frmRegistration.origin.value == "") {
+                    alert("Please enter ancestral origin (Native) field");
+                    document.frmRegistration.origin.focus();
+                    return false;
+                }
+                var ancestral = /^[A-Za-z ]+$/;
+                if (!ancestral.test(document.frmRegistration.origin.value)) {
+                    alert("Please enter the Correct ancestral origin (Native) Field");
+                    document.frmRegistration.origin.focus();
+                    return false;
+                }
+
+            }
+
+//-->
+        </script>
 
     </body>
 </html>

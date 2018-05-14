@@ -2,14 +2,11 @@
 <!--
     function validateMain()
     {
-
-        if(document.forms[1].elements[0].value=="")
-        {
-            alert("Please enter username");
+        if(document.forms[1].elements[0].value=="") {
+            alert("Please enter User ID or Email ID");
             document.forms[1].elements[0].focus();
             return false;
-        } else if (document.forms[1].elements[1].value=="")
-        {
+        } else if (document.forms[1].elements[1].value=="") {
             alert("Please enter password");
             document.forms[1].elements[1].focus();
             return false;

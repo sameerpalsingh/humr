@@ -2,10 +2,6 @@
 <html>
  <head>
   <title><?php echo SITE_TITLE;?></title>
-  <meta name="Generator" content="EditPlus">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
  </head>
 
  <body>
@@ -23,8 +19,6 @@
         $thumb->process();                           // generate image
         $thumb->save($d->path."/thumb/".$entry);
     }
-
-
  }
  $d->close();
  ?>

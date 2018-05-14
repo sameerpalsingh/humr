@@ -34,14 +34,14 @@
                         }
                         ?>
                         <tr>
-                          <td align="right" class="text3">Username</td>
+                          <td align="right" class="text3">User ID</td>
                           <td width="348" align="left" valign="middle"><input name="username" type="text" class="box" maxlength="15" /> </td>
                         </tr>
                         <tr>
                           <td align="center" class="text3" colspan="2" /> Or </td>
                         </tr>
                         <tr>
-                          <td align="right" valign="middle" class="text3">Email</td>
+                          <td align="right" valign="middle" class="text3">Email ID</td>
                           <td align="left" valign="middle"><input name="emailid" type="text" class="box" value="" maxlength="80" /></td>
                         </tr>
                         <tr>

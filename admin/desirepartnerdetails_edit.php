@@ -479,17 +479,15 @@ function unload(){
 									<span style="float:left;" onclick="selectAllrl('checkrl','10')">Check All </span>
 									<span style="float:right;" onclick="uncheckAllrl('checkrl','10')">Uncheck All</span>&nbsp;
 									<div style="overflow-x:hidden;overflow-y:scroll;height:150px;width:200px;border:1px solid #CCCCCC;">
-									<div id="checkrl_1" style="display:block;" ><input id="checkrl_rl_1" type="checkbox" value="Hindu" name="Hindu" <?php if(preg_match('/Hindu/',$p_religion)) echo 'checked'; ?> />Hindu</div>
-									
-									<div id="checkrl_2" style="display:block;" ><input id="checkrl_rl_2" type="checkbox" value="Buddhist" name="Buddhist"<?php if(preg_match('/Buddhist/',$p_religion)) echo 'checked'; ?> />Buddhist</div>
-									<div id="checkrl_3" style="display:block;" ><input id="checkrl_rl_3" type="checkbox" value="Christian" name="Christian" <?php if(preg_match('/Christian/',$p_religion)) echo 'checked'; ?> />Christian</div>
-									<div id="checkrl_4" style="display:block;" ><input id="checkrl_rl_4" type="checkbox" value="Hindu" name="Hindu" <?php if(preg_match('/Hindu/',$p_religion)) echo 'checked'; ?>/>Hindu</div>
-									<div id="checkrl_5" style="display:block;" ><input id="checkrl_rl_5" type="checkbox" value="Jain" name="Jain" <?php if(preg_match('/Jain/',$p_religion)) echo 'checked'; ?> />Jain</div>
-									<div id="checkrl_6" style="display:block;" ><input id="checkrl_rl_6" type="checkbox" value="Jewish" <?php if(preg_match('/Jewish/',$p_religion)) echo 'checked'; ?>  name="Jewish" />Jewish</div>
-									<div id="checkrl_7" style="display:block;" ><input id="checkrl_rl_7" type="checkbox" value="Muslim" name="Muslim" <?php if(preg_match('/Muslim/',$p_religion)) echo 'checked'; ?>/>Muslim</div>
-									<div id="checkrl_8" style="display:block;" ><input id="checkrl_rl_8" type="checkbox" value="Parsi" name="Parsi" <?php if(preg_match('/Parsi/',$p_religion)) echo 'checked'; ?>/>Parsi</div>
-									<div id="checkrl_9" style="display:block;" ><input id="checkrl_rl_9" type="checkbox" value="Sikh" name="Sikh" <?php if(preg_match('/Sikh/',$p_religion)) echo 'checked'; ?>/>Sikh</div>
-									<div id="checkrl_10" style="display:block;" ><input id="checkrl_rl_10" type="checkbox" value="Other" name="Other" <?php if(preg_match('/Other/',$p_religion)) echo 'checked'; ?>/>Other</div>
+<div id="checkrl_1" style="display:block;" ><input id="checkrl_rl_1" type="checkbox" value="Hindu" name="Hindu" <?php if(preg_match('/Hindu/',$p_religion)) echo 'checked'; ?> />Hindu</div>
+<div id="checkrl_2" style="display:block;" ><input id="checkrl_rl_2" type="checkbox" value="Buddhist" name="Buddhist"<?php if(preg_match('/Buddhist/',$p_religion)) echo 'checked'; ?> />Buddhist</div>
+<div id="checkrl_3" style="display:block;" ><input id="checkrl_rl_3" type="checkbox" value="Christian" name="Christian" <?php if(preg_match('/Christian/',$p_religion)) echo 'checked'; ?> />Christian</div>
+<div id="checkrl_4" style="display:block;" ><input id="checkrl_rl_4" type="checkbox" value="Jain" name="Jain" <?php if(preg_match('/Jain/',$p_religion)) echo 'checked'; ?> />Jain</div>
+<div id="checkrl_5" style="display:block;" ><input id="checkrl_rl_5" type="checkbox" value="Jewish" <?php if(preg_match('/Jewish/',$p_religion)) echo 'checked'; ?>  name="Jewish" />Jewish</div>
+<div id="checkrl_6" style="display:block;" ><input id="checkrl_rl_6" type="checkbox" value="Muslim" name="Muslim" <?php if(preg_match('/Muslim/',$p_religion)) echo 'checked'; ?>/>Muslim</div>
+<div id="checkrl_7" style="display:block;" ><input id="checkrl_rl_7" type="checkbox" value="Parsi" name="Parsi" <?php if(preg_match('/Parsi/',$p_religion)) echo 'checked'; ?>/>Parsi</div>
+<div id="checkrl_8" style="display:block;" ><input id="checkrl_rl_8" type="checkbox" value="Sikh" name="Sikh" <?php if(preg_match('/Sikh/',$p_religion)) echo 'checked'; ?>/>Sikh</div>
+<div id="checkrl_9" style="display:block;" ><input id="checkrl_rl_9" type="checkbox" value="Other" name="Other" <?php if(preg_match('/Other/',$p_religion)) echo 'checked'; ?>/>Other</div>
 									</div>
 									<span id='div_sel_lang' style="font-size: 8pt; font-family: arial, verdana, sans-serif;color:#d50033;" name='div_sel_lang'style="float:left;">Select Religion Here.</span>
 							</div>
@@ -504,27 +502,15 @@ function unload(){
 									<span style="float:right;"onclick="uncheckAllrl('disprl','10')">Uncheck All</span>&nbsp;
 									<div style="overflow-x:hidden;overflow-y:scroll;height:150px;width:200px;vertical-align:bottom;border:1px solid #CCCCCC;">
 									<div style="overflow-x:hidden;overflow-y:scroll;height:150px;width:200px;border:1px solid #CCCCCC;">
-									<div id="disprl_1" style='<?php if(preg_match('|Hindu|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_1" type="checkbox" value="Hindu"
-									<?php if(preg_match('/Hindu/',$p_religion)) echo 'checked'; ?> name="religion[]" />Hindu</div>
-									<!--<span style="color: rgb(10, 137, 254);margin:15px;">------------</span>-->
-
-									<div id="disprl_2" style='<?php if(preg_match('|Buddhist|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_2" type="checkbox" value="Buddhist" name="religion[]" <?php if(preg_match('/Buddhist/',$p_religion)) echo 'checked'; ?>/>Buddhist</div>
-
-									<div id="disprl_3" style='<?php if(preg_match('|Christian|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_3" type="checkbox" value="Christian" name="religion[]" <?php if(preg_match('/Christian/',$p_religion)) echo 'checked'; ?>/>Christian</div>
-
-									<div id="disprl_4" style='<?php if(preg_match('|Hindu|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_4" type="checkbox" value="Hindu" name="religion[]" <?php if(preg_match('/Hindu/',$p_religion)) echo 'checked'; ?>/>Hindu</div>
-
-									<div id="disprl_5" style='<?php if(preg_match('|Jain|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_5" type="checkbox" value="Jain" name="religion[]" <?php if(preg_match('/Jain/',$p_religion)) echo 'checked'; ?>/>Jain</div>
-
-									<div id="disprl_6" style='<?php if(preg_match('|Jewish|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_6" type="checkbox" value="Jewish" name="religion[]" <?php if(preg_match('/Jewish/',$p_religion)) echo 'checked'; ?>/>Jewish</div>
-
-									<div id="disprl_7" style='<?php if(preg_match('|Muslim|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_7" type="checkbox" value="Muslim" name="religion[]" <?php if(preg_match('/Muslim/',$p_religion)) echo 'checked'; ?>/>Muslim</div>
-
-									<div id="disprl_8" style='<?php if(preg_match('|Parsi|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_8" type="checkbox" value="Parsi" name="religion[]" <?php if(preg_match('/Parsi/',$p_religion)) echo 'checked'; ?> />Parsi</div>
-
-									<div id="disprl_9" style='<?php if(preg_match('|Sikh|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_9" type="checkbox" value="Sikh" name="religion[]" <?php if(preg_match('/Sikh/',$p_religion)) echo 'checked'; ?>/>Sikh</div>
-
-									<div id="disprl_10" style='<?php if(preg_match('|Other|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_10" type="checkbox" value="Other" name="religion[]" <?php if(preg_match('/Other/',$p_religion)) echo 'checked'; ?>/>Other</div>
+<div id="disprl_1" style='<?php if(preg_match('|Hindu|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_1" type="checkbox" value="Hindu" <?php if(preg_match('/Hindu/',$p_religion)) echo 'checked'; ?> name="religion[]" />Hindu</div>
+<div id="disprl_2" style='<?php if(preg_match('|Buddhist|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_2" type="checkbox" value="Buddhist" name="religion[]" <?php if(preg_match('/Buddhist/',$p_religion)) echo 'checked'; ?>/>Buddhist</div>
+<div id="disprl_3" style='<?php if(preg_match('|Christian|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_3" type="checkbox" value="Christian" name="religion[]" <?php if(preg_match('/Christian/',$p_religion)) echo 'checked'; ?>/>Christian</div>
+<div id="disprl_4" style='<?php if(preg_match('|Jain|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_4" type="checkbox" value="Jain" name="religion[]" <?php if(preg_match('/Jain/',$p_religion)) echo 'checked'; ?>/>Jain</div>
+<div id="disprl_5" style='<?php if(preg_match('|Jewish|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_5" type="checkbox" value="Jewish" name="religion[]" <?php if(preg_match('/Jewish/',$p_religion)) echo 'checked'; ?>/>Jewish</div>
+<div id="disprl_6" style='<?php if(preg_match('|Muslim|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_6" type="checkbox" value="Muslim" name="religion[]" <?php if(preg_match('/Muslim/',$p_religion)) echo 'checked'; ?>/>Muslim</div>
+<div id="disprl_7" style='<?php if(preg_match('|Parsi|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_7" type="checkbox" value="Parsi" name="religion[]" <?php if(preg_match('/Parsi/',$p_religion)) echo 'checked'; ?> />Parsi</div>
+<div id="disprl_8" style='<?php if(preg_match('|Sikh|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_8" type="checkbox" value="Sikh" name="religion[]" <?php if(preg_match('/Sikh/',$p_religion)) echo 'checked'; ?>/>Sikh</div>
+<div id="disprl_9" style='<?php if(preg_match('|Other|',$p_religion)) {echo '';} else {echo 'display:none';}?>'><input id="disprl_rl_9" type="checkbox" value="Other" name="religion[]" <?php if(preg_match('/Other/',$p_religion)) echo 'checked'; ?>/>Other</div>
 									</div>
 									</div>
 									<span id='divlang'  style="font-size: 8pt; font-family: arial, verdana, sans-serif;color:#d50033;" name='div_lang'>Religion Must Be Checked.</span>
@@ -683,7 +669,7 @@ function unload(){
                           <tr>
                             <td><font class="text">Describe your desired partner</font></td>
                             <td colspan="2"
-							  style="font-size: 13px; font-family: arial, verdana, sans-serif">Tell us about your expectations & what you’re looking for.<br/>
+							  style="font-size: 13px; font-family: arial, verdana, sans-serif">Tell us about your expectations & what youï¿½re looking for.<br/>
 							  <span style="float:left;" style="font-size: 12pt; width: 335px; font-family: arial, verdana, sans-serif" > 
 							<textarea name="described_partner" id="about_your_partner" cols="40" rows="5" style="width:420px; height:130px;" class="fl" onKeyDown="limitText(this.form.described_partner,this.form.countdown,500);" 
 								onKeyUp="limitText(this.form.described_partner,this.form.countdown);"> <?php echo $p_desc;?></textarea><br/>

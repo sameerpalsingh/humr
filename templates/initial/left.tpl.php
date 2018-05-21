@@ -68,13 +68,17 @@
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <td>
+                    
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td><img src="images/member-login.gif" alt="" width="193" height="20" /></td>
                   </tr>
                   <tr>
-                    <td align="right" class="bothside-border"><table width="180" border="0" align="center" cellpadding="0" cellspacing="2">
-                      <form name="frmLogin" method="post" action="login_check.php" onsubmit="return validate();" ><tr>
+                    <td align="right" class="bothside-border">
+                        <form name="frmLogin" method="post" action="login_check.php" onsubmit="return validate();" >
+                        <table width="180" border="0" align="center" cellpadding="0" cellspacing="2">
+                      <tr>
                         <td colspan="2"><img src="images/spacer.gif" alt="" width="1" height="7" /></td>
                         </tr>
                       <tr>
@@ -88,10 +92,15 @@
                         <td><input name="password" type="password" class="content" size="10" /></td>
                       </tr>
                       <tr>
-                        <td align="right"><span class="forget-pass"><a href="forgot_password.php">Forgot Password</a> </span></td>
+                        <td align="right">&nbsp;</td>
                         <td class="forget-pass"><input type="image" src="images/go-button.gif" alt="Submit" width="33" height="14" /></td>
-                      </tr> </form>
-                    </table></td>
+                      </tr> 
+                      <tr>
+                          <td  align="center" colspan="2" ><span class="forget-pass"><a href="forgot_password.php">Forgot Password</a> </span></td>
+                      </tr> 
+                    </table>
+                        </form>
+                    </td>
                   </tr>
                   <tr>
                     <td><img src="images/link-bottom.gif" alt="" width="193" height="20" /></td>

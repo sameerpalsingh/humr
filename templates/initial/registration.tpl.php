@@ -25,33 +25,35 @@ if (isset($message) && $message !='')
             <td colspan="4">&nbsp;</td>
           </tr>
             <tr>
-            <td width="25%" align="right"><font class="text" &nbsp;>Your Email: &nbsp;</font></td>
+            <td width="25%" align="right"><font class="vheading" &nbsp;>Your Email: &nbsp;</font></td>
             <td  align="left">
-                <input class="box" maxlength="100" size="35" id="emailid" name="emailid" onchange="return checkEmailid();" />&nbsp<span style="color:red;">*</span>
-                <span id="emailid_error" style="display:none;color:blue;border:0px solid;padding:1px;width:285px; line-height: 11px;">Email Id already exists, Please try another.</span>
+                <input class="field_text" maxlength="100" size="35" id="emailid" name="emailid" onchange="return checkEmailid();" />&nbsp<span style="color:red;">*</span>
+                <span id="emailid_error" class="field_error">Email Id already exists, Please try another.</span>
             </td>
           </tr>
-
+<tr>
+            <td colspan="4" height="3"></td>
+          </tr>
              <tr>
-            <td width="25%" align="right"><font class="text" &nbsp;>UserId: &nbsp;</font></td>
-            <td  align="left"><input class="box" maxlength="100" size="35" name="loginid" onchange="return checkUsername();" /><span style="color:red;">&nbsp;*</span>
-			<span id="loginid_error" style="display:none;color:blue;border:0px solid;padding:1px;width:285px; line-height: 11px;">Loginid Id already exists, Please try another.</span>
-			</td>
+            <td width="25%" align="right"><font class="vheading" &nbsp;>UserId: &nbsp;</font></td>
+            <td  align="left"><input class="field_text" maxlength="100" size="35" name="loginid" onchange="return checkUsername();" /><span style="color:red;">&nbsp;*</span>
+			<span id="loginid_error" class="field_error">Loginid Id already exists, Please try another.</span>
+	</td>
           </tr>
 
            <tr>
             <td colspan="4" height="3"></td>
           </tr>
            <tr>
-            <td width="25%" align="right"><font class="text">Choose Your Password: &nbsp;</font></td>
-            <td  align="left"><input class="box" maxlength="50" type="password" size="35" name="password" /><span style="color:red;">&nbsp;*</span></td>
+            <td width="25%" align="right"><font class="vheading">Choose Your Password: &nbsp;</font></td>
+            <td  align="left"><input class="field_text" maxlength="50" type="password" size="35" name="password" /><span style="color:red;">&nbsp;*</span></td>
           </tr>
            <tr>
             <td colspan="4" height="3"></td>
           </tr>
           <tr>
-            <td width="25%" align="right"><font class="text">Confirm Password: &nbsp;</font></td>
-            <td  align="left"><input class="box" maxlength="50" type="password" size="35" name="confirmpassword" /><span style="color:red;">&nbsp;*</span></td>
+            <td width="25%" align="right"><font class="vheading">Confirm Password: &nbsp;</font></td>
+            <td  align="left"><input class="field_text" maxlength="50" type="password" size="35" name="confirmpassword" /><span style="color:red;">&nbsp;*</span></td>
           </tr>
           <tr>
             <td colspan="4">&nbsp;</td>

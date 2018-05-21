@@ -24,53 +24,67 @@
     <td align=middle  class="content">
       <div align=left style="color:red; font-weight:bold; font-size: 13px;" >
       <?php
+      $error_message = "";
       if (isset($_GET['msg']) && $_GET['msg']=="invalid")
       {
-          echo "Invalid Username/Password.";
+          $error_message =  "Invalid Username/Password.";
       } else if (isset($_GET['msg']) && $_GET['msg']=="notactive")
       {
-          echo "Your profile is under review. We will update you once your profile is active and visible to other members.";
+          $error_message = "Your profile is under review. We will update you once your profile is active and visible to other members.";
       }else if (isset($_GET['msg']) && $_GET['msg']=="logout")
       {
-          echo "You are successfully logged out.";
+          $error_message = "You are successfully logged out.";
       }else if (isset($_GET['msg']) && $_GET['msg']=="delete")
       {
-          echo "Humraahi.com has deactivated your profile .</br>Pls contact through our contactus page.";
+          $error_message = "Humraahi.com has deactivated your profile .</br>Pls contact through our contactus page.";
       }
 
       ?>
+          
       <br><br></div>Sign in
       here<br><br>Freelist yourself to become a member
       of Humraahi.com</b></div></td>
     <td>
-      <table cellspacing=0 cellpadding=2 width=350 border=0>
+      <table cellspacing=0 cellpadding=2 border=0>
         <tbody>
         <tr>
-          <td class=box2>
+          <td class="">
             <table cellspacing=0 cellpadding=5 width="100%" align=center
             bgcolor=#ffffff border=0>
               <tbody>
               <tr>
                 <td>
                   <center class=fl-text-l>
-                  <p></p></center>
+                      <?php if(isset($error_message) && $error_message != '') { ?>
+                      <div class="alert alert-danger"> <strong>Error!</strong> <?php echo $error_message;?>. </div>   
+                      <?php } ?>
+                  </center>
                   <div class=text align=center><b>Sign in here </b></div><br>
                   <form method="post" name="frmMainLogin" action="login_check.php" onsubmit="return validateMain();">
                   <table cellspacing=0 width="100%" border=0>
                     <tbody>
                     <tr>
                       <form action="login_check.php" method="post">
-                      <td class=text align=right>Email ID/User ID :</td>
-                      <td><input type="text" class="textbox" size="25" name="username"></td></tr>
+                      <td class="vheading" align=right>Email ID/User ID :</td>
+                      <td><input type="textbox" class="field_text" size="25" name="username"></td>
+                    </tr>
                     <tr>
-                      <td class=text align=right>Password:</td>
-                      <td><input type="password" class="textbox" size="25" name="password"></td></tr>
+                      <td class="" height="3" align=right></td>
+                    </tr>
+                    <tr>                    
+                    <tr>
+                      <td class=vheading align=right>Password:</td>
+                      <td><input type="password" class="field_text" size="25" name="password"></td></tr>
+                    <tr>
+                      <td class="" height="3" align=right></td>
+                    </tr>
                     <tr>
                       <td class=fl-text align=right></td>
-                      <td><input type=image
-                        src="<?php echo DIR_WS_IMAGES.'submit.gif'; ?>"
-                      name=submit></td></form></tr></tbody></table>
-                      </form>
+                      <td><input type=image src="<?php echo DIR_WS_IMAGES.'submit.gif'; ?>" name=submit>
+                      
+                      </td>
+                    </tr></tbody></table>
+                    </form>
                   <center class=fl-text><span class="forget-pass"><a href="forgot_password.php">Forgot Password</a> </span>
               </center></td></tr></tbody></table></td></tr></tbody></table></td></tr>
   <tr>
@@ -79,8 +93,7 @@
   <tr>
     <td colspan=2 class="content">
       <center>for new user! </center>
-      <div align=center><b><a href="registration.php">sign up</a>
-	  </b> now to become a free
+      <div align=center><b><a href="registration.php">Register here</a> </b> to become a free
       member.</div></center>
      </td></tr>
   <center></tbody></table>

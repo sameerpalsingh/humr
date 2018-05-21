@@ -3695,3 +3695,476 @@ Stack trace:
 [14-May-2018 19:45:49 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
 [14-May-2018 19:45:49 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
 [14-May-2018 19:45:49 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[20-May-2018 09:31:56 Europe/Berlin] PHP Notice:  Undefined variable: caste in E:\xampp7\htdocs\humraahi\index.php on line 297
+[20-May-2018 09:31:57 Europe/Berlin] PHP Notice:  Undefined variable: mothertongue in E:\xampp7\htdocs\humraahi\index.php on line 308
+[21-May-2018 16:45:40 Europe/Berlin] PHP Notice:  Undefined variable: caste in E:\xampp7\htdocs\humraahi\index.php on line 297
+[21-May-2018 16:45:40 Europe/Berlin] PHP Notice:  Undefined variable: mothertongue in E:\xampp7\htdocs\humraahi\index.php on line 308
+[21-May-2018 16:45:43 Europe/Berlin] PHP Notice:  Undefined variable: caste in E:\xampp7\htdocs\humraahi\index.php on line 297
+[21-May-2018 16:45:43 Europe/Berlin] PHP Notice:  Undefined variable: mothertongue in E:\xampp7\htdocs\humraahi\index.php on line 308
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:28:48 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:00 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:25 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:30:44 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:07 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:31:59 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:32:25 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:33:56 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:41 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:34:53 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:35:17 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:38:54 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:00 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:12 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:39:32 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:37 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:40:48 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 18:41:26 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 20:08:15 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:15 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:08:15 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:15 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:15 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:15 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:15 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:15 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:16 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:16 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:16 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:16 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:16 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:08:16 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 20:10:57 Europe/Berlin] PHP Notice:  Undefined variable: row in E:\xampp7\htdocs\humraahi\templates\initial\wl_view_member.tpl.php on line 154
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Undefined variable: name in E:\xampp7\htdocs\humraahi\templates\initial\search_by_id.tpl.php on line 152
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Undefined variable: doArr in E:\xampp7\htdocs\humraahi\templates\initial\search_by_id.tpl.php on line 189
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:11:58 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 20:11:58 Europe/Berlin] PHP Notice:  Undefined variable: mssg in E:\xampp7\htdocs\humraahi\search_by_id_submit.php on line 571
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:13:00 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:17:56 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:20:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:24:39 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:25:58 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:26:07 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:33 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:43 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:51 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:29:59 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:33:00 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:35:53 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Undefined variable: retVal in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 323
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Notice:  Object of class sql_db could not be converted to int in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 322
+[21-May-2018 20:39:46 Europe/Berlin] PHP Warning:  trim() expects parameter 1 to be string, object given in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 424
+[21-May-2018 20:41:33 Europe/Berlin] PHP Notice:  A session had already been started - ignoring session_start() in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 5
+[21-May-2018 20:45:26 Europe/Berlin] PHP Notice:  Undefined index: username in E:\xampp7\htdocs\humraahi\templates\initial\my_favourites.tpl.php on line 47
+[21-May-2018 20:45:26 Europe/Berlin] PHP Notice:  Undefined index: username in E:\xampp7\htdocs\humraahi\templates\initial\my_favourites.tpl.php on line 47
+[21-May-2018 20:55:17 Europe/Berlin] PHP Notice:  A session had already been started - ignoring session_start() in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 5
+[21-May-2018 20:58:55 Europe/Berlin] PHP Notice:  A session had already been started - ignoring session_start() in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 5
+[21-May-2018 21:01:13 Europe/Berlin] PHP Notice:  A session had already been started - ignoring session_start() in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 5
+[21-May-2018 21:01:22 Europe/Berlin] PHP Notice:  A session had already been started - ignoring session_start() in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 5
+[21-May-2018 21:01:51 Europe/Berlin] PHP Notice:  A session had already been started - ignoring session_start() in E:\xampp7\htdocs\humraahi\includes\application_top.php on line 5

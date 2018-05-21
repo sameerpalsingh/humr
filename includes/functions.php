@@ -113,13 +113,17 @@ function changeQuote($str)
 
 function getImageFromId($db, $imageId=0) {
     if ($imageId == 0) {
-        return "100/noimage.jpg";
+        return "maledummy.jpg";
     }
+    $returnimage = "maledummy.jpg";
     $sql_image = "SELECT image_name_100_size
                    FROM hum_members_images
                    WHERE id='".$imageId."' ";
     $rs_image  = $db->executeQuery($sql_image);
     $row_image = $db->fetchRow($rs_image);
-    return $row_image[0];
+    if (empty($row_image[0])) {
+        return $returnimage;        
+    } else 
+        return $row_image[0];
 }
 ?>

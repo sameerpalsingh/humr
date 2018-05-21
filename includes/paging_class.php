@@ -51,7 +51,7 @@ class Paging_Class {
      */
     public function __construct() {
         
-        $this->recordsPerPage = 2;
+        $this->recordsPerPage = 10;
         $this->start = (!isset($_GET['start'])) ? '0' : ($_GET['start'] - 1); // required to set paging.
         $this->startFrom = ($this->start == 0) ? 0 : (($this->start + 1) * $this->recordsPerPage) - $this->recordsPerPage;
         $this->imagePath = $_SERVER['HTTP_HOST'];
@@ -80,7 +80,7 @@ class Paging_Class {
      */
     private function getPaging() {
         $nextSet = 0; // Start value, incremented by the total records per page.
-        $output = '';
+        $output = '<ul class="pagination">';
         $urlShow = false; // display paging only if the pages are more than 1.
         // Adding "<< Previous" and first record jump link.
         if ($this->currentpage != 1) {
@@ -93,16 +93,15 @@ class Paging_Class {
             <img src='" . $this->imagePath . "assets/images/pagination_first.png' border=0 alt='First Page'></a>";*/
 
             // Adding link to jump on Previous page.
-            $output.="<a class='prev_next'
-            href='" . $this->linkName . $delimiter . "start=" . ($this->currentpage - 1) . "'><img src='images/pagination_left.jpg' 
-            border=0 alt='Previous'></a>";
+            $output.="<li><a class='prev_next'
+            href='" . $this->linkName . $delimiter . "start=" . ($this->currentpage - 1) . "'>Previous</a></li>";
         } else {
             // Adding link to jump on first record. << First
             //http://site.hoover.local/assets/images/pagination_left.png
            /* $output.="<a href='JavaScript:void();' class='prev_next'><img src='" . $this->imagePath . "assets/images/pagination_first.png' border=0 alt='First'></a>";*/
 
             // Adding link to jump on Previous page.
-            $output.="<a href='JavaScript:void();' class='prev_next'><img src='images/pagination_left.jpg' border=0 alt='Previous'></a>";
+            $output.="<li class='disabled'><a href='JavaScript:void();' class='prev_next'>Previous</a></li>";
         }
         $urlShow = true;
         $delimiter = (strpos($this->linkName, '?') == false) ? '?' : '&';
@@ -114,11 +113,11 @@ class Paging_Class {
         //echo "($startlink-$endlink)";
 
         for ($i = $startlink; $i <= $endlink; $i++) {
-            $output.= "<a ";
+            $output.= "<li ";
             if ($this->currentpage == $i) {
                 $output.= "class='active' ";
             }
-            $output.= "href='" . $this->linkName . $delimiter . 'start=' . $i . "'> " . $i . "</a>";
+            $output.= "><a href='" . $this->linkName . $delimiter . 'start=' . $i . "'> " . $i . "</a></li>";
         }
 
         $nextSet = $nextSet + $this->recordsPerPage;
@@ -128,17 +127,18 @@ class Paging_Class {
             $delimiter = (strpos($this->linkName, '?') == false) ? '?' : '&';
 
             // Adding Next Record jump link
-            $output.="<a class='prev_next' href='" . $this->linkName . $delimiter . "start=" . ($this->currentpage + 1) .
-                    "'><img src='images/pagination_right.jpg' border=0 alt='Next' title='Next'></a>";
+            $output.="<li><a class='prev_next' href='" . $this->linkName . $delimiter . "start=" . ($this->currentpage + 1) .
+                    "'>Next</a></li>";
 
             // Adding Last record jump link
            /* $output.="<a class='prev_next'
             href='" . $this->linkName . $delimiter . "start=" . $this->totalPages . "'>
                 <img src='" . $this->imagePath . "assets/images/pagination_last.png' border=0 alt='Last page' title='Last page'></a>";*/
         } else {
-            $output.="<a class='prev_next' href='JavaScript:void();'><img src='images/pagination_right.jpg' border=0 alt='Next'></a>";
+            $output.="<li class='disabled'><a class='prev_next' href='JavaScript:void();'>Next</a></li>";
             /*$output.="<a class='prev_next' href='JavaScript:void();'><img src='" . $this->imagePath . "assets/images/pagination_last.png' border=0 title='Last' alt='Last'></a>";*/
         }
+        $output.="</ul>";
 
         if ($urlShow == true) {
             return $output;

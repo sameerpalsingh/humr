@@ -134,7 +134,8 @@
   <form method="post" action="add_to_favourites.php" name="frmSearch" onsubmit="return validate();">
     <table class="table table-bordered">
   
-  <tr><td  style="background-color: #990000; color: #ffffff" height="10px" colspan="2"><input type="checkbox" name="chkbox[]" value="<?php echo $row["id"]?>">&nbsp;<?php echo $row["name"]?>&nbsp;(<?php echo $row["loginid"]?>)</td></tr>
+  <tr><td style="background-color: #990000;" height="10px" colspan="2">
+          <input type="checkbox" name="chkbox[]" value="<?php echo $row["id"]?>">&nbsp;<a style="color: #fff;" href="member_profile.php?id=<?php echo $row["id"]?>"><?php echo $row["name"]?>&nbsp;(<?php echo $row["loginid"]?>)</a></td></tr>
 	
   <tr >
 
@@ -230,13 +231,6 @@ $qs_images = $db->executeQuery($sql_images);
 	<td  class="vheading_small" valign="top">Description : </td>
 	<td class="" colspan="3"><?php echo stripslashes($row['aboutyourself']); ?></td>
 	</tr>
-	<!--<tr><td colspan="4" align="left">&nbsp;&nbsp;<a href="">Read More..</a></td></tr>-->
-	<tr><td colspan="4"><hr /></td></tr>
-	<tr>
-	<td colspan="4" class="search" style="text-align:center;"><img src="images/bottom2222red.gif" alt="" width="5" height="5" />&nbsp;<a href="search_by_id_submit.php?profilename=<?php echo $row['loginid']?>">View Profile</a>&nbsp;&nbsp;<img src="images/bottom2222red.gif" alt="" width="5" height="5" />&nbsp;<a href="login.php" class="thickbox" style="text-decoration: none;">View Contact Details</a> &nbsp;&nbsp;<img src="images/bottom2222red.gif" alt="" width="5" height="5" />&nbsp; <a href="registration.php">Free registration</a> </td>
-	</tr>
-	
-	
 	</table>	
 	
 	</td>
@@ -255,23 +249,18 @@ $qs_images = $db->executeQuery($sql_images);
 <input type="submit" value="Add to favourites">
 
 </form>
-<table  width="50%"   align="center">
+<table width="50%" align="center">
 <tbody>
-<tr style="background-color:#FFFFFF;color:#000000;"><td align="center" colspan="2">&nbsp;</td>
-<tr style="background-color:#FFFFFF;color:#000000;"><td align="center" colspan="2">
-<?php
-
-	
+    <tr><td style="float: left;">
+<?php	
 echo $objPaging->showPaging();
-
-  ?>
+?>
   </td></tr>
-  </tbody></table><?php }
-
-?>
-  <?php }
-
-?>
+</tbody>
+</table>
+<?php } ?>
+        
+  <?php } ?>
 
    </td>
     <td width="30">&nbsp;</td>
@@ -286,32 +275,5 @@ echo $objPaging->showPaging();
 <script src="js/jquery-ui-1.8.18.custom.min.js"></script>
 <script src="js/jquery.smooth-scroll.min.js"></script>
 <script src="js/lightbox.js"></script>
-
-<script>
-  jQuery(document).ready(function($) {
-      $('a').smoothScroll({
-        speed: 1000,
-        easing: 'easeInOutCubic'
-      });
-
-      $('.showOlderChanges').on('click', function(e){
-        $('.changelog .old').slideDown('slow');
-        $(this).fadeOut();
-        e.preventDefault();
-      })
-  });
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-2196019-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
 </html>
 

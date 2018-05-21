@@ -1,11 +1,8 @@
-<html>
-<head>
-	<title></title>
-	<?php // THICKBOX RESOURCES ?>
-	<script type="text/javascript" src="thickbox/jquery-latest.js"></script> 
-	<script type="text/javascript" src="thickbox/thickbox.js"></script>
-	<link rel="stylesheet" href="thickbox/thickbox.css" type="text/css" media="screen" />
-	<style type="text/css">
+<?php // THICKBOX RESOURCES ?>
+<script type="text/javascript" src="thickbox/jquery-latest.js"></script> 
+<script type="text/javascript" src="thickbox/thickbox.js"></script>
+<link rel="stylesheet" href="thickbox/thickbox.css" type="text/css" media="screen" />
+<style type="text/css">
    .head {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -29,11 +26,6 @@
 	   font-size: 12px; font-family: arial, verdana, sans-serif;width: 80px;
    }
 </style>
-</head>	
-		
-<!--<form method="post" action="edit_profile_submit.php" name="frmEditProfile" onsubmit="return login_validate();" >-->
-
-<body>
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
 
                    <tr>
@@ -86,29 +78,26 @@
 					 ?>
 </table>
     <br />   
-<table>
+<table >
 					 <tr>
 					 <td>
 					 
 					 </td>
 					 </tr>
 					
-                                         <td><h3 class="page_heading">My Profile</h3></td>
+                                         <td><h3 class="page_heading"><?php echo ucwords ($name) . " ($userid)"; ?>  </h3></td>
 					<td class="s-title" style="border-bottom:1px solid #CCCCCC"></td><td class="s-title" style="border-bottom:1px solid #CCCCCC"></td>
                     </tr>
 					
 </table>
     <br />
-<table>
+<table width="100%">
 
 <tr>
 <td valign="top" width="50%">
 <table align="left" width="100%" border="0">
 <tr>
-<td colspan="2"><!--<img src="images/personal-info.gif" alt="" height="30"/><td>--><font  class="head">Personal-Information</font> 
-<a href="personaldetails_edit.php?height=430&width=350" class="thickbox" style="text-decoration: none;">
-<font class="add">[Edit]</font>
-</a>
+<td colspan="2"><!--<img src="images/personal-info.gif" alt="" height="30"/><td>--><font  class="head">Personal-Information</font>
 </td>
 </tr>
     <tr>
@@ -282,8 +271,7 @@
 <td colspan="2">
 <font class="head">Location-Information</font>
 <!--<img src="images/location-info.gif" alt=""  height="30"/><td>-->
-<a href="locationinfo_edit.php?height=280&width=350" class="thickbox" title="" style="text-decoration: none;">
-<!--<img src="images/b_edit.png" height="17"/>--><font class="add">[Edit]</font></a>
+
 </td>
 </tr>
 </tr>
@@ -343,7 +331,6 @@
 <td colspan="2">
 <!--<img src="images/other-info.gif" alt="" height="30"/><td>-->
 <font class="head"> Other-Information</font>
-<a href="otherinfo_edit.php?height=300&width=400" class="thickbox" title="" style="text-decoration: none;"><font class="add">[Edit]</font></a>
 </td>
 </tr>                           
                     <tr>
@@ -393,7 +380,7 @@
 					<tr>
 
 <td colspan="2">
-<font class="head">Family-Details</font><a href="familydetails_edit.php?height=550&width=700" class="thickbox" title="" style="text-decoration: none;"><font class="add"> [Edit]</a></font>
+<font class="head">Family-Details</font></font>
 </td>
 </tr>
                     <tr>
@@ -496,8 +483,6 @@
 <td colspan="3">
 <font class="head"> Educational-Details</font>
 <!--<img src="images/educational.gif" alt="" height="30" /><td>-->
-<a href="educationalinfo_edit.php?height=480&width=550" class="thickbox" title="" style="text-decoration: none;">
-<!--<img src="images/b_edit.png" height="17"/ >--><font class="add">[Edit]</font></a>
 </td>
 </tr>
                     <tr>
@@ -579,7 +564,6 @@
 <tr>
 <td colspan="2">
 <!--<img src="images/social-back.gif" alt="" height="30"/><td valign="top">--><font class="head">Social-Information</font>
-<a href="socialinfo_edit.php?height=480&width=570" class="thickbox" title="" style="text-decoration: none;"><font class="add">[Edit]</a>
 </font>
 </td>
 </tr>
@@ -735,7 +719,7 @@
 					</tr>
 <tr><td colspan="2">
 <font class="head"> 
-Desired Partner Details</font><a href="desirepartnerdetails_edit.php?height=780&width=800" class="thickbox" title="" style="text-decoration: none;"><font class="add"> [Edit]</a></font>
+Desired Partner Details</font></font>
 					</font>
 					</td>
 					</tr>
@@ -833,8 +817,7 @@ Desired Partner Details</font><a href="desirepartnerdetails_edit.php?height=780&
 <td colspan="2">
 <!--<img src="images/contact-info.gif" alt="" height="30" /><td>-->
 <font class="head">Contact-Information</font>
-<a href="contactinfo_edit.php?height=400&width=560" class="thickbox" title="" style="text-decoration: none;">
-<font class="add">[Edit]</font></a>
+
 </td>
 
                     </tr>

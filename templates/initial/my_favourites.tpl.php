@@ -15,6 +15,12 @@
                   <tr>
                     <td width="24" >&nbsp;</td>
                     <td><div align="center">
+                            <?php if(isset($_GET['deleted']) && $_GET['deleted'] == 'true') {?>
+                            <div class="alert alert-success alert-dismissible">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>Success!</strong> Your favourite profile is deleted successfully.
+                            </div>
+                            <?php } ?>
                       <br />
                       <form method="post" name="frmFavourites" action="my_favourites_delete.php" onsubmit="return validate();">
                       <input type="hidden" name="txtcheck">
@@ -22,7 +28,9 @@
                   <thead>
   <tr align="center" bgcolor="#eceaea">
       <th class="heading"><input type="checkbox" onclick="checkuncheckall();"></th>
-      <th class="heading">Select</th>
+      
+      <th class="heading">Profile image</th>
+      <th class="heading">Name (User Id)</th>
       <th class="heading">Age</th>
       <th class="heading">Caste</th>
       <th class="heading">City</th>
@@ -39,10 +47,10 @@
         $row_member = getMemberDetails($row_fav['fav_id']);
   ?>
   <tr bgcolor="#e8e4d9">
-      <td class="heading" align="center" ><input type="checkbox" name="chkbox[]" value="<?php echo $row_fav['fav_id'];?>"></td>
-      <td><img src="<?php echo DIR_WS_USER_IMAGES.getImageFromId($db, $row_member['pic']);?>" width=100 border=0 alt="click here to see the photograph">
+      <td class="content" align="center" ><input type="checkbox" name="chkbox[]" value="<?php echo $row_fav['fav_id'];?>"></td>
+      <td><img src="<?php echo DIR_WS_USER_IMAGES.getImageFromId($db, $row_member['pic']);?>" width=50 border=0 alt="click here to see the photograph">
       </td>
-      
+      <td class="content"><?php echo $row_member['name'] . " (". $row_member['loginid'] .")" ; ?></td>
       <td class="content"><?php echo $row_member['age']; ?></td>
       <td class="content" align="left"><?php echo showCasteById($db, $row_member['caste']); ?></td>
       <td class="content"><?php echo showCityById($db, $row_member['city']); ?></td>
@@ -54,7 +62,7 @@
   if ($num != 0) {
   ?>
   <tr>
-      <td colspan="6" align="left">
+      <td colspan="7" align="left">
           
           <button type="submit" name="btnDelete" class="btn btn-danger">Delete</button>
       </td>

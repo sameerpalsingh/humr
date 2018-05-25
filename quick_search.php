@@ -63,7 +63,6 @@ function getQuickSearchResults($gender, $religion, $caste, $city,$country,$mothe
     $allRecords = $db->executeQuery($sql);
     $num_for_paging = $db->recordCount;
 
-    echo $sql;
     return $db->executeQuery($sql_with_limit);
    }
 

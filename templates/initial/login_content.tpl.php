@@ -55,9 +55,16 @@
               <tr>
                 <td>
                   <center class=fl-text-l>
-                      <?php if(isset($error_message) && $error_message != '') { ?>
+                      <?php if(isset($error_message) && $error_message == 'Invalid Username/Password.') { ?>
                       <div class="alert alert-danger"> <strong>Error!</strong> <?php echo $error_message;?>. </div>   
-                      <?php } ?>
+                      <?php } 
+                      if(isset($error_message) && $error_message == 'Your profile is under review. We will update you once your profile is active and visible to other members.') { ?>
+                      <div class="alert alert-info"> <strong>Info!</strong> <?php echo $error_message;?>. </div>   
+                      <?php } 
+                      if(isset($error_message) && $error_message == 'You are successfully logged out.') { ?>
+                      <div class="alert alert-success"> <strong>Success!</strong> <?php echo $error_message;?>. </div>   
+                      <?php }
+                      ?>
                   </center>
                   <div class=text align=center><b>Sign in here </b></div><br>
                   <form method="post" name="frmMainLogin" action="login_check.php" onsubmit="return validateMain();">

@@ -217,7 +217,7 @@ if (isset($physicalstatus) && $physicalstatus > 0) {
 
 $sql_images = "SELECT image_name_100_size
                FROM hum_members_images,hum_registration
-               WHERE hum_members_images.id=hum_registration.pic and hum_members_images.member_id=".$_SESSION['sess_user_id'];
+               WHERE hum_members_images.id=hum_registration.pic and hum_members_images.member_id=".$user_id;
 $rs_images = $db->executeQuery($sql_images);
 
 $contact=explode(',', $contact_number);

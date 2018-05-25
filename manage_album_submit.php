@@ -7,7 +7,7 @@ $db = new sql_db;
 $upload = new Upload($_FILES['fimage']);
 
 if ($upload->token == false) {
-    header("Location: manage_album.php?message=".$upload->message." ");
+    header("Location: manage_album.php?type=error&message=".$upload->message." ");
     exit;    
 } 
 
@@ -18,7 +18,7 @@ if ($upload->token == false) {
 $db->executeQuery($sql);
 
 // Redirect to manage album page page.
-header("Location: manage_album.php?message=Your photo is uploaded successfully.");
+header("Location: manage_album.php?type=success&message=Your photo is uploaded successfully.");
 exit;
 
 ?>

@@ -16,6 +16,18 @@
           <td width="24" >&nbsp;</td>
           <td><div align="center">
               <form name="frmImageUplaod" action="manage_album_submit.php" enctype="multipart/form-data" method="post">
+                      <?php if (isset($_GET['type']) && $_GET['type'] == 'success') { ?>
+                            <div class="alert alert-success alert-dismissible">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>Success!</strong> <?php echo $_GET['message'];?>.
+                            </div>                          
+                      <?php } ?>
+                      <?php if (isset($_GET['type']) && $_GET['type'] == 'error') { ?>
+                            <div class="alert alert-danger alert-dismissible">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>Error!</strong> <?php echo $_GET['message'];?>.
+                            </div>                          
+                      <?php } ?>                  
                   <div>
                       <h4>Add photo in Album</h4> <br /> <input type="file" name="fimage" size="25">
                       <br />

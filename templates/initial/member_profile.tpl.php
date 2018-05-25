@@ -38,8 +38,8 @@
 				   ?>
                               				   
 				   <?php
-					if($gender=='M') {   echo "<a href='manage_album.php'> <img src='images/maledummy.gif' title='Change Your Profile Picture' style='border:dotted 1px'></a>";}
-				   else if ($gender=='F') { echo "<a href='manage_album.php'> <img src='images/femaledummy.gif' title='Change Your Profile Picture' style='border:dotted 1px'></a>";}
+					if($gender=='M') {   echo "<img src='images/maledummy.gif' title='Change Your Profile Picture' style='border:dotted 1px'>";}
+				   else if ($gender=='F') { echo "<img src='images/femaledummy.gif' title='Change Your Profile Picture' style='border:dotted 1px'>";}
 				   ?>
 				   
 				   
@@ -50,11 +50,11 @@
                      ?>
 					
 					<div style="float:left; width:200px;">
-					<div style="float:left; margin-right:35%;">
-					<a href="manage_album.php">
-					<img src="<?php echo DIR_WS_USER_IMAGES.$row_images['image_name_100_size'];?>" width=100 border=1 style='border:dotted 1px' title="Change Your Profile Picture"
-					alt=""></a> 
-					</div>
+                                            <div style="float:left; margin-right:35%;">
+
+                                            <img src="<?php echo DIR_WS_USER_IMAGES.$row_images['image_name_100_size'];?>" width=100 border=1 style='border:dotted 1px' title="Change Your Profile Picture"
+                                            alt="">
+                                            </div>
 					</div>
 					
 					</td>
@@ -65,9 +65,6 @@
 					{echo "Congratulation "." ".$sess_user_name." "." you have Successfully sent Your Request";} 
 					else if (isset($_GET['err']) && $_GET['err']=="already sent") 
 						{echo $sess_user_name . " You have Already sent your Request..";} ?> </b>
-	
-      
-      
 					</div>
 						
 					</td>

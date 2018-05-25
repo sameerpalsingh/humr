@@ -50,7 +50,7 @@
       <td class="content" align="center" ><input type="checkbox" name="chkbox[]" value="<?php echo $row_fav['fav_id'];?>"></td>
       <td><img src="<?php echo DIR_WS_USER_IMAGES.getImageFromId($db, $row_member['pic']);?>" width=50 border=0 alt="click here to see the photograph">
       </td>
-      <td class="content"><?php echo $row_member['name'] . " (". $row_member['loginid'] .")" ; ?></td>
+      <td class="content"><a href="member_profile.php?id=<?php echo $row_member['id'];?>"><?php echo $row_member['name'] . " (". $row_member['loginid'] .")" ; ?></a></td>
       <td class="content"><?php echo $row_member['age']; ?></td>
       <td class="content" align="left"><?php echo showCasteById($db, $row_member['caste']); ?></td>
       <td class="content"><?php echo showCityById($db, $row_member['city']); ?></td>

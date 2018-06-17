@@ -169,7 +169,7 @@ if(document.frmRegistration.loginid.value == "" ) {
     }
    if ((document.frmRegistration.loginid.value.length < 4)||(document.frmRegistration.loginid.value.indexOf(" ") != -1) ) {
                    // if(document.frmRegistration.loginid.value.indexOf(" ") != -1)    {
-                    alert("Pls. Enter Correct User Id minimum of 4 character without spaces .");
+                    alert("Pls. Enter Correct User ID minimum of 4 character without spaces .");
                     document.frmRegistration.loginid.focus();
                     return false;
                     }
@@ -214,101 +214,79 @@ if(document.frmRegistration.loginid.value == "" ) {
         return false;
     }
 
- if (document.frmRegistration.name.value.length < 4) {
-                  
-                    alert("Pls. Enter Correct Name minimum of 4 character!..");
-                    document.frmRegistration.name.focus();
-                    return false;
-                    }
-
-
-		if (document.frmRegistration.lookingfor.selectedIndex == 0){
+    if (document.frmRegistration.name.value.length < 4) {                  
+        alert("Pls. Enter Correct Name minimum of 4 character!..");
+        document.frmRegistration.name.focus();
+        return false;
+    }
+    if (document.frmRegistration.lookingfor.selectedIndex == 0){
         alert ("Please select you are looking for");
         document.frmRegistration.lookingfor.focus();
         return false;
     }
-		if (document.frmRegistration.gender[0].checked == false && document.frmRegistration.gender[1].checked == false) {
-			alert("Please select your gender.");
-				document.frmRegistration.gender[0].focus();
-				return false;
-	}
-	 if(document.frmRegistration.day.selectedIndex == 0){
+    if (document.frmRegistration.gender[0].checked == false && document.frmRegistration.gender[1].checked == false) {
+        alert("Please select your gender.");
+        document.frmRegistration.gender[0].focus();
+        return false;
+    }
+    if(document.frmRegistration.day.selectedIndex == 0){
         alert ("Please enter date field");
         document.frmRegistration.day.focus();
         return false;
-    }
-    else if(document.frmRegistration.month.selectedIndex == 0){
+    } else if(document.frmRegistration.month.selectedIndex == 0){
         alert ("Please enter month field");
         document.frmRegistration.month.focus();
         return false;
-    }
-    else if(document.frmRegistration.year.selectedIndex == 0){
+    } else if(document.frmRegistration.year.selectedIndex == 0){
         alert ("Please enter year field");
         document.frmRegistration.year.focus();
         return false;
-    }
-	  else if ( document.frmRegistration.maritalstatus.selectedIndex == 0 ) {
+    } else if ( document.frmRegistration.maritalstatus.selectedIndex == 0 ) {
         alert ("Please select your Marital Status");
         document.frmRegistration.maritalstatus.focus();
         return false;
-    }
-	else if ( document.frmRegistration.height.selectedIndex == 0 ) {
+    } else if ( document.frmRegistration.height.selectedIndex == 0 ) {
         alert ("Please select height");
         document.frmRegistration.height.focus();
         return false;
-	}
-	else if (document.frmRegistration.livingin.selectedIndex == 0){
+    } else if (document.frmRegistration.livingin.selectedIndex == 0){
         alert ("Please select country living in");
         document.frmRegistration.livingin.focus();
         return false;
-    }
-	 else if (document.frmRegistration.state.selectedIndex == 0){
+    } else if (document.frmRegistration.state.selectedIndex == 0){
         alert ("Please enter your State");
         document.frmRegistration.state.focus();
         return false;
-    }
-	 else if (document.frmRegistration.city.selectedIndex == 0){
+    } else if (document.frmRegistration.city.selectedIndex == 0){
         alert ("Please enter your City");
         document.frmRegistration.city.focus();
         return false;
     }
-	 if(document.frmRegistration.mobile.value==0){
-		alert("please Enter the Contact Number");
-		document.frmRegistration.mobile.focus();
-		return false;
-	}
-	else if(isNaN(document.frmRegistration.mobile.value)){
-		alert("Enter the valid Mobile Number(Like : 9566137117)");
-		document.frmRegistration.mobile.focus();
-		return false;
-	}
-	else if((document.frmRegistration.mobile.value.length < 10) || (document.frmRegistration.mobile.value.length > 10)){
-		alert(" Your Mobile Number must be 10 digit Integers");
-		document.frmRegistration.mobile.select();
-		return false;
-	}
-   else if(document.frmRegistration.contact_address.value == ""){
+    if(document.frmRegistration.mobile.value==0){
+        alert("please Enter the Contact Number");
+        document.frmRegistration.mobile.focus();
+        return false;
+    } else if(isNaN(document.frmRegistration.mobile.value)){
+        alert("Enter the valid Mobile Number(Like : 9566137117)");
+        document.frmRegistration.mobile.focus();
+        return false;
+    } else if((document.frmRegistration.mobile.value.length < 10) || (document.frmRegistration.mobile.value.length > 10)){
+            alert(" Your Mobile Number must be 10 digit Integers");
+            document.frmRegistration.mobile.select();
+            return false;
+    } else if(document.frmRegistration.contact_address.value == ""){
         alert ("Please enter your contact address");
         document.frmRegistration.contact_address.focus();
         return false;
-    }
-	
-	 else if (document.frmRegistration.religion.selectedIndex == 0){
-        alert ("Please select your relegion");
-        document.frmRegistration.religion.focus();
-        return false;
-    }
-	 else if (document.frmRegistration.caste.selectedIndex == 0){
+    } else if (document.frmRegistration.caste.selectedIndex == 0){
         alert ("Please select caste");
         document.frmRegistration.caste.focus();
         return false;
-    }
-	   else if (document.frmRegistration.raasi.selectedIndex == 0){
+    } else if (document.frmRegistration.raasi.selectedIndex == 0){
         alert ("Please select raasi");
         document.frmRegistration.raasi.focus();
         return false;
-    }
-   else if (document.frmRegistration.mothertongue.selectedIndex == 0){
+    } else if (document.frmRegistration.mothertongue.selectedIndex == 0){
         alert ("Please select your mother tongue");
         document.frmRegistration.mothertongue.focus();
         return false;

@@ -282,21 +282,9 @@ if (isset($message) && $message !='')
             <td><font class="text">Religion</font></td>
             <td colspan="3"><font class="text">
               <select style="font-size: 9pt; width: 120px; font-family: arial, verdana, sans-serif" name="religion">
-
-              <!-- <option value="0">-Select Your Religion-</option>-->
             <?php
                echo createDropDownForReligion($db, 2);
             ?>
-               
-               <!-- <option value="0" selected="selected">-Select Religion-</option>
-                <option value="1">Hindu</option>
-                <option value="2">Muslim</option>
-                <option value="3">Sikh</option>
-                <option value="4">Christian</option>
-                <option value="5">Budhist</option>
-                <option value="6">Jain</option>
-                <option value="7">Bahai</option>
-                <option value="8">Parasi</option>-->
               </select>
             </font><span style="color:red;">&nbsp;*</span></td>
           </tr>

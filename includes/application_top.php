@@ -286,15 +286,8 @@ function createDropDownForHighestdegree($dbObj, $selectedId='') {
 function showHighestdegreeById($dbObj, $highestdegreeId) {
     $rs = $dbObj->executeQuery("SELECT highestdegree FROM hum_highestdegree WHERE id='".$highestdegreeId."' " );
     $row = $dbObj->fetchRow($rs);
-    return $row['highestdegree'];
+    return ($row['highestdegree']!='')?$row['highestdegree']:'N/A';
 }
-
-//function showHighestdegreeById($highestdegreeId) {
-
-   // global $_highestdegree;
-   // return $_highestdegree[$highestdegreeId];
-
-//}
 
 function createDropDownForWorkarea($dbObj, $selectedId='') {
     $retVal = "";
@@ -330,11 +323,13 @@ function createDropDownForIncome($selectedId='') {
 
 function displayincome($selectedId='') {
     global $_income;
+    $output = "N/A";
     foreach($_income as $key => $val) {
         if ($selectedId == $key) {
-            echo "$val";
+            $output = "$val";
         }
     }
+    echo $output;
 }
 
 function showIncomeById($incomeId) {

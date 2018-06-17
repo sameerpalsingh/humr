@@ -125,7 +125,7 @@ border=0>
 									<tr>
 													<td height="25"></td></tr>
 									<tr>
-									<td><strong>User Id:</strong></td><td><input type="text" style="width:133" id="userid" name="userid" /></td></tr>
+									<td><strong>User ID:</strong></td><td><input type="text" style="width:133" id="userid" name="userid" /></td></tr>
 
 									<tr>
 													<td height="25"></td></tr>

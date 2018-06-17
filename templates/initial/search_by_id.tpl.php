@@ -156,7 +156,7 @@
 					</td>
                     </tr>
 					<tr>
-                    <td valign="top"><font class="text">User Id</font></td>
+                    <td valign="top"><font class="text">User ID</font></td>
                     <td style="font-size: 12px; font-family: arial, verdana, sans-serif"><input type="hidden" maxlength="40"  name="loginid" value="<?php echo $userid;?>" disabled="disabled" />
 					<font class="txt">
 					<?php echo $userid;?>

@@ -1,7 +1,7 @@
 <?php
 include("includes/application_top.php");
 
-//checking the username with password
+//checking user loggedin..
 if (!isset($_SESSION['sess_user_id'])) {
     header("location: login.php");
     exit;

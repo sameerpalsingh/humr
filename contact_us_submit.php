@@ -1,6 +1,4 @@
 <?php
-ob_start();
-session_start();
 include ("includes/application_top.php");
 
 $to = SITE_EMAIL;
@@ -21,6 +19,4 @@ if (@!mail($to, $subject, $message, $header)) {
     header("Location: contact_us.php?message=mailsuccess");
     exit;
 }
-
-ob_end_flush();
 ?>

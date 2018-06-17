@@ -1,6 +1,6 @@
 <?php 
 include("includes/application_top.php");
-//checking the username with password
+
 if (!isset($_SESSION['sess_user_id'])) {
     header("location: login.php");
     exit;
@@ -15,7 +15,11 @@ if (isset($messages) && count($messages) > 0) {
     }
 }
 
-$user_id   = (int)$_GET['id'];
+$user_id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT, array('options'=>array('default'=>0, 'min_range'=>1, 'max_range'=>9999999999)) );
+if ($user_id == 0) {
+    @header("Location: search_by_id.php?err=msg");
+    exit;
+}
 
 $err_message = "";
 $message = "";
@@ -70,6 +74,7 @@ $contact_number         = $row['contact_number'];
 $contact_address        = $row['contact_address'];
 $bloodgroup             = $row['bloodgroup'];
 $description            = $row['aboutyourself'];
+$pic                    = $row['pic'];
 
 /******************family**********************************/
 
@@ -198,9 +203,6 @@ if (isset($weight) && $weight > 0) {
     $kg = "";
 }
 
-//$pic=$db->executeQuery('SELECT image_name_original_size FROM hum_members_images WHERE id='.$pic);
-//$img = $db->fetchRow($pic);
-
 if (isset($mothertongue) && $mothertongue > 0) {
     $mothertongue=$db->executeQuery('SELECT mother_tongue FROM hum_mother_tongue WHERE id='.$mothertongue);
     $tongue = $db->fetchRow($mothertongue);
@@ -215,9 +217,10 @@ if (isset($physicalstatus) && $physicalstatus > 0) {
     $phy = "";
 }
 
-$sql_images = "SELECT image_name_100_size
-               FROM hum_members_images,hum_registration
-               WHERE hum_members_images.id=hum_registration.pic and hum_members_images.member_id=".$user_id;
+$sql_default_image = "SELECT image_name_100_size FROM hum_members_images WHERE id=$pic AND member_id=".$user_id;
+$rs_default_image = $db->executeQuery($sql_default_image);
+
+$sql_images = "SELECT image_name_500_size FROM hum_members_images WHERE member_id=".$user_id;
 $rs_images = $db->executeQuery($sql_images);
 
 $contact=explode(',', $contact_number);

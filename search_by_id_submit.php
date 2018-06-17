@@ -1,57 +1,37 @@
 <?php
-ob_start();
 include("includes/application_top.php");
-
+if (!isset($_SESSION['sess_user_id'])) {
+    header("location: login.php");
+    exit;
+}
 $db = new sql_db;
 $profilename = $_REQUEST['profilename'];
-if($profilename == $_SESSION['sess_full_name'])
-{
-		@header("Location: search_by_id.php?err=msg");
+
+//print_r($_SESSION); exit;
+
+if($profilename == $_SESSION['sess_user_name']) {
+    @header("Location: edit_profile.php");
+    exit;
 }
 
-$rs = $db->executeQuery(" SELECT * FROM hum_registration INNER JOIN hum_members_profile ON        
-                          hum_registration.id=hum_members_profile.user_id where loginid='$profilename' ");
+$rs = $db->executeQuery("SELECT * FROM hum_registration where loginid='$profilename' ");
 
-$row = $db->fetchRow($rs);
 $num = $db->numRows($rs);
-
-$id=$row['id'];
+if ($num >0 ) {
+    $row = $db->fetchRow($rs);
+    $id=$row['id'];
+    //echo "ID :". $id; exit;
+    @header("Location: member_profile.php?id=$id");
+    exit;    
+} else {
+    @header("Location: search_by_id.php?msg=1");
+    exit;
+}
 
 $select="select * from hum_member_contact where contact_id='".$id."' and contact_by ='".$_SESSION['sess_user_id']."'";
 $count = $db->executeQuery($select);
 $record=$db->fetchRow($count);
 $num_count = $db->numRows($count);
-/*if($num_count > 0 )
-{
-	$mssg="your request is already send. Please wait..";	
-}
-if(isset($_REQUEST['Submit'])=="Submit" )
-{
- $today = Date("Y-m-d");
-//print_r($_REQUEST);
-
-
-		if($num_count == 0)
-		{
-			$sql="insert into hum_member_contact set contact_id='".$id."' , description='".addslashes($_REQUEST['txt_comment'])."' , contact_by ='".$_SESSION['sess_user_id']."' , contact_date='".$today."', permission=0";
-	//exit;
-			$rs = $db->executeQuery($sql);
-		}
-		else
-		{
-			$mssg="your request is already send. Please wait..";
-		}
-}
-
-if ($num == 0) {
-//    @header("Location: search_by_id.php?err=profile_not_found");
-		@header("Location: search_by_id.php?msg=profile not found");
-  //  exit;
-
-}*/
-
-
-
 
 $userid					= $row['loginid'];
 $password				= $row['password'];

@@ -1,6 +1,4 @@
 <?php
-//session_start();
-//print_r($_SESSION);
 include 'includes/application_top.php';
 include 'includes/paging_class.php';
 $objPaging = new Paging_Class();
@@ -19,7 +17,6 @@ $select="select * from hum_registration where id='".$id."' ";
 $result = $db->executeQuery($select);
 $quick = $db->fetchRow($result);
  /*********this query for use to select age*******/
-
 
 $gender       = isset($_GET['gender'])?$_GET['gender']:$quick['gender'];
 $caste        = isset($_GET['caste'])?$_GET['caste']:$quick['caste'];
@@ -63,6 +60,7 @@ function getQuickSearchResults($gender, $religion, $caste, $city,$country,$mothe
     $allRecords = $db->executeQuery($sql);
     $num_for_paging = $db->recordCount;
 
+    //echo $sql_with_limit;
     return $db->executeQuery($sql_with_limit);
    }
 

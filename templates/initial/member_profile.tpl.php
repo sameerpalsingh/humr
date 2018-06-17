@@ -1,6 +1,4 @@
 <?php // THICKBOX RESOURCES ?>
-<script type="text/javascript" src="thickbox/jquery-latest.js"></script> 
-<script type="text/javascript" src="thickbox/thickbox.js"></script>
 <link rel="stylesheet" href="thickbox/thickbox.css" type="text/css" media="screen" />
 <style type="text/css">
    .head {
@@ -27,52 +25,62 @@
    }
 </style>
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
-
+    <tr>
+        <td colspan="2">
+            <div id="warning-div" class="alert alert-warning alert-dismissible fade in" style="display:none;">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Info!</strong> You have already expressed interest to this user.
+            </div>
+            
+            <div id="success-div" class="alert alert-success alert-dismissible fade in" style="display:none;">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Success!</strong> Successfully expressed your interest to user.
+            </div>
+            
+        </td>
+    </tr>
                    <tr>
 				   <td>
                   
-				   <?php 
-				   $row_images = $db->fetchRow($rs_images);
-				   if(empty($row_images))
-				   {
-				   ?>
-                              				   
-				   <?php
-					if($gender=='M') {   echo "<img src='images/maledummy.gif' title='Change Your Profile Picture' style='border:dotted 1px'>";}
-				   else if ($gender=='F') { echo "<img src='images/femaledummy.gif' title='Change Your Profile Picture' style='border:dotted 1px'>";}
-				   ?>
-				   
-				   
-					<?php
-                    //while($row_images = $db->fetchRow($rs_images)){
-				   }
-				   else {
-                     ?>
-					
-					<div style="float:left; width:200px;">
-                                            <div style="float:left; margin-right:35%;">
-
-                                            <img src="<?php echo DIR_WS_USER_IMAGES.$row_images['image_name_100_size'];?>" width=100 border=1 style='border:dotted 1px' title="Change Your Profile Picture"
-                                            alt="">
+				  
+				    </td>
+					<td>
+					<div style="float:left; width:100%;">
+                                            <div style="float:left;width:50%">
+ <?php 
+$row_default_image = $db->fetchRow($rs_default_image);
+if(empty($row_default_image)) {
+     if($gender=='M') {   echo "<img src='images/maledummy.gif' class='img-thumbnail'";}
+     else if ($gender=='F') { echo "<img src='images/femaledummy.gif' class='img-thumbnail'>";}
+} else {
+    ?>
+    <a href="<?php echo DIR_WS_USER_IMAGES.$row_default_image['image_name_100_size'];?>" rel="lightbox[plants]"><img src="<?php echo DIR_WS_USER_IMAGES.$row_default_image['image_name_100_size'];?>" class='img-thumbnail' alt=""></a>
+    <div style="display: none;">
+    <?php 
+    while($row_images = $db->fetchRow($rs_images)) {
+        ?><a href="<?php echo DIR_WS_USER_IMAGES.$row_images['image_name_500_size'];?>" rel="lightbox[plants]"><img src="<?php echo DIR_WS_USER_IMAGES.$row_images['image_name_500_size'];?>" class='img-thumbnail' alt=""></a><?php
+    }
+    ?>
+    </div>        
+<?php } ?> 
+    
+                                            
+                                            </div>
+                                            <div style="float:right; width:50%">
+                                                <button type="button" class="btn btn-primary" style="float:right;" onclick="expressInterest('<?php echo $user_id; ?>');">Express Interest</button>
                                             </div>
 					</div>
-					
-					</td>
-					<td>
-					
+                                            
 					<div style="width:200px; margin-top:30px;margin-right:40px;">
 			        <font color="green"><b><?php if (isset($_GET['mess']) && $_GET['mess']=="sucessfully sent Request") 
 					{echo "Congratulation "." ".$sess_user_name." "." you have Successfully sent Your Request";} 
 					else if (isset($_GET['err']) && $_GET['err']=="already sent") 
 						{echo $sess_user_name . " You have Already sent your Request..";} ?> </b>
 					</div>
-						
 					</td>
 					</tr>
 					
-					<?php 
-					}
-					 ?>
+					
 </table>
     <br />   
 <table >
@@ -94,27 +102,26 @@
 <td valign="top" width="50%">
 <table align="left" width="100%" border="0">
 <tr>
-<td colspan="2"><!--<img src="images/personal-info.gif" alt="" height="30"/><td>--><font  class="head">Personal-Information</font>
-</td>
+<td colspan="2"><font  class="head">Personal-Information</font></td>
 </tr>
     <tr>
         <td valign="top" width="30%" class="vheading">Name</td>
         <td><?php echo ucwords ($name); ?> </td>
     </tr>
     <tr>
-        <td valign="top" width="30%" class="vheading">User Id</td>
+        <td valign="top" width="30%" class="vheading">User ID</td>
         <td><?php echo $userid;?></td>
     </tr>
-           			<tr>
+                    <tr>
                     <td valign="top"><font class="vheading">Gender</font></td>
                     <td >
-					<font class="txt">
-					<?php
-					if($gender=='M'){echo "Male";}
-                                        else if ($gender == "F") { echo "Female";};
-					?>
-					</font>
-                   </td>
+                        <font class="txt">
+                        <?php
+                        if($gender=='M'){echo "Male";}
+                        else if ($gender == "F") { echo "Female";};
+                        ?>
+                        </font>
+                    </td>
                     </tr>
                     <tr>
                     <td valign="top"><font class="vheading">Date Of Birth</font></td>
@@ -204,29 +211,23 @@
    				    <tr>
                     <td valign="top"><font class="vheading">Weight</font></td>
                     <td >
-                    <!--<select style="font-size: 9pt;"name="weight" disabled="disabled">
-                    <option value="0">-Select Your Weight-</option>
-					<?php
-					echo createDropDownForWeight($db,$weight);
-					?>-->
-					<font class="txt">
-					<?php
-					echo isset($kg['weight'])?$kg['weight']:"";
-					?>
-					</font>
+                        <font class="txt">
+                        <?php
+                        echo isset($kg['weight'])?$kg['weight']:"N/A";
+                        ?>
+                        </font>
                     </td>
-                    </tr>
-					
-					<tr>
+                    </tr>			
+                    <tr>
                     <td valign="top"><font class="vheading">Physical status</font></td>
-                    <td >
-					<font class="txt">
-					<?php
-					if ($physical_status=="N") {echo "Normal";}
-					else {echo "Disable";}
-					?>
-					
-					</font></td>
+                    <td>
+                        <font class="txt">
+                        <?php
+                        if ($physical_status=="N") {echo "Normal";}
+                        else {echo "Disable";}
+                        ?>
+                        </font>
+                    </td>
                     </tr>
 					<tr>
                     <td valign="top"><font class="vheading">Diet</font></td>
@@ -264,14 +265,12 @@
                     </tr>
 					<tr><td> &nbsp;</td></tr>
 
-<tr>
-<td colspan="2">
-<font class="head">Location-Information</font>
-<!--<img src="images/location-info.gif" alt=""  height="30"/><td>-->
+    <tr>
+        <td colspan="2">
+        <font class="head">Location-Information</font>
+        </td>
+    </tr>
 
-</td>
-</tr>
-</tr>
              	    <tr>
                     <td valign="top"><font class="vheading">Citizenship</font></td>
                     <td colspan="3" style="font-size: 12px; font-family: arial, verdana, sans-serif ">
@@ -295,12 +294,7 @@
                     <tr>
                     <td valign="top"><font class="vheading">Native State</font></td>
                     <td colspan="3" >
-                    <!--<select style="font-size: 9pt;" name="nativestate" disabled="disabled">
-                    <option value="0" selected="selected">Select One</option>
-                    <?php
-                    echo createDropDownForState($db, $nativestate);
-                    ?>
-                    </select>-->
+                    
 					<font class="txt">
 					<?php
 					echo isset($stat['state'])?$stat['state']:"";
@@ -310,12 +304,7 @@
                     </tr>
                     <tr>
                     <td valign="top"><font class="vheading">Residing City</font></td>
-                    <td colspan="3" ><!--<select style="font-size: 9pt;" name="residingcity" disabled="disabled">
-                    <option value="0">Select One</option>
-                    <?php
-                    echo createDropDownForCities($db, $city);
-                    ?>
-                    </select>-->
+                    <td colspan="3" >
 					<font class="txt">
 					<?php
 					echo isset($citi['city'])?$citi['city']:"";
@@ -326,7 +315,6 @@
                     <tr><td>&nbsp;</td></tr>
 <tr>
 <td colspan="2">
-<!--<img src="images/other-info.gif" alt="" height="30"/><td>-->
 <font class="head"> Other-Information</font>
 </td>
 </tr>                           
@@ -335,7 +323,7 @@
                     <td >
                     <font class="txt">
 					<?php
-					echo isset($phy['physicalstatus'])?$phy['physicalstatus']:"";
+					echo isset($phy['physicalstatus'])?$phy['physicalstatus']:"N/A";
 					?>
                     </font>
 					</td>
@@ -343,16 +331,10 @@
 					<tr>
                     <td valign="top"><font class="vheading">Blood Group</font></td>
                     <td colspan="3" >
-                    <!--<select style="font-size: 9pt; " name="bloodgroup" disabled="disabled">
-                    <option value="0">- Select Your Blood Group -</option>
-                    <?php
-                    echo createDropDownForBloodgroup($db,$bloodgroup);
-                    ?>
-                    </select>
-                    -->
+                    
 					<font class="txt">
 					<?php
-					echo isset($blood['bloodgroup'])?$blood['bloodgroup']:"";
+					echo isset($blood['bloodgroup'])?$blood['bloodgroup']:"N/A";
 					?>
 					</font>
 					</td>
@@ -360,14 +342,9 @@
                     <tr>
                     <td valign="top"><font class="vheading">Profile Description</font></td>
                     <td colspan="3" >
-
-                    </font>
-
-                   
-
-					<font class="txt">
-					<?php echo nl2br(stripslashes($description)); ?></td>
-					</font>
+                        <font class="txt">
+                        <?php echo nl2br(stripslashes($description)); ?></td>
+                        </font>
                     </tr>
 					<tr>
 					<td valign="top">
@@ -376,60 +353,50 @@
 					</tr>
 					<tr>
 
-<td colspan="2">
-<font class="head">Family-Details</font></font>
-</td>
-</tr>
+                                            <td colspan="2">
+                                            <font class="head">Family-Details</font></font>
+                                            </td>
+                                        </tr>
                     <tr>
                     <td valign="top"><font class="vheading">Family Values</font>
 				    </td>
 					<td >
 					<?php
-					if($familyvalues==0 || $familyvalues=="") {echo "";}
+					if($familyvalues==0 || $familyvalues=="") {echo "N/A";}
 					else if($familyvalues==1) {echo "Orthodox";}
 					else if($familyvalues==2) {echo "Conservative";}
 					else if($familyvalues==3) {echo "Moderate";}
 					else { echo "Liberal";}
-					?>
-					 
-					<!--<?php
-					echo $familyvalues;
-					?>-->
+					?>					 
 					</td>
 					</tr>
 					<tr>
                     <td valign="top"><font class="vheading">Family Type</font></td>
 					<td >
 					<?php
-					if($familytype==0){echo "";}
+					if($familytype==0){echo "N/A";}
 					else if($familytype==1){echo "Joint Family";}
 					else if($familytype==2){echo "Nuclear Family";}
-					else{echo "other";}
-					
-					?>
-					
+					else{echo "other";}					
+					?>					
 					</td>
 					</tr>
 					<tr>
 					<td valign="top"><font class="vheading">Family Status </font></td>
 					<td >
-					
 					<?php
-					if($familystatus==0){echo "";}
+					if($familystatus==0){echo "N/A";}
 					else if($familystatus==1){echo "Rich/Affluent";}
 					else if($familystatus==2){echo "Upper Middle Class";}
 					else {echo "Middle class";}
 					?>
-					
 				    </td>
 					</tr>
 					<tr>
                     <td valign="top"><font class="vheading">Father's Occupation</font></td>
-					<td >
-						  
+					<td >	  
 				    <?php
-
-					 if($fatheroccupation==0){echo "";}
+					 if($fatheroccupation==0){echo "N/A";}
 					 else if($fatheroccupation==1){echo "Business/Entrepreneur";}
 					 else if($fatheroccupation==2){echo "Service - Private";}
 					 else if($fatheroccupation==3){echo "Service - Govt./PSU" ;}
@@ -438,7 +405,6 @@
 					 else if($fatheroccupation==6){echo "Retired";}
 					 else if($fatheroccupation==7){echo "Not Employed";}
 					 else {echo "Expired";}
-						  
 				    ?>
 					
 				     </td>
@@ -479,78 +445,54 @@
 <tr>
 <td colspan="3">
 <font class="head"> Educational-Details</font>
-<!--<img src="images/educational.gif" alt="" height="30" /><td>-->
 </td>
 </tr>
                     <tr>
                     <td valign="top" width="40%"><font class="vheading">Educational Background</font></td>
                     <td >
-                    <textarea style="display:none;" name="educational_background" disabled="disabled"><?php echo stripslashes($educational_background); ?></textarea>
-                            
-					<font class="txt">
-					<?php echo stripslashes($educational_background); ?></td>
-					</font>
+                        <font class="txt">
+                        <?php echo stripslashes($educational_background); ?></td>
+                        </font>
                     </tr>
 					<tr>
                     <td valign="top"><font class="vheading">Highest Degree</font></td>
-                    <td >
-					<font class="txt">
-					<?php
-					echo $degree['highestdegree'];
-					?>
-					</font>
-					</td>
+                    <td>
+                        <font class="txt"> <?php echo $degree['highestdegree']; ?></font>
+                    </td>
                     </tr>
 					<tr>
                     <td valign="top"><font class="vheading">Professional Background</font></td>
-                    <td >
-                    <textarea style="display:none;" name="professional_background" disabled="disabled"><?php echo stripslashes($professional_background); ?></textarea>
-                    </font> 
-					<font class="txt">
-					<?php echo stripslashes($professional_background); ?></td>
-					</font>
+                    <td>
+                        <font class="txt">
+                        <?php echo stripslashes($professional_background); ?>
+                        </font>
+                    </td>  
                     </tr>
-				    <tr>
+                    <tr>
                     <td valign="top"><font class="vheading">Work Area</font></td>
                     <td >
-                    
-					<font class="txt">
-                    <?php
-                    echo $work['workarea'];
-                    ?>
-					</font>
-					</td>
+                        <font class="txt">
+                        <?php
+                        echo $work['workarea'];
+                        ?>
+			</font>
+                    </td>
                     </tr>
 				    <tr>
                     <td valign="top"><font class="vheading">Work status</font></td>
                     <td >
-                    <!--<select style="font-size: 9pt; display:none;" name="work_status" disabled="disabled">
-				    <?php
-                    echo createDropDownForWorkStatus($db,$workstatus);
-                    ?>
-               
-                    </font>-->
-					<font class="txt">
-					<?php echo isset($status['workstatus'])?$status['workstatus']:"" ?>
-					</font>
-					</td>
+
+                    <font class="txt">
+                    <?php echo isset($status['workstatus'])?$status['workstatus']:"" ?>
+                    </font>
+                    </td>
                     </tr>
                     <tr>
-				    <tr>
+                    <tr>
                     <td valign="top"><font class="vheading">Annual Income</font></td>
                     <td >
-                    <!--<select style="font-size: 9pt; " name="annualincome" disabled="disabled">
-                    <option value="0">- Select Your Income -</option>
-                    <?php
-                    echo createDropDownForIncome($db,$annualincome);
-                    ?>
-                    </select>-->
-					<font class="txt">
-                    <?php
-					echo displayincome($annualincome);
-					?>
-					</font>
-					</td>
+                    <font class="txt"> <?php echo displayincome($annualincome); ?> </font>
+		    </td>
                     </tr>
 				    <tr>
 					<td valign="top">
@@ -558,61 +500,48 @@
 					</td></tr>
 			    
 							
-<tr>
-<td colspan="2">
-<!--<img src="images/social-back.gif" alt="" height="30"/><td valign="top">--><font class="head">Social-Information</font>
-</font>
-</td>
-</tr>
+                    <tr>
+                    <td colspan="2">
+                    <font class="head">Social-Information</font>
+                    </font>
+                    </td>
+                    </tr>
   
                      <tr>
                      <td valign="top"><font class="vheading">Religion</font></td>
                      <td >
-                     <!--<select style="font-size: 9pt; "name="religion" disabled="disabled">
-                             
-					 <option value="0">-Select Your Religion-</option>
-                     <?php
-                     echo createDropDownForReligion($db, $religion);
-                     ?>-->
-					 <font class="txt">
-					 <?php
-					 echo $rel['religion'];
-					 ?>
-					 </font>
-					 </td>
+                            <font class="txt">
+                            <?php
+                            echo $rel['religion'];
+                            ?>
+                            </font>
+		     </td>
                      </tr>
-
-					 <tr>
+                     <tr>
                      <td valign="top"><font class="vheading">Caste</font></td>
-                     <td >
-                     <!--<select style="font-size: 9pt;" name="caste" disabled="disabled">
-                     <option value="0">Select caste</option>
-                     <?php
-                     echo createDropDownForCaste($db, $caste);
-                     ?>
-                     </select>-->
-					 <font class="txt">
-					 <?php
-					 echo isset($cast['caste'])?$cast['caste']:"";
-					 ?>
-					 </font>
+                     <td>
+                        <font class="txt">
+                        <?php
+                        echo isset($cast['caste'])?$cast['caste']:"";
+                        ?>
+                        </font>
                      </td>
                      </tr>
                      <td valign="top"><font class="vheading">Sub-Caste</font></td>
                      <td >
-                     <input type="hidden" maxlength="30" name="subcast" value="<?php echo $subcast; ?>"/ disabled="disabled">
-					 <font class="txt">
-					 <?php echo $subcast; ?>
-					 </font>
+                     <input type="hidden" maxlength="30" name="subcast" value="<?php echo $subcast; ?>" disabled="disabled">
+                        <font class="txt">
+                        <?php echo $subcast; ?>
+                        </font>
                      </td>
                      </tr>
- 					 <tr>
+		     <tr>
                      <td valign="top"><font class="vheading">Gotra</font></td>
-                     <td >
+                     <td>
                      <input type="hidden" maxlength="30" name="gotra" value="<?php echo $gotra; ?>"/ disabled="disabled">
-					 <font class="txt">
-					 <?php echo $gotra; ?>
-                     </font>  
+			<font class="txt">
+				 <?php echo $gotra; ?>
+                        </font>  
                      </td>
                      </tr>
 
@@ -877,3 +806,40 @@ Desired Partner Details</font></font>
 </table>
 </body>
 </html>
+<script>
+    function expressInterest(userid) {
+        $.ajax({
+           type: "POST",
+           url: "<?php echo DIR_WS_ROOT?>send_request.php",
+           data: "user="+userid,
+           success: function(msg) {
+               var msgarr = msg.split("|");
+               if (msgarr[0] == 'warning') {
+                   $("#warning-div").show();
+               } else {
+                   $("#success-div").show();
+               }
+           }
+         });
+    }
+</script>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="js/jquery.smooth-scroll.min.js"></script>
+<script src="js/lightbox.js"></script>
+
+<script>
+  jQuery(document).ready(function($) {
+      $('a').smoothScroll({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+      });
+
+      $('.showOlderChanges').on('click', function(e){
+        $('.changelog .old').slideDown('slow');
+        $(this).fadeOut();
+        e.preventDefault();
+      })
+  });
+</script>

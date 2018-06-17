@@ -43,16 +43,11 @@
 				   $row_images = $db->fetchRow($rs_images);
 				   if(empty($row_images))
 				   {
-				   ?>
-                              				   
-				   <?php
-					if($gender=='M') {   echo "<a href='manage_album.php'> <img src='images/maledummy.gif' title='Change Your Profile Picture' style='border:dotted 1px'></a>";}
-				   else if ($gender=='F') { echo "<a href='manage_album.php'> <img src='images/femaledummy.gif' title='Change Your Profile Picture' style='border:dotted 1px'></a>";}
-				   ?>
-				   
-				   
-					<?php
-                    //while($row_images = $db->fetchRow($rs_images)){
+                                        if($gender=='M') {
+                                            echo "<a href='manage_album.php'> <img src='images/maledummy.gif' class='img-thumbnail'></a>";                                            
+                                        } else if ($gender=='F') { 
+                                            echo "<a href='manage_album.php'> <img src='images/femaledummy.gif' class='img-thumbnail'></a>";
+                                        }
 				   }
 				   else {
                      ?>
@@ -60,7 +55,7 @@
 					<div style="float:left; width:200px;">
 					<div style="float:left; margin-right:35%;">
 					<a href="manage_album.php">
-					<img src="<?php echo DIR_WS_USER_IMAGES.$row_images['image_name_100_size'];?>" width=100 border=1 style='border:dotted 1px' title="Change Your Profile Picture"
+					<img src="<?php echo DIR_WS_USER_IMAGES.$row_images['image_name_100_size'];?>" class="img-thumbnail"  title="Change Your Profile Picture"
 					alt=""></a> 
 					</div>
 					</div>
@@ -116,7 +111,7 @@
         <td><?php echo ucwords ($name); ?> </td>
     </tr>
     <tr>
-        <td valign="top" width="30%" class="vheading">User Id</td>
+        <td valign="top" width="30%" class="vheading">User ID</td>
         <td><?php echo $userid;?></td>
     </tr>
            			<tr>

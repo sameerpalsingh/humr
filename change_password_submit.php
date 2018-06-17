@@ -1,6 +1,10 @@
 <?php
 session_start();
 include ("includes/application_top.php");
+if (!isset($_SESSION['sess_user_id'])) {
+    header("location: login.php");
+    exit;
+}
 
 $db = new sql_db;
 

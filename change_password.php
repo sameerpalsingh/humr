@@ -1,5 +1,11 @@
 <?php
 include("includes/application_top.php");
+
+if (!isset($_SESSION['sess_user_id'])) {
+    header("location: login.php");
+    exit;
+}
+
 include_once("header.php");
 $message = (isset($_GET['message']))? $_GET['message']: '';
 ?>

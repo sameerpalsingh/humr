@@ -113,10 +113,10 @@ class Upload extends Thumbnail
             $this->message = "File Uploaded Successfully";
             $this->token = true;
             $this->sizeOriginalFileName = $filename;
-            $this->size100FileName = $this->createThumb(100);
+            $this->size100FileName = $this->createThumb(150);
             $this->size500FileName = $this->createThumb(500);
         } else {
-            $this->message = "Some error has ocurred while upoading.85";
+            $this->message = "Some error has ocurred while upoading";
         }
     }
 
@@ -134,9 +134,8 @@ class Upload extends Thumbnail
     private function createThumb($size)
     {       
         $this->thumb($this->sizeOriginalFilepath);
-        $this->quality = 95;
         $this->size_auto($size);                        // set the biggest width or height for thumbnail
-        $this->quality=75;                        //default 75 , only for JPG format
+        $this->quality=100;                        //default 75 , only for JPG format
         $this->output_format='jpg';               // JPG | PNG
         $this->txt_watermark='Humraahi.Com';        // [OPTIONAL] set watermark text [RECOMENDED ONLY WITH GD 2 ]
         $this->txt_watermark_color='000000';        // [OPTIONAL] set watermark text color , RGB Hexadecimal[RECOMENDED ONLY WITH GD 2 ]

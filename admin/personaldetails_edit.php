@@ -250,7 +250,7 @@ if (document.personaldetails.password.value == 0){
 						</tr>
 
 						<tr>
-                        <td ><font class="text">User Id</font></td>
+                        <td ><font class="text">User ID</font></td>
                         <td style="font-size: 12px; font-family: arial, verdana, sans-serif">
 						<?php echo $userid;?> </td>
                         </tr>

@@ -165,45 +165,45 @@
 
                                             <tr>
                                                 <td width="25%" class="vheading_small">Name</td>
-                                                <td width="25%" class=""><?php echo $row['name']; ?></td>
+                                                <td width="25%" class="field_text"><?php echo $row['name']; ?></td>
                                                 <td width="25%" class="vheading_small">Annual Income</td>
-                                                <td width="25%" class=""><?php
-        $annualincome = $row['annualincome'];
-        echo displayincome($annualincome);
-        ?></td>
+                                                <td width="25%" class="field_text"><?php
+                                                $annualincome = $row['annualincome'];
+                                                echo displayincome($annualincome);
+                                                ?>
+                                                </td>
                                             </tr>
-
                                             <tr>
                                                 <td width="25%" class="vheading_small" >Gender/ Age</td>
-                                                <td width="25%" class=""><?php
-        $gender = $row['gender'];
-
-        if ($gender == 'M') {
-            echo "Male";
-        } else {
-            echo "Female";
-        }
-        ?> , (<?php echo $row['age'] ?> Years)</td>
+                                                <td width="25%" class="field_text"><?php
+                                                $gender = $row['gender'];
+                                                if ($gender == 'M') {
+                                                    echo "Male";
+                                                } else {
+                                                    echo "Female";
+                                                }
+                                                ?> , (<?php echo $row['age'] ?> Years)
+                                                </td>
                                                 <td width="25%" class="vheading_small">Caste </td>
-                                                <td width="25%" class=""><?php echo showCasteById($db, $row['caste']); ?></td>
+                                                <td width="25%" class="field_text"><?php echo showCasteById($db, $row['caste']); ?></td>
                                             </tr>
 
                                             <tr>
                                                 <td width="25%" class="vheading_small">Location: </td>
-                                                <td width="25%" class=""><?php echo showCityById($db, $row['city']); ?>, <?php echo showCountryById($db, $row['country']); ?></td>
+                                                <td width="25%" class="field_text"><?php echo showCityById($db, $row['city']); ?>, <?php echo showCountryById($db, $row['country']); ?></td>
                                                 <td width="25%" class="vheading_small">Occupation</td>
-                                                <td width="25%" class=""><?php echo showWorkareaById($db, $row['workarea']); ?></td>
+                                                <td width="25%" class="field_text"><?php echo showWorkareaById($db, $row['workarea']); ?></td>
                                             </tr>
 
                                             <tr>
                                                 <td width="25%" class="vheading_small">Education : </td>
-                                                <td width="25%" class=""><?php echo showHighestdegreeById($db, $row['highestdegree']); ?></td>
+                                                <td width="25%" class="field_text"><?php echo showHighestdegreeById($db, $row['highestdegree']); ?></td>
                                                 <td width="25%" class="vheading_small">Height</td>
-                                                <td width="25%" class=""><?php echo showHeightById($db, $row['height']); ?></td>
+                                                <td width="25%" class="field_text"><?php echo showHeightById($db, $row['height']); ?></td>
                                             </tr>
                                             <tr >
                                                 <td width="25%" class="vheading_small" valign="top">Description : </td>
-                                                <td colspan="3"><?php echo stripslashes($row['aboutyourself']); ?></td>
+                                                <td colspan="3" class="field_text"><?php echo stripslashes($row['aboutyourself']); ?></td>
                                             </tr>
                                         </table>	
 
@@ -245,7 +245,6 @@
             <td>&nbsp;</td>
         </tr>
     </table>
-    <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/jquery-ui-1.8.18.custom.min.js"></script>
     <script src="js/jquery.smooth-scroll.min.js"></script>
     <script src="js/lightbox.js"></script>

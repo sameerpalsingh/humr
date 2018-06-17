@@ -20,7 +20,7 @@ if ($db->numRows($rs_select) == 0) {
                        WHERE id='".$row_select['member_id']."' ";
         $db->executeQuery($sql_update);
         $message = "Selected Photo is set as your default photo in profile.";
-        header("Location: manage_album.php?message=$message");
+        header("Location: manage_album.php?type=success&message=$message");
     } else {
         // do nothing.
         header("Location: manage_album.php");

@@ -16,13 +16,9 @@ $sql = "SELECT * FROM hum_registration WHERE ";
 
 $sql.= "id !='".$id."' AND ";
 
-$sql.= "loginid !='".$name."' AND ";
-
-$sql.= "emailid!='".$mail."' AND ";
-
 $sql.= "gender='".$_GET['gender']."' AND ";
 
-$sql.="physical_status= '".$_GET['physical_status']."' AND ";
+$sql.= "physical_status= '".$_GET['physical_status']."' AND ";
 
 $sql.= "age between ".$_GET['age']." AND ";
 
@@ -59,20 +55,18 @@ if (@!in_array('All', $_GET['state'])) {
 
 
 if ($_GET['marital_status'] !='All') {
-$sql.= ""." marital_status='".$_GET['marital_status']."'";
-
-}
-else
-{
-	$sql.= " "."marital_status >0 ";
+    $sql.= ""." marital_status='".$_GET['marital_status']."'";
+} else {
+    $sql.= "1=1";
 }
 
-$sql.= "ORDER BY id desc";
+$sql.= " ORDER BY id desc";
 $sql_with_limit = $sql." LIMIT  $startFrom, $perpage ";
 
 $allRecords = $db->executeQuery($sql);
 $num_for_paging = $db->recordCount;
 
+//echo $sql_with_limit; 
 $rs = $db->executeQuery($sql_with_limit);
 $objPaging->processPaging($num_for_paging, $_SERVER['REQUEST_URI']);
 
@@ -99,7 +93,6 @@ include_once("header.php");
 </table>
 
 </body>
-<script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/jquery-ui-1.8.18.custom.min.js"></script>
 <script src="js/jquery.smooth-scroll.min.js"></script>
 <script src="js/lightbox.js"></script>

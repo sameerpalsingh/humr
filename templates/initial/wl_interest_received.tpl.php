@@ -20,7 +20,7 @@
                       <input type="hidden" name="txtcheck">
               <table border=0 class="table table-bordered" width="93%">
                   <thead>
-  <tr align="center" bgcolor="#eceaea">
+  <tr align="center" bgcolor="#cccccc">
       <th class="heading">S.No.</th>
       <th class="heading">Profile image</th>
       <th class="heading">Name (User ID)</th>
@@ -41,7 +41,7 @@
   while ($row = $db->fetchRow($rs)) {
         $row_member = getMemberDetails($row['contact_by']);
   ?>
-  <tr bgcolor="#e8e4d9">
+  <tr bgcolor="<?php echo ($cnt%2==0)?'#f1f1f1':'#eceaea'?>">
       <td class="content" align="center"><?php echo $cnt?></td>
       <td align="center"><img src="<?php echo DIR_WS_USER_IMAGES.getImageFromId($db, $row_member['pic']);?>" class="thumbnail" alt="click here to see the photograph">
       </td>

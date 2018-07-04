@@ -122,15 +122,13 @@
                         ?>
 
                         <form method="post" action="add_to_favourites.php" name="frmSearch" onsubmit="return validate();">
-                            <table class="table table-bordered">
+                            <table class="table table-bordered" >
 
                                 <tr><td style="background-color: #990000;" height="10px" colspan="2">
-                                        <input type="checkbox" name="chkbox[]" value="<?php echo $row["id"] ?>">&nbsp;<a style="color: #fff;" href="member_profile.php?id=<?php echo $row["id"] ?>"><?php echo $row["name"] ?>&nbsp;(<?php echo $row["loginid"] ?>)</a></td></tr>
-
-                                <tr >
-
-                                    <td width="100"  align="center" valign="top">
-
+                                        <input type="checkbox" name="chkbox[]" value="<?php echo $row["id"] ?>">&nbsp;<a style="color: #fff;" href="member_profile.php?id=<?php echo $row["id"] ?>"><?php echo $row["name"] ?>&nbsp;(<?php echo $row["loginid"] ?>)</a></td>
+                                </tr>
+                                <tr>
+                                    <td width="100" align="center" valign="top">
                                         <?php
                                         $id = $row['id'];
 
@@ -156,7 +154,6 @@
                                              $counter++;
                                             }
                                             ?>
-                         <!--<a href="<?php echo DIR_WS_USER_IMAGES . $row_images[2]; ?> " rel="lightbox[plants]" ><font color="red">[view Photos]</a> -->
         <?php } ?>
 
                                     </td>

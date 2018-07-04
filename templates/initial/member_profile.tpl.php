@@ -7,7 +7,9 @@
     line-height: 22px;
     color: #669933;
     font-weight: bold;
-    text-decoration:none
+    text-decoration:none;
+    padding-bottom: 9px;
+        
 }
    .add {
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -46,11 +48,11 @@
 				    </td>
 					<td>
 					<div style="float:left; width:100%;">
-                                            <div style="float:left;width:50%">
+                                            <div style="float:left;width:25%">
  <?php 
 $row_default_image = $db->fetchRow($rs_default_image);
 if(empty($row_default_image)) {
-     if($gender=='M') {   echo "<img src='images/maledummy.gif' class='img-thumbnail'";}
+     if($gender=='M') {   echo "<img src='images/maledummy.gif' class='img-thumbnail'>";}
      else if ($gender=='F') { echo "<img src='images/femaledummy.gif' class='img-thumbnail'>";}
 } else {
     ?>
@@ -66,8 +68,26 @@ if(empty($row_default_image)) {
     
                                             
                                             </div>
+                                            <div style="float:left;width:25%" id="contact_address">
+                                                <div class="head" style="display: inline-block;">Contact Information </div>
+                                                <div>
+<div>
+<label>Mobile</label>: <span class="con_mobile"></span>                                                    
+</div>
+<div>
+<label>Email</label>: <span class="con_emailid"></span>
+</div>
+<div>
+<label>Landline</label>: <span class="con_landline"></span>
+</div>
+<div>
+<label>Address</label>: <span class="con_address"></span>
+</div>                                                    
+                                                </div>
+                                            </div>
                                             <div style="float:right; width:50%">
-                                                <button type="button" class="btn btn-primary" style="float:right;" onclick="expressInterest('<?php echo $user_id; ?>');">Express Interest</button>
+                                                <button type="button" class="btn btn-primary" style="float:right;margin-right: 10px;" onclick="expressInterest('<?php echo $user_id; ?>');">Express Interest</button>
+                                                <button type="button" class="btn btn-success" style="float:right;margin-right: 10px;" onclick="viewContact('<?php echo $user_id; ?>');">View Contact</button>
                                             </div>
 					</div>
                                             
@@ -739,66 +759,6 @@ Desired Partner Details</font></font>
 					</tr>
 				    <tr>  
 				    <td>&nbsp;</td></tr>
-<tr>
-<td colspan="2">
-<!--<img src="images/contact-info.gif" alt="" height="30" /><td>-->
-<font class="head">Contact-Information</font>
-
-</td>
-
-                    </tr>
-                    <tr>
-                    <td valign="top"><font class="vheading">E-mail </font></td>
-                    <td colspan="3" >
-                    <input type="hidden" maxlength="80" name="emailid" value="<?php echo $emailid; ?>"/ disabled="disabled"></font>
-					<font class="txt">
-					<?php echo $emailid; ?>
-					</font>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td valign="top"><font class="vheading">Mobile No </font></td>
-                    <td colspan="3" >
-                    <input type="hidden" maxlength="30" name="mobile" value="<?php echo $mobile; ?>"/ disabled="disabled">
-                           
-					<font class="txt">
-
-					<?php echo $mobile; ?>
-
-					</font>
-					</td>
-                    </tr>
-
-					<tr>
-                    <td valign="top"><font class="vheading">Landline No </font></td>
-                    <td colspan="3" >
-                    <input type="hidden" maxlength="30" name="landline" value="<?php echo $landline; ?>"/ disabled="disabled">
-                           
-					<font class="txt">
-
-					<?php echo $landline; ?>
-
-					</font>
-					</td>
-                    </tr>
-
-
-
-                    <tr>
-                    <td valign="top"><font class="vheading">Contact Address </font></td>
-                    <td colspan="3" >
-                    <textarea style="display:none;" name="address" disabled="disabled"><?php echo stripslashes($contact_address); ?></textarea>
-                           
-					<font class="txt">
-					<?php echo stripslashes($contact_address); ?>
-					</font>
-					</td>
-                    </tr>
-					<tr>
-					<td>
-					&nbsp;
-					</td>
-     				</tr>
 			 				
 </table>
 </td>
@@ -822,6 +782,28 @@ Desired Partner Details</font></font>
            }
          });
     }
+    
+  
+  function viewContact(userid) {
+      var resp = confirm("Are you sure you want to see the contact details?");
+      if (resp === true) {
+        $.ajax({
+           type: "POST",
+           url: "<?php echo DIR_WS_ROOT?>get_contactdetails.php",
+           data: "user="+userid,
+           success: function(msg) {
+               msg = JSON.parse(msg);
+               $("#contact_address").show();
+               $(".con_mobile").text(msg.Mobile);
+               $(".con_emailid").text(msg.Emailid);
+               $(".con_landline").text(msg.Landline);
+               $(".con_address").text(msg.Address);
+               
+           }
+         });          
+      }      
+  }
+  
 </script>
 
 <script src="js/jquery-1.7.2.min.js"></script>
@@ -842,4 +824,5 @@ Desired Partner Details</font></font>
         e.preventDefault();
       })
   });
+  $("#contact_address").hide();
 </script>

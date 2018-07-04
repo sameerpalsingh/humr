@@ -217,7 +217,7 @@ if (isset($physicalstatus) && $physicalstatus > 0) {
     $phy = "";
 }
 
-$sql_default_image = "SELECT image_name_100_size FROM hum_members_images WHERE id=$pic AND member_id=".$user_id;
+$sql_default_image = "SELECT image_name_100_size FROM hum_members_images WHERE id='$pic' AND member_id=".$user_id;
 $rs_default_image = $db->executeQuery($sql_default_image);
 
 $sql_images = "SELECT image_name_500_size FROM hum_members_images WHERE member_id=".$user_id;

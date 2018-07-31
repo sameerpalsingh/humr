@@ -15,7 +15,8 @@
             <td>
                 <table class="form-text" cellspacing="2" cellpadding="0" width="100%" border="0">
                     <tr>
-                        <td class="s-title" colspan="4" style="border-bottom:1px solid #CCCCCC">To make your partner search more relevant , provide details about your background and family details </td>
+                        <td class="s-title" colspan="3" width="75%">Your background and family details</td>
+                        <td class="s-title" align="right" width="25%">Step-3</td>
                     </tr>
                     <tr>
                         <td align="right" valign="top" height="6" colspan="4" style="color:red; font-size:12px; font-family: arial, verdana, sans-serif " >* Required Information</td>

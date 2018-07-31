@@ -14,7 +14,7 @@ if (isset($message) && $message !='')
 ?> 
      <td><table class="form-text" cellspacing="2" cellpadding="0" width="100%" border="0">
         <tr>
-    <td class="s-title" colspan="4" style="border-bottom:1px solid #CCCCCC">Account Details</td>
+            <td class="s-title" colspan="4">Account Details (Step-1)</td>
     </tr>
       <tr>
             <td align="right" valign="top" height="6" colspan="3" style="color:red; font-size:12px; font-family: arial, verdana, sans-serif " >* Required Information</td>
@@ -60,21 +60,8 @@ if (isset($message) && $message !='')
           </tr>
                               
     <tr>
-    <td class="s-title" colspan="1" style="border-bottom:1px solid #CCCCCC">Basic Details</td>
+    <td class="s-title" colspan="1" >Basic Details</td>
     </tr>
-  <!--  <tr>
-      <td><table class="form-text" cellspacing="2" cellpadding="0" width="100%" border="0">
-        <tbody>
-          <tr>
-            <td colspan="4">&nbsp;</td>
-          </tr>
-          <tr>
-            <td colspan="4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td><img src="images/personal-info.gif" alt="" width="131" height="30" /></td>
-                </tr>
-              </table></td>
-          </tr>-->
           <tr>
             <td colspan="4" height="25"></td>
           </tr>
@@ -283,7 +270,7 @@ if (isset($message) && $message !='')
             <td colspan="3"><font class="text">
               <select style="font-size: 9pt; width: 120px; font-family: arial, verdana, sans-serif" name="religion">
             <?php
-               echo createDropDownForReligion($db, 2);
+               echo createDropDownForReligion($db, 1);
             ?>
               </select>
             </font><span style="color:red;">&nbsp;*</span></td>

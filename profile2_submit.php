@@ -23,7 +23,6 @@ if(count($_REQUEST['mrtstatus']) > 0){
 	$annual_income = implode(" , ",$_REQUEST['income']);
 }
 
-
 $sql="update hum_members_profile set
 	partner_age				='".addslashes($age1)."',
 	partner_marital_status	='".($marrital_status)."',
@@ -36,6 +35,10 @@ $sql="update hum_members_profile set
 	where user_id=".$_SESSION['sess_user_id'];
 
 $rs = $db->executeQuery($sql);
+
+$sql_credit = "INSERT IGNORE INTO hum_credits(member_id, loginid, credit, description) VALUES('".$_SESSION['sess_user_id']."', '".$_SESSION['sess_user_name']."', 10, 'Registration Credits')";
+$db->executeQuery($sql_credit);
+
 header("Location: edit_profile.php");
 echo "<meta http-equiv='Refresh' Content='0 URL=view_member.php'>";
 exit;

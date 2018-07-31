@@ -16,7 +16,8 @@
             <td><table class="form-text" cellspacing="2" cellpadding="0" width="100%" border="0">
                 <tbody>
                     <tr>
-                        <td class="s-title" colspan="2" style="border-bottom:1px solid #CCCCCC" width="200">more about <?php echo $_SESSION['sess_full_name']; ?>..</td>
+                        <td class="s-title" width="30%">more about <?php echo $_SESSION['sess_full_name']; ?>..</td>
+                        <td class="s-title" align="right" width="70%">(Step-2)</td>
                     </tr>
                     <tr>
                         <td align="right" valign="top" height="6" colspan="2" style="color:red; font-size:12px; font-family: arial, verdana, sans-serif " >* Required Information</td>

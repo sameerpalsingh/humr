@@ -38,6 +38,10 @@
                     <td class="tdunderline"><a href="my_favourites.php">My Favourites</a></td>
                   </tr>
                   <tr>
+                    <td><img src="images/bullet.gif" alt="" width="15" height="9" /></td>
+                    <td class="tdunderline"><a href="my_credits.php">My Credits</a></td>
+                  </tr>                  
+                  <tr>
                     <td>&nbsp;</td>
                     <td >&nbsp;</td>
                   </tr>

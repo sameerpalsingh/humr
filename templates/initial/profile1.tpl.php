@@ -12,7 +12,8 @@
 				}
 				?>
                     <tr>
-                      <td class="s-title" colspan="3" style="border-bottom:1px solid #CCCCCC">Your Education &amp; Professional Details</td>
+                      <td class="s-title" colspan="2">Your Education &amp; Professional Details</td>
+                      <td class="s-title" align="right" width="25%">Step-4</td>
                     
                     <tr>
                       <td><table class="form-text" cellspacing="2" cellpadding="0" width="100%" border="0">
@@ -73,7 +74,7 @@
                             <td colspan="4">&nbsp;</td>
                           </tr>
 						 <tr>
-                      <td class="s-title" colspan="4" style="border-bottom:1px solid #CCCCCC">Additional Details About You</td>
+                      <td class="s-title" colspan="4">Additional Details About You</td>
                     </tr>
 					  <tr>
                             <td colspan="4">&nbsp;</td>

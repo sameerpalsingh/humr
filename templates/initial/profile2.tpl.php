@@ -1,13 +1,3 @@
-<!--[if IE 8]>
-<style type="text/css">
-	/* css for IE 8 */
-</style>
-<![endif]-->
-
-<!--[if lt IE 8]>
-	<link href="ie7.css" rel="stylesheet" type="text/css" />
-<![endif]-->
-
 <form method="post" action="profile2_submit.php" name="frmRegistration" onsubmit="return login_validate4();" >
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -25,7 +15,8 @@
                 }
                 ?>
                     <tr>
-                      <td class="s-title" style="border-bottom:1px solid #CCCCCC">Your Partner Preferences</td>
+                      <td class="s-title">Your Partner Preferences</td>
+                      <td class="s-title" align="right" width="25%">Step-5</td>
                     </tr>
                     <tr>
                       <td><table class="form-text" cellspacing="2" cellpadding="0" width="100%" border="0">
@@ -648,6 +639,7 @@
                         </tbody>
                       </table>
                       </td>
+                      <td>&nbsp;</td>
                     </tr>
                   </table>
                   </form>

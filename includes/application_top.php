@@ -514,4 +514,6 @@ function showheightById($dbObj, $heightId) {
     return $high['height'];
 }
 include DIR_FS_INCLUDES."functions.php";
+include DIR_FS_INCLUDES."messages.php";
+
 ?>

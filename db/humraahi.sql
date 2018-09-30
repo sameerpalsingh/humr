@@ -11,7 +11,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Dumping structure for table humraahi.hum_bloodgroup
-DROP TABLE IF EXISTS `hum_bloodgroup`;
 CREATE TABLE IF NOT EXISTS `hum_bloodgroup` (
   `id` int(1) DEFAULT NULL,
   `bloodgroup` varchar(4) DEFAULT NULL
@@ -32,7 +31,6 @@ INSERT INTO `hum_bloodgroup` (`id`, `bloodgroup`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_cards
-DROP TABLE IF EXISTS `hum_cards`;
 CREATE TABLE IF NOT EXISTS `hum_cards` (
   `card_id` int(11) NOT NULL AUTO_INCREMENT,
   `card` blob NOT NULL,
@@ -49,7 +47,6 @@ INSERT INTO `hum_cards` (`card_id`, `card`, `flag`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_caste
-DROP TABLE IF EXISTS `hum_caste`;
 CREATE TABLE IF NOT EXISTS `hum_caste` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `caste` varchar(160) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -226,7 +223,6 @@ INSERT INTO `hum_caste` (`id`, `caste`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_category
-DROP TABLE IF EXISTS `hum_category`;
 CREATE TABLE IF NOT EXISTS `hum_category` (
   `cat_id` int(4) NOT NULL AUTO_INCREMENT,
   `cat_name` varchar(100) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -248,7 +244,6 @@ INSERT INTO `hum_category` (`cat_id`, `cat_name`, `desc`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_challenged
-DROP TABLE IF EXISTS `hum_challenged`;
 CREATE TABLE IF NOT EXISTS `hum_challenged` (
   `id` int(4) NOT NULL AUTO_INCREMENT,
   `physicalstatus` varchar(100) DEFAULT NULL,
@@ -267,7 +262,6 @@ INSERT INTO `hum_challenged` (`id`, `physicalstatus`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_cities
-DROP TABLE IF EXISTS `hum_cities`;
 CREATE TABLE IF NOT EXISTS `hum_cities` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `city` varchar(100) COLLATE latin1_general_ci NOT NULL,
@@ -652,7 +646,6 @@ INSERT INTO `hum_cities` (`id`, `city`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_countries
-DROP TABLE IF EXISTS `hum_countries`;
 CREATE TABLE IF NOT EXISTS `hum_countries` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `country` varchar(40) NOT NULL DEFAULT '',
@@ -895,8 +888,47 @@ INSERT INTO `hum_countries` (`id`, `country`) VALUES
 /*!40000 ALTER TABLE `hum_countries` ENABLE KEYS */;
 
 
+-- Dumping structure for table humraahi.hum_credits
+CREATE TABLE IF NOT EXISTS `hum_credits` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `member_id` int(11) NOT NULL,
+  `loginid` varchar(40) NOT NULL,
+  `credit` mediumint(11) unsigned NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `payment_id` int(10) unsigned DEFAULT NULL,
+  `invoice_id` int(10) unsigned DEFAULT NULL,
+  `credit_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `member_id_loginid_description` (`member_id`,`loginid`,`description`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+-- Dumping data for table humraahi.hum_credits: ~1 rows (approximately)
+/*!40000 ALTER TABLE `hum_credits` DISABLE KEYS */;
+INSERT INTO `hum_credits` (`id`, `member_id`, `loginid`, `credit`, `description`, `payment_id`, `invoice_id`, `credit_time`) VALUES
+	(4, 44, 'suresh3brainz', 10, 'Registration Credits', NULL, NULL, '2018-07-31 22:31:24'),
+	(5, 35, 'sameerpalsingh', 3, 'Registration Credits', NULL, NULL, '2018-08-14 12:15:44');
+/*!40000 ALTER TABLE `hum_credits` ENABLE KEYS */;
+
+
+-- Dumping structure for table humraahi.hum_credits_used
+CREATE TABLE IF NOT EXISTS `hum_credits_used` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `member_used_by` int(11) NOT NULL,
+  `member_used_for` int(11) NOT NULL,
+  `used_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+-- Dumping data for table humraahi.hum_credits_used: ~3 rows (approximately)
+/*!40000 ALTER TABLE `hum_credits_used` DISABLE KEYS */;
+INSERT INTO `hum_credits_used` (`id`, `member_used_by`, `member_used_for`, `used_time`) VALUES
+	(2, 35, 43, '2018-07-11 00:12:12'),
+	(3, 35, 31, '2018-10-15 00:15:02'),
+	(4, 38, 31, '2019-02-15 00:15:02');
+/*!40000 ALTER TABLE `hum_credits_used` ENABLE KEYS */;
+
+
 -- Dumping structure for table humraahi.hum_details_category
-DROP TABLE IF EXISTS `hum_details_category`;
 CREATE TABLE IF NOT EXISTS `hum_details_category` (
   `id` int(4) NOT NULL AUTO_INCREMENT,
   `cat_id` int(4) NOT NULL DEFAULT '0',
@@ -923,7 +955,6 @@ INSERT INTO `hum_details_category` (`id`, `cat_id`, `name`, `company`, `address`
 
 
 -- Dumping structure for table humraahi.hum_emailgroup
-DROP TABLE IF EXISTS `hum_emailgroup`;
 CREATE TABLE IF NOT EXISTS `hum_emailgroup` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `emailid` varchar(80) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -937,7 +968,6 @@ CREATE TABLE IF NOT EXISTS `hum_emailgroup` (
 
 
 -- Dumping structure for table humraahi.hum_email_matter
-DROP TABLE IF EXISTS `hum_email_matter`;
 CREATE TABLE IF NOT EXISTS `hum_email_matter` (
   `email_matter_id` int(11) NOT NULL AUTO_INCREMENT,
   `email_subject` varchar(255) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -953,7 +983,6 @@ INSERT INTO `hum_email_matter` (`email_matter_id`, `email_subject`, `email_matte
 
 
 -- Dumping structure for table humraahi.hum_free_paid
-DROP TABLE IF EXISTS `hum_free_paid`;
 CREATE TABLE IF NOT EXISTS `hum_free_paid` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` varchar(10) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -968,7 +997,6 @@ INSERT INTO `hum_free_paid` (`id`, `status`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_friendslist
-DROP TABLE IF EXISTS `hum_friendslist`;
 CREATE TABLE IF NOT EXISTS `hum_friendslist` (
   `friends_id` int(5) NOT NULL AUTO_INCREMENT,
   `emails` varchar(60) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -998,7 +1026,6 @@ INSERT INTO `hum_friendslist` (`friends_id`, `emails`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_generic_question
-DROP TABLE IF EXISTS `hum_generic_question`;
 CREATE TABLE IF NOT EXISTS `hum_generic_question` (
   `generic_question_id` int(4) NOT NULL AUTO_INCREMENT,
   `question` varchar(100) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -1013,7 +1040,6 @@ INSERT INTO `hum_generic_question` (`generic_question_id`, `question`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_handicapped
-DROP TABLE IF EXISTS `hum_handicapped`;
 CREATE TABLE IF NOT EXISTS `hum_handicapped` (
   `id` int(2) NOT NULL AUTO_INCREMENT,
   `nature` varchar(30) DEFAULT NULL,
@@ -1033,7 +1059,6 @@ INSERT INTO `hum_handicapped` (`id`, `nature`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_height
-DROP TABLE IF EXISTS `hum_height`;
 CREATE TABLE IF NOT EXISTS `hum_height` (
   `id` tinyint(2) NOT NULL AUTO_INCREMENT,
   `height` varchar(10) DEFAULT NULL,
@@ -1083,7 +1108,6 @@ INSERT INTO `hum_height` (`id`, `height`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_highestdegree
-DROP TABLE IF EXISTS `hum_highestdegree`;
 CREATE TABLE IF NOT EXISTS `hum_highestdegree` (
   `id` int(3) NOT NULL AUTO_INCREMENT,
   `highestdegree` varchar(40) DEFAULT NULL,
@@ -1121,7 +1145,6 @@ INSERT INTO `hum_highestdegree` (`id`, `highestdegree`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_hit_counter
-DROP TABLE IF EXISTS `hum_hit_counter`;
 CREATE TABLE IF NOT EXISTS `hum_hit_counter` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `response_id` varchar(25) DEFAULT NULL,
@@ -1145,7 +1168,6 @@ INSERT INTO `hum_hit_counter` (`id`, `response_id`, `request_id`, `accepted`, `r
 
 
 -- Dumping structure for table humraahi.hum_home_images
-DROP TABLE IF EXISTS `hum_home_images`;
 CREATE TABLE IF NOT EXISTS `hum_home_images` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `top_profile` varchar(255) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -1167,7 +1189,6 @@ INSERT INTO `hum_home_images` (`id`, `top_profile`, `favourite_queen`, `favourit
 
 
 -- Dumping structure for table humraahi.hum_images
-DROP TABLE IF EXISTS `hum_images`;
 CREATE TABLE IF NOT EXISTS `hum_images` (
   `id_image` int(11) NOT NULL AUTO_INCREMENT,
   `imagename` varchar(250) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -1185,7 +1206,6 @@ INSERT INTO `hum_images` (`id_image`, `imagename`, `linkid`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_inbox
-DROP TABLE IF EXISTS `hum_inbox`;
 CREATE TABLE IF NOT EXISTS `hum_inbox` (
   `message_id` int(200) NOT NULL AUTO_INCREMENT,
   `loginid` int(200) NOT NULL,
@@ -1220,8 +1240,23 @@ INSERT INTO `hum_inbox` (`message_id`, `loginid`, `message`, `sentby`, `adminto`
 /*!40000 ALTER TABLE `hum_inbox` ENABLE KEYS */;
 
 
+-- Dumping structure for table humraahi.hum_invoices
+CREATE TABLE IF NOT EXISTS `hum_invoices` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `member_id` int(11) NOT NULL,
+  `loginid` varchar(40) NOT NULL,
+  `payment_id` mediumint(11) unsigned NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `date_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Dumping data for table humraahi.hum_invoices: ~0 rows (approximately)
+/*!40000 ALTER TABLE `hum_invoices` DISABLE KEYS */;
+/*!40000 ALTER TABLE `hum_invoices` ENABLE KEYS */;
+
+
 -- Dumping structure for table humraahi.hum_last_modify
-DROP TABLE IF EXISTS `hum_last_modify`;
 CREATE TABLE IF NOT EXISTS `hum_last_modify` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `last_updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -1236,7 +1271,6 @@ INSERT INTO `hum_last_modify` (`id`, `last_updated`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_lead_user
-DROP TABLE IF EXISTS `hum_lead_user`;
 CREATE TABLE IF NOT EXISTS `hum_lead_user` (
   `user_id` int(4) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(100) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -1253,7 +1287,6 @@ INSERT INTO `hum_lead_user` (`user_id`, `user_name`, `user_desc`, `user_max_lead
 
 
 -- Dumping structure for table humraahi.hum_mailtesting
-DROP TABLE IF EXISTS `hum_mailtesting`;
 CREATE TABLE IF NOT EXISTS `hum_mailtesting` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `emailid` varchar(80) COLLATE latin1_general_ci DEFAULT NULL,
@@ -2135,7 +2168,6 @@ INSERT INTO `hum_mailtesting` (`id`, `emailid`, `flag`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_members
-DROP TABLE IF EXISTS `hum_members`;
 CREATE TABLE IF NOT EXISTS `hum_members` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(40) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -2294,7 +2326,6 @@ INSERT INTO `hum_members` (`id`, `name`, `gender`, `dob`, `age`, `maritalstatus`
 
 
 -- Dumping structure for table humraahi.hum_members_images
-DROP TABLE IF EXISTS `hum_members_images`;
 CREATE TABLE IF NOT EXISTS `hum_members_images` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `image_name_100_size` varchar(100) COLLATE latin1_general_ci NOT NULL,
@@ -2302,19 +2333,19 @@ CREATE TABLE IF NOT EXISTS `hum_members_images` (
   `image_name_original_size` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `member_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
--- Dumping data for table humraahi.hum_members_images: 3 rows
+-- Dumping data for table humraahi.hum_members_images: 4 rows
 /*!40000 ALTER TABLE `hum_members_images` DISABLE KEYS */;
 INSERT INTO `hum_members_images` (`id`, `image_name_100_size`, `image_name_500_size`, `image_name_original_size`, `member_id`) VALUES
-	(1, '150/35_37f00650a13ac578b37e462f941d95de.jpg', '500/35_37f00650a13ac578b37e462f941d95de.jpg', 'original/35_37f00650a13ac578b37e462f941d95de.jpg', 35),
-	(2, '150/35_d4d2d6d44a790ebcc97e63a1bbcaa36a.jpg', '500/35_d4d2d6d44a790ebcc97e63a1bbcaa36a.jpg', 'original/35_d4d2d6d44a790ebcc97e63a1bbcaa36a.jpg', 35),
-	(3, '150/35_1cde50b7d7536fa2e6394308b75f3321.jpg', '500/35_748b81c66a2b8357c693a1a9aaeea8aa.jpg', 'original/35_1cde50b7d7536fa2e6394308b75f3321.jpg', 35);
+	(5, '150/35_c437ac8957b3a0f18af39a4bedcff5c4.jpg', '500/35_54b4c3d20172e3c54f091854a2907175.jpg', 'original/35_c437ac8957b3a0f18af39a4bedcff5c4.jpg', 35),
+	(7, '150/44_b3c5495cbf07aa809d118d8b73059b98.jpg', '500/44_b3c5495cbf07aa809d118d8b73059b98.jpg', 'original/44_93c8abc2c83ecf8ca42fb846bd758607.jpg', 44),
+	(4, '150/43_0fc4c8a165c0904926e376705ea7ff35.jpg', '500/43_0fc4c8a165c0904926e376705ea7ff35.jpg', 'original/43_0fc4c8a165c0904926e376705ea7ff35.jpg', 43),
+	(8, '', '', '', 35);
 /*!40000 ALTER TABLE `hum_members_images` ENABLE KEYS */;
 
 
 -- Dumping structure for table humraahi.hum_members_profile
-DROP TABLE IF EXISTS `hum_members_profile`;
 CREATE TABLE IF NOT EXISTS `hum_members_profile` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
@@ -2354,9 +2385,9 @@ CREATE TABLE IF NOT EXISTS `hum_members_profile` (
   `desired_partner` text NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_id` (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=43 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
 
--- Dumping data for table humraahi.hum_members_profile: 12 rows
+-- Dumping data for table humraahi.hum_members_profile: 13 rows
 /*!40000 ALTER TABLE `hum_members_profile` DISABLE KEYS */;
 INSERT INTO `hum_members_profile` (`id`, `user_id`, `subcast`, `gotra`, `ancestralorigin`, `manglik`, `nakshatra`, `horoscope`, `birth_time`, `det_country`, `det_city`, `upload_horoscope`, `family_values`, `family_type`, `family_status`, `father_occupation`, `mother_occupation`, `brother`, `sister`, `live_with_parents`, `about_family`, `educational_background`, `work_status`, `professional_background`, `bloodgroup`, `challenged`, `handicap`, `languages`, `partner_age`, `partner_marital_status`, `partner_height`, `partner_state_region`, `partner_religion`, `partner_cast`, `partner_annual_income`, `desired_partner`) VALUES
 	(31, 31, '', '', '', 0, 0, '', '00:00:00', 0, '', '', 0, '', '', 0, 0, '', '', '', '', '', 0, '', 3, 1, 0, '', '', '', '15 to 20', '', '', '', '', ''),
@@ -2365,17 +2396,17 @@ INSERT INTO `hum_members_profile` (`id`, `user_id`, `subcast`, `gotra`, `ancestr
 	(28, 28, 'teli', '', 'teli', 3, 0, '', '00:00:00', 0, '', '', 1, '1', '2', 5, 7, '2', '1', '0', 'my family are silent features.\r\nmy family are silent features.\r\nmy family are silent features.\r\nmy family are silent features.\r\nmy family are silent features.', 'are good', 2, 'fvdfg', 2, 1, 1, 'Arabic , Hindi , Punjabi', '19 to 33', 'Never Married , Divorced', '13 to 24', 'Haryana , Himanchal Pradesh , Punjab , Uttaranchal', 'Buddhist , Christian , Hindu', 'Christian , Christian: Born Again', 'Under Rs.50,000 , Rs.50,001 - 1,00,000 , Rs.1,00,001 - 2,00,000', 'partner nature are good & silent .loving nn\r\nMBA(International Marketing)\r\nMBA(International Marketing)gkjhdmds'),
 	(29, 29, 'kjknkkj', '', 'hjhjhgj', 3, 0, '', '00:00:00', 0, '', '', 2, '2', '2', 2, 1, '1', '1', '1', 'thkjlgjhlgjhlgkhjlgjhglojh hth\r\nthth\r\nt\r\nhtotyrty\r\ntr\r\nyt\r\nryrtyr\r\nteyr\r\nty\r\nrty\r\nrty\r\ntr\r\nrty\r\nrty\r\nrety\r\nty t\r\nyty r\r\ntyr', ' jlmb.cv bv\r\n\r\n\r\nhgd\r\n\'k\r\ndghki\r\ngh\r\ngh \r\ndhg[th\r\nr', 6, 'hkgh dkhkllf \r\n\r\nre ter\r\ntrti \r\nret\r\net\r\ne', 3, 2, 1, 'Arabic', '21 to 24', 'Never Married', '5 to 12', 'All Hindi', 'Christian', 'Christian: Born Again', 'Rs.50,001 - 1,00,000', 'ngkhgk g r\r\nrgi\r\nere\r\nr\r\nie\r\nrt rtr\r\nt\r\nre\r\nrt reireter9811gourav\r\n9811gourav9811gourav9811gourav9811gourav9811gourav'),
 	(30, 30, 'Chamar', '', 'Mujaffar Nagar', 1, 1, '', '00:00:00', 0, '', '', 0, '', '', 0, 0, '', '', '', '', '', 0, '', 0, 0, 0, '', '', '', '0 to 0', '', '', '', '', ''),
-	(34, 35, 'Pal Singh', 'Neem', 'Uttar Pradesh', 1, 19, '1', '00:00:00', 0, '', 'images.jpg', 4, '3', '3', 6, 1, '1', '2', '0', 'Tell us about your parents and/or siblings, what they do, their backgrounds etc. Tell us about your parents \'sameer "singh"', 'tell me your \'educationa\' "background"', 3, 'let me know your \'professional\' "background"', 5, 3, 1, 'English , Hindi , Marathi', '20 to 42', 'Awaiting Divorce , Divorced', '6to25', 'Haryana , Himanchal Pradesh , Punjab , Uttaranchal , Uttar Pradesh , Goa , Lakshadweep/Mahl , Bihar , Jharkhand', 'Hindu , Buddhist , Hindu , Jain', '', 'Rs.50,001 - 1,00,000 , Rs.1,00,001 - 2,00,000 , Rs.2,00,001 - 3,00,000 , Rs.3,00,001 - 4,00,000 , Rs.4,00,001 - 5,00,000 , Rs.5,00,001 - 7,50,000 , Rs.7,50,001 - 10,00,000', '   this is my profile this is my profile this is my profile this is my profile this is my profile this is my profile '),
+	(34, 35, 'Pal Singh', 'Neem', 'Uttar Pradesh', 1, 19, '1', '00:00:00', 0, '', 'images.jpg', 4, '3', '3', 6, 1, '1', '2', '0', 'Tell us about your parents and/or siblings, what they do, their backgrounds etc. Tell us about your parents \'sameer "singh"', 'tell me your \'educationa\' "background"', 3, 'let me know your \'professional\' "background"', 5, 3, 1, 'English , Hindi , Marathi', '20 to 42', '', '13 to 34', '', '', '', '', 'Tell us about your expectations & Tell us about your expectations & Tell us about your expectations & Tell us about your expectations & Tell us about your expectations'),
 	(35, 36, 'Singh', 'You better know', 'UP', 1, 19, '1', '04:20:30', 1, 'Delhi', '', 2, '2', '2', 6, 2, '1', '2', '0', 'Tell us about your parents and/or siblings, what they do, their backgrounds etc. Tell us about your parents and/or siblings, what they do, their backgrounds etc.', '4545545', 4, ' about your current and past work experienc', 3, 2, 2, '', '', '', '0 to 0', '', '', '', '', ''),
 	(36, 40, 'Singh', 'Neem', 'Aligarh', 1, 19, '1', '04:20:02', 1, 'delhi', '', 2, '2', '2', 7, 1, '1', '1', '0', 'out your parents and/or siblings, what they do, their bac out your parents and/or siblings, what they do, their bac out your parents and/or siblings, what they do, their bac ', 'Write about your educational qualifications, place of study etc.', 2, 'Write about your current and past work experience.', 3, 1, 1, 'English , Hindi , Marathi', '18 to 45', 'Never Married , Awaiting Divorce', '13 to 24', 'Haryana , Himanchal Pradesh , Jammu & Kashmir , Punjab , Uttaranchal , Uttar Pradesh , Maharashtra  , Assam', 'Hindu , Buddhist , Hindu', 'Christian , Christian: Born Again , Christian: Catholic , Christian: CMS , Christian: CSI , Christian: Evangelical , Christian: Jacobite , Christian: Marthomite , Christian: Nadar , Christian: Protestant , Christian: Syrian , Christian: Pentecost , Hindu , Hindu: Kuli Maratha , Hindu: Adi Dravida , ', 'Under Rs.50,000 , Rs.50,001 - 1,00,000 , Rs.1,00,001 - 2,00,000 , Rs.2,00,001 - 3,00,000 , Rs.3,00,001 - 4,00,000 , Rs.4,00,001 - 5,00,000 , Rs.5,00,001 - 7,50,000 , Rs.7,50,001 - 10,00,000 , Rs.10,00,001 - 15,00,000 , Rs.15,00,001 - 20,00,000 , Rs.20,00,001 - 25,00,000 , Rs.25,00,001 and above , Un', 'Tell us about your expectations Tell us about your expectations Tell us about your expectations Tell us about your expectations'),
 	(40, 41, 'Pal Singh', 'Neem', 'Uttar Pradesh', 1, 19, '', '00:00:00', 0, '', '', 1, '1', '1', 6, 1, '1', '1', '0', 'Tell us about your parents and/or siblings, what they do, their backgrounds etc ell us about your parents and/or siblings, what they do, their backgrounds etc ell us about your parents and/or siblings, what they do, their backgrounds etc', 'AAA', 1, 'BBBB', 3, 1, 0, '', '18 to 70', 'Never Married , Awaiting Divorce , Divorced , Other , Widowed', '6to18', '', '', '', '', 'Tell us about your expectations & what youï¿½re looking for Tell us about your expectations & what youï¿½re looking for Tell us about your expectations & what youï¿½re looking for'),
 	(41, 42, 'Singh', 'Neem', 'Uttar Pradesh', 1, 19, '', '00:00:00', 0, '', '', 2, '1', '2', 6, 1, '1', '1', '0', 'i dont have anything here.i dont have anything here.i dont have anything here.i dont have anything here.', 'schooling from Mumbai', 2, 'Computer diploma', 3, 1, 0, '', '18 to 45', 'Never Married,Awaiting Divorce,Divorced', '13to25', 'Himanchal Pradesh,Jammu & Kashmir,Punjab,Uttaranchal', 'Buddhist', 'Hindu: Jatav', 'Rs.15,00,001 - 20,00,000', 'Describe your desired partner Describe your desired partner Describe your desired partner Describe your desired partner Describe your desired partner Describe your desired partner '),
-	(42, 43, 'Singh', 'Neem', 'Uttar Pradesh', 0, 1, '', '00:00:00', 0, '', '', 0, '', '', 0, 0, '', '', '', '', '', 0, '', 0, 0, 0, '', '', '', '0 to 0', '', '', '', '', '');
+	(42, 43, 'Singh', 'Neem', 'Uttar Pradesh', 0, 1, '', '00:00:00', 0, '', '', 0, '', '', 0, 0, '', '', '', '', '', 0, '', 0, 0, 0, '', '', '', '0 to 0', '', '', '', '', ''),
+	(43, 44, 'Kumar', 'Janwar', 'Uttar Pradesh', 1, 16, '1', '03:04:05', 1, 'delhi', '', 2, '2', '2', 3, 1, '1', '1', '0', 'God fearing and cultured family. My mother is a housewife and she has devoted her most valuable time for our upbringing.', 'I have done BA from Banaras hindu university', 2, 'no professional. earlier i worked in a hardware company.', 3, 1, 1, 'English , Hindi', '19 to 26', 'Never Married', '9 to 13', 'Uttar Pradesh', 'Hindu', 'Hindu: Chaurasia', '', 'Tell us about your expectations & Tell us about your expectations & Tell us about your expectations & Tell us about your expectations & ');
 /*!40000 ALTER TABLE `hum_members_profile` ENABLE KEYS */;
 
 
 -- Dumping structure for table humraahi.hum_member_contact
-DROP TABLE IF EXISTS `hum_member_contact`;
 CREATE TABLE IF NOT EXISTS `hum_member_contact` (
   `id` int(4) NOT NULL AUTO_INCREMENT,
   `contact_id` mediumint(9) NOT NULL,
@@ -2384,19 +2415,19 @@ CREATE TABLE IF NOT EXISTS `hum_member_contact` (
   `contact_date` datetime NOT NULL,
   `message` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
--- Dumping data for table humraahi.hum_member_contact: 3 rows
+-- Dumping data for table humraahi.hum_member_contact: 4 rows
 /*!40000 ALTER TABLE `hum_member_contact` DISABLE KEYS */;
 INSERT INTO `hum_member_contact` (`id`, `contact_id`, `contact_by`, `permission`, `contact_date`, `message`) VALUES
 	(1, 30, 35, 0, '2018-06-16 20:33:17', NULL),
 	(2, 43, 35, 0, '2018-06-17 19:14:09', NULL),
-	(3, 35, 43, 0, '2018-06-17 19:19:17', NULL);
+	(3, 35, 43, 0, '2018-06-17 19:19:17', NULL),
+	(4, 44, 35, 0, '2018-09-10 13:23:45', NULL);
 /*!40000 ALTER TABLE `hum_member_contact` ENABLE KEYS */;
 
 
 -- Dumping structure for table humraahi.hum_mother_tongue
-DROP TABLE IF EXISTS `hum_mother_tongue`;
 CREATE TABLE IF NOT EXISTS `hum_mother_tongue` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `mother_tongue` varchar(40) COLLATE latin1_general_ci DEFAULT NULL,
@@ -2443,7 +2474,6 @@ INSERT INTO `hum_mother_tongue` (`id`, `mother_tongue`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_myfavourites
-DROP TABLE IF EXISTS `hum_myfavourites`;
 CREATE TABLE IF NOT EXISTS `hum_myfavourites` (
   `myfav_id` int(7) NOT NULL AUTO_INCREMENT,
   `fav_id` varchar(7) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -2463,7 +2493,6 @@ INSERT INTO `hum_myfavourites` (`myfav_id`, `fav_id`, `by_loginid`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_nakshatra
-DROP TABLE IF EXISTS `hum_nakshatra`;
 CREATE TABLE IF NOT EXISTS `hum_nakshatra` (
   `id` tinyint(3) NOT NULL AUTO_INCREMENT,
   `nakshatra` varchar(25) DEFAULT NULL,
@@ -2505,8 +2534,28 @@ INSERT INTO `hum_nakshatra` (`id`, `nakshatra`) VALUES
 /*!40000 ALTER TABLE `hum_nakshatra` ENABLE KEYS */;
 
 
+-- Dumping structure for table humraahi.hum_payments
+CREATE TABLE IF NOT EXISTS `hum_payments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `member_id` int(11) NOT NULL,
+  `loginid` varchar(40) NOT NULL,
+  `payment` mediumint(11) unsigned NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `random_code` varchar(40) NOT NULL,
+  `payment_status` enum('IN_PROGRESS','COMPLETED') NOT NULL DEFAULT 'IN_PROGRESS',
+  `start_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `end_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+-- Dumping data for table humraahi.hum_payments: ~0 rows (approximately)
+/*!40000 ALTER TABLE `hum_payments` DISABLE KEYS */;
+INSERT INTO `hum_payments` (`id`, `member_id`, `loginid`, `payment`, `description`, `random_code`, `payment_status`, `start_time`, `end_time`) VALUES
+	(1, 35, 'sameerpalsingh', 1000, 'testing payment', 'xjh&fdsak', 'IN_PROGRESS', '2018-06-27 00:40:56', '2018-06-27 00:42:15');
+/*!40000 ALTER TABLE `hum_payments` ENABLE KEYS */;
+
+
 -- Dumping structure for table humraahi.hum_registration
-DROP TABLE IF EXISTS `hum_registration`;
 CREATE TABLE IF NOT EXISTS `hum_registration` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `emailid` varchar(40) DEFAULT NULL,
@@ -2551,32 +2600,32 @@ CREATE TABLE IF NOT EXISTS `hum_registration` (
   `firstlogin` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `email_id` (`emailid`)
-) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=45 DEFAULT CHARSET=latin1;
 
--- Dumping data for table humraahi.hum_registration: 16 rows
+-- Dumping data for table humraahi.hum_registration: 17 rows
 /*!40000 ALTER TABLE `hum_registration` DISABLE KEYS */;
 INSERT INTO `hum_registration` (`id`, `emailid`, `loginid`, `password`, `name`, `looking_for`, `gender`, `age`, `dob`, `marital_status`, `height`, `livingin`, `country`, `state`, `city`, `contact_number`, `contact_status`, `messenger_id`, `contact_address`, `religion`, `caste`, `raasi`, `mothertongue`, `highestdegree`, `workarea`, `annualincome`, `physical_status`, `diet`, `smoke`, `drink`, `bodytype`, `complexion`, `aboutyourself`, `weight`, `pic`, `modifieddate`, `lastloggedin`, `joiningdate`, `status`, `membership`, `firstlogin`) VALUES
 	(31, 'akku@gmail.com', 'akku123', 'akku', 'akkuy sharma', 1, 'M', 39, '1973-04-07', 1, '2', 0, 1, 8, 2, '6547686666,Landline', 'Mobile and Landline', '@', 'j jljljl lkj lkj l', 2, 1, 2, 1, 0, 0, 0, '', '', '', '', '', '', '., m.lxm vx,x \r\nv nnvkjfnvklfnv,fmv\r\n', '0', '', '2012-10-30 18:11:25', '2012-10-30 18:10:51', '2012-10-30 17:01:29', 1, 0, 1),
-	(30, 'ankit@gmail.com', 'ankit123', 'ankit123', 'Ankit', 1, 'M', 40, '1972-02-06', 1, '2', 2, 1, 10, 252, '4646464654,Landline', 'Mobile and Landline', '@', 'hhjkhj jhf\r\n\r\nh\r\nh\r\ntrhrth', 1, 72, 6, 33, 19, 1, 1, 'D', 'Y', 'O', 'O', '3', '3', ' y.y,jhlkjh/fh\r\nh\r\nhrhtyiyi\r\ny\r\nyiyh hithtk;l jj lg kk kgbnkgnf h j', '1', '', '2018-06-17 20:59:44', '2018-06-09 18:47:15', '2012-10-30 15:38:31', 1, 0, 1),
+	(30, 'ankit@gmail.com', 'ankit123', 'ankit123', 'Ankit', 1, 'M', 40, '1972-02-06', 1, '2', 2, 1, 10, 252, '4646464654,Landline', 'Mobile and Landline', '@', 'hhjkhj jhf\r\n\r\nh\r\nh\r\ntrhrth', 1, 72, 6, 33, 19, 1, 1, 'D', 'Y', 'O', 'O', '3', '3', ' y.y,jhlkjh/fh\r\nh\r\nhrhtyiyi\r\ny\r\nyiyh hithtk;l jj lg kk kgbnkgnf h j', '1', '6', '2018-06-26 19:39:42', '2018-06-26 19:38:03', '2012-10-30 15:38:31', 1, 0, 1),
 	(29, 'ajay@yahoo.com', 'ajay', 'ajay123', 'Ajay Singh', 1, 'M', 32, '1980-03-09', 1, '24', 0, 1, 10, 2, '4156464613,Landline', 'Mobile and Landline', '@', ' jhklgjlgjl j jngklg jgfh\r\ntglhgkhg\r\n', 2, 1, 2, 1, 5, 2, 1, 'N', 'Y', 'N', 'N', '2', '2', 'jfgldfjg lfjgldfjg ldfkgjldfkjgfkjd klfjgklfdjlfkgjf fg\r\ndfgdfgdfg\r\ndf\r\ngdf\r\ngodf\r\ngd\r\n', '1', '', '2012-10-30 16:31:43', '0000-00-00 00:00:00', '2012-10-30 14:26:58', 1, 0, 1),
 	(28, 'manisha@gmail.com', 'manisha9999', 'manisha', 'manisha', 1, 'F', 31, '1981-03-10', 1, '19', 0, 1, 33, 4, '8958534864,Landline', 'Mobile and Landline', '@', 'Agra kamal nagar,gali mohalla', 4, 3, 4, 13, 17, 36, 4, 'N', 'Y', 'N', 'N', '2', '2', 'I am post graduate from IP university, my studies are from Delhi only , i have two brothers one is elder and one is younget to me. My father is a Govt. Employee and my mother is a house wife. ', '26', '', '2018-06-17 20:59:42', '2012-10-30 12:33:06', '2012-10-30 11:00:01', 1, 0, 1),
 	(32, 'amar@yahoo.com', 'amar', 'amar', 'amar', 1, 'F', 42, '1970-12-01', 1, '1', 0, 1, 1, 1, '5757676767,Landline', 'Mobile and Landline', '@', 'jhgkryhgkehgiehtkertyierthireth', 3, 1, 2, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '2012-10-30 18:13:52', '2012-10-30 18:13:52', '2012-10-30 18:12:44', 1, 0, 1),
 	(33, 'ashish@facebook.com', 'ashish', 'ashish', 'ashish', 1, 'F', 42, '1970-01-01', 1, '1', 0, 1, 1, 1, '5667456346,Landline', 'Mobile and Landline', '@', 'jhf gmdbfkg dhg,d hgtg\r\ngfhkdf hgkdhgl\r\n ukyuk\r\nu kyukj\r\n u', 3, 1, 2, 1, 0, 0, 0, '', '', '', '', '', '', '', '0', '', '2012-10-30 18:25:15', '2012-10-30 18:25:15', '2012-10-30 18:19:13', 1, 0, 1),
 	(34, 'sameerpalsingh1@gmail.com', 'sameer1', 'sameer123', 'sameer', 1, 'M', 39, '1978-12-28', 6, '23', 0, 1, 33, 127, '9810222301,Landline', 'Mobile and Landline', '', 'D-240, Street-10, Laxmi Nagar Delhi', 2, 18, 6, 33, 0, 0, 0, '', '', '', '', '', '', '', '0', '', '2017-11-27 15:41:15', '0000-00-00 00:00:00', '2017-11-23 16:11:02', 0, 0, 0),
-	(35, 'sameerpalsingh@gmail.com', 'sameerpalsingh', 'sameer@123', 'Sameer', 3, 'M', 28, '1998-12-28', 1, '19', 3, 1, 18, 125, '9810222301,Landline', 'Mobile and Landline', '', 'laxmi nagar', 1, 72, 6, 33, 4, 17, 13, 'N', 'Y', 'Y', 'Y', '2', '3', 'AAAAA BBBB\'s "Sameer" qwsqwda', '38', '3', '2018-06-17 21:00:40', '2018-06-16 18:41:49', '2017-11-27 15:42:29', 1, 1, 1),
+	(35, 'sameerpalsingh@gmail.com', 'sameerpalsingh', 'sameer@123', 'Sameer', 3, 'M', 28, '1998-12-28', 1, '19', 3, 1, 18, 125, '9810222301,Landline', 'Mobile and Landline', '', 'laxmi nagar', 1, 72, 6, 33, 1, 22, 13, 'N', 'Y', 'Y', 'Y', '1', '1', 'Tell us about your family background, education, lifestyle, interests, hobbies etc Tell us about your family background, education, lifestyle, interests, hobbies etc Tell us about your family background, education, lifestyle, interests, hobbies etc Tell us about your family background, education, lifestyle, interests, hobbies etc', '41', '5', '2018-09-12 20:24:01', '2018-09-12 20:24:01', '2017-11-27 15:42:29', 1, 1, 1),
 	(36, 'sameerpalsingh2@gmail.com', 'sameerpalsingh2', 'sameer123', 'Sameer Singh', 1, 'M', 40, '1978-12-28', 1, '23', 3, 1, 33, 128, '9810222301,2011543', 'Mobile and Landline', '', '507, SG Impressions, raj Nagar', 2, 106, 6, 33, 15, 2, 7, 'N', 'Y', 'N', 'N', '2', '2', 'sadf af afas a asd a das dsa dsad as dasd asd asd asd as das', '6', '', '2018-06-17 20:59:27', '0000-00-00 00:00:00', '2018-03-23 13:12:32', 0, 0, 0),
 	(37, 'sameerpalsingh3@gmail.com', 'sameerpalsingh3', 'sameer123', 'Sameer', 1, 'M', 40, '1978-12-28', 1, '23', 0, 1, 33, 128, '9810222301,Landline', 'Mobile and Landline', '', '507, SG Impressions-58, Raj Nagar Extn.', 2, 71, 6, 33, 20, 34, 11, 'N', 'N', 'O', 'O', '3', '4', 'I love my gudiya, i love my riya , i love my Meethi... i love you\r\ni love you\r\ni love you..\r\ni love you...\r\ni love my daughter...', '39', '', '2018-04-05 16:29:29', '0000-00-00 00:00:00', '2018-04-05 16:24:55', 0, 0, 0),
 	(38, 'sameer@gmail.com', 'sameer', 'sameer123', 'Sameer', 1, 'M', 40, '1978-12-28', 1, '20', 0, 1, 33, 128, '9810222301,Landline', 'Mobile and Landline', '', 'test', 2, 14, 6, 33, 20, 34, 11, 'N', 'Y', 'O', 'O', '3', '4', 'this is test test test test testm md type:jpg,png,bmp od type:jpg,png,bmp od type:jpg,png,bmp od type:jpg,png,bmp od type:jpg,png,bmp od type:jpg,png,bmp o', '39', '', '2018-06-17 20:59:30', '0000-00-00 00:00:00', '2018-04-05 16:42:56', 0, 0, 0),
 	(39, 'sameer2@gmail.com', 'sameer2', 'sameer', 'sameer', 1, 'M', 40, '1978-12-28', 1, '23', 4, 3, 14, 19, '9810222301,Landline', 'Mobile and Landline', '', 'thestete test', 2, 2, 3, 2, 6, 3, 2, 'N', 'Y', 'N', 'N', '2', '2', ' Personality, Values, Lifestyle.\r\nYour education ï¿½ school and college\r\nYour Occupation, Income and Goals\r\nYour family ï¿½ Dad, Mom, Sib', '6', '', '2018-06-17 20:59:33', '0000-00-00 00:00:00', '2018-04-05 16:47:36', 0, 0, 0),
 	(40, 'sameer3@gmail.com', 'sameer3', 'sameer123', 'Sameer', 1, 'M', 40, '1978-12-28', 1, '23', 0, 1, 33, 128, '9810222301,Landline', 'Mobile and Landline', '', 'this is test', 2, 72, 6, 33, 20, 34, 11, 'N', 'N', 'O', 'O', '3', '4', 'Your Personality, Values, Lifestyle Your Personality, Values, Lifestyle Your Personality, Values, Lifestyle ', '39', '', '2018-06-17 20:59:37', '0000-00-00 00:00:00', '2018-04-05 18:34:38', 0, 0, 0),
+	(44, 'suresh@3brainz.com', 'suresh3brainz', 'sameer123', 'Suresh Kumar', 1, 'M', 25, '1993-12-28', 1, '19', 4, 1, 10, 252, '9810222301,Landline', 'Mobile and Landline', '', 'Mujaffarpur, Bihar', 1, 53, 2, 10, 18, 1, 5, 'N', 'Y', 'O', 'O', '2', '3', 'We are very down to earth person. i am simple, loving, caring boy with real indian values.', '21', '7', '2018-09-10 14:14:06', '0000-00-00 00:00:00', '2018-07-31 21:48:00', 0, 0, 0),
 	(41, 'sameerpalsingh6@gmail.com', 'sameerpalsingh6', 'sameer123', 'Sameer', 1, 'M', 40, '1978-12-28', 1, '23', 44, 1, 33, 128, '9810222301,Landline', 'Mobile and Landline', '', 'test test test', 2, 72, 6, 33, 3, 34, 11, 'N', 'N', 'O', 'O', '3', '3', 'tilted face', '39', '', '2018-04-21 20:27:08', '0000-00-00 00:00:00', '2018-04-21 17:44:58', 0, 0, 0),
 	(42, 'sameerpalsingh7@gmail.com', 'sameerpalsingh7', 'sameer', 'Sameer', 1, 'M', 40, '1978-12-28', 1, '23', 44, 1, 33, 128, '9810222301,Landline', 'Mobile and Landline', '', 'test test test', 6, 1, 6, 33, 20, 62, 12, 'N', 'N', 'O', 'O', '3', '3', 'Smart Young', '39', '', '2018-04-24 22:02:36', '0000-00-00 00:00:00', '2018-04-24 21:45:45', 0, 0, 0),
-	(43, 'bhawna.singh@gmail.com', 'bhawnasingh', 'bhawna123', 'Bhawna Singh', 1, 'F', 34, '1984-08-07', 1, '16', 0, 1, 33, 4, '8506002301,Landline', 'Mobile and Landline', '', 'A-305, Paschim Puri, Sikandra, Agra', 1, 72, 3, 33, 0, 0, 0, 'N', '', '', '', '', '', '', '0', '', '2018-06-17 20:59:40', '2018-06-17 19:06:17', '2018-06-02 17:49:14', 1, 0, 1);
+	(43, 'bhawna.singh@gmail.com', 'bhawnasingh', 'bhawna123', 'Bhawna Singh', 1, 'F', 34, '1984-08-07', 1, '16', 0, 1, 33, 4, '8506002301,Landline', 'Mobile and Landline', '', 'A-305, Paschim Puri, Sikandra, Agra', 1, 72, 3, 33, 0, 0, 0, 'N', '', '', '', '', '', '', '0', '4', '2018-06-26 19:23:50', '2018-06-26 19:23:00', '2018-06-02 17:49:14', 1, 0, 1);
 /*!40000 ALTER TABLE `hum_registration` ENABLE KEYS */;
 
 
 -- Dumping structure for table humraahi.hum_reg_form
-DROP TABLE IF EXISTS `hum_reg_form`;
 CREATE TABLE IF NOT EXISTS `hum_reg_form` (
   `ID` int(10) NOT NULL AUTO_INCREMENT,
   `uni_id` varchar(20) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -2598,7 +2647,6 @@ CREATE TABLE IF NOT EXISTS `hum_reg_form` (
 
 
 -- Dumping structure for table humraahi.hum_religion
-DROP TABLE IF EXISTS `hum_religion`;
 CREATE TABLE IF NOT EXISTS `hum_religion` (
   `id` tinyint(2) NOT NULL AUTO_INCREMENT,
   `religion` varchar(20) DEFAULT NULL,
@@ -2620,7 +2668,6 @@ INSERT INTO `hum_religion` (`id`, `religion`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_splashes
-DROP TABLE IF EXISTS `hum_splashes`;
 CREATE TABLE IF NOT EXISTS `hum_splashes` (
   `splash_id` int(11) NOT NULL AUTO_INCREMENT,
   `splashed_by` varchar(22) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -2652,7 +2699,6 @@ INSERT INTO `hum_splashes` (`splash_id`, `splashed_by`, `splashed_on`, `regardin
 
 
 -- Dumping structure for table humraahi.hum_sstories
-DROP TABLE IF EXISTS `hum_sstories`;
 CREATE TABLE IF NOT EXISTS `hum_sstories` (
   `story_id` int(5) NOT NULL AUTO_INCREMENT,
   `description` text COLLATE latin1_general_ci NOT NULL,
@@ -2671,7 +2717,6 @@ INSERT INTO `hum_sstories` (`story_id`, `description`, `loginid`, `datentime`, `
 
 
 -- Dumping structure for table humraahi.hum_state
-DROP TABLE IF EXISTS `hum_state`;
 CREATE TABLE IF NOT EXISTS `hum_state` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `state` varchar(40) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -2720,7 +2765,6 @@ INSERT INTO `hum_state` (`id`, `state`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_weight
-DROP TABLE IF EXISTS `hum_weight`;
 CREATE TABLE IF NOT EXISTS `hum_weight` (
   `id` tinyint(4) NOT NULL AUTO_INCREMENT,
   `weight` varchar(10) DEFAULT NULL,
@@ -2795,7 +2839,6 @@ INSERT INTO `hum_weight` (`id`, `weight`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_workarea
-DROP TABLE IF EXISTS `hum_workarea`;
 CREATE TABLE IF NOT EXISTS `hum_workarea` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `workarea` varchar(50) COLLATE latin1_general_ci DEFAULT NULL,
@@ -2879,7 +2922,6 @@ INSERT INTO `hum_workarea` (`id`, `workarea`) VALUES
 
 
 -- Dumping structure for table humraahi.hum_workstatus
-DROP TABLE IF EXISTS `hum_workstatus`;
 CREATE TABLE IF NOT EXISTS `hum_workstatus` (
   `id` tinyint(2) NOT NULL AUTO_INCREMENT,
   `workstatus` varchar(30) DEFAULT NULL,
@@ -2902,7 +2944,6 @@ INSERT INTO `hum_workstatus` (`id`, `workstatus`) VALUES
 
 
 -- Dumping structure for table humraahi.idev_admin
-DROP TABLE IF EXISTS `idev_admin`;
 CREATE TABLE IF NOT EXISTS `idev_admin` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `user` varchar(64) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -2918,7 +2959,6 @@ INSERT INTO `idev_admin` (`id`, `user`, `pass`) VALUES
 
 
 -- Dumping structure for table humraahi.idev_banners
-DROP TABLE IF EXISTS `idev_banners`;
 CREATE TABLE IF NOT EXISTS `idev_banners` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `grp` int(255) NOT NULL DEFAULT '0',
@@ -2969,7 +3009,6 @@ INSERT INTO `idev_banners` (`id`, `grp`, `description`, `banner`, `url`, `target
 
 
 -- Dumping structure for table humraahi.idev_groups
-DROP TABLE IF EXISTS `idev_groups`;
 CREATE TABLE IF NOT EXISTS `idev_groups` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `name` varchar(64) COLLATE latin1_general_ci NOT NULL DEFAULT '',
@@ -2990,7 +3029,6 @@ INSERT INTO `idev_groups` (`id`, `name`, `s1`, `s2`, `logid`) VALUES
 
 
 -- Dumping structure for table humraahi.idev_login
-DROP TABLE IF EXISTS `idev_login`;
 CREATE TABLE IF NOT EXISTS `idev_login` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `user` varchar(64) COLLATE latin1_general_ci NOT NULL DEFAULT '',
